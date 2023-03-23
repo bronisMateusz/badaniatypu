@@ -1,0 +1,29 @@
+uuid: 2c319b55-e67e-4349-b3fa-968e33b2ef9d
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.article
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: QdUgf_beeoaPiyKorFv0q1fcJpWH_uZTqe_xoVJacrw
+id: node.article.field_tags
+field_name: field_tags
+entity_type: node
+bundle: article
+label: Tagi
+description: 'Wprowadź listę oddzielonych przecinkami słów. Przykładowo: Wrocław, Mexico City, "Cleveland, Ohio"'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

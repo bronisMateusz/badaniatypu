@@ -1,0 +1,13 @@
+uuid: 478ef2c4-0560-4c7b-a1c3-8741c19af3bc
+langcode: pl
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: DoVt_VGgVLcDD4XmVbSFzr0K17SJy9imFiYusKkJBgY
+id: taxonomy_term_publish_action
+label: 'Publikuj termin taksonomii'
+type: taxonomy_term
+plugin: 'entity:publish_action:taxonomy_term'
+configuration: {  }

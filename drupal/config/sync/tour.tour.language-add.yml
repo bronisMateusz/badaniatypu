@@ -1,0 +1,34 @@
+uuid: f0c1adbf-cd5f-41cf-8491-5405654973a8
+langcode: pl
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: vcDd9H0uIlyOQGoVAJuD3ADMnQeRR_X3B-ojyb8Cbnc
+id: language-add
+label: 'Dodawanie języków'
+module: language
+routes:
+  -
+    route_name: language.add
+tips:
+  language-add-overview:
+    id: language-add-overview
+    plugin: text
+    label: 'Dodawanie języków'
+    weight: 1
+    body: '<p>Ta strona stwarza możliwość dodania powszechnych języków do twojej strony.</p><p>Jeśli pożądany język nie jest dostępny, dodaj własny język.</p>'
+  language-add-choose:
+    id: language-add-choose
+    plugin: text
+    label: 'Wybór języka'
+    weight: 2
+    selector: '#edit-predefined-langcode'
+    body: '<p>Wybierz język z listy lub dodaj "Własny język..." na końcu listy.</p><p>Kliknij przycisk "Dodaj język" by potwierdzić wybór.</p><p>Dodając własny język będziesz mieć możliwość wprowadzenia nazwy, kodu i kierunku w kolejnym formularzu.</p>'
+  language-add-continue:
+    id: language-add-continue
+    plugin: text
+    label: Kontynuując
+    weight: 3
+    body: '<p>Teraz gdy masz już ogólną wiedzę na temat funkcji "Dodaj języki" możesz:<ul><li>Dodać język</li><li>Dodać własny język</li><li><a href="[site:url]admin/config/regional/language">Wyświetlić skonfigurowane języki</a></li></ul></p>'

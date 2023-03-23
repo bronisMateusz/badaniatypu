@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+  <arg name="ignore" value="*node_modules/*,*vendor/*,*/dist/*"/>
+  <arg name="extensions" value="php,module,inc,install,test,profile,theme,info,txt,md,yml"/>
+  <rule ref="AcquiaDrupalStrict" />
+  <rule ref="Drupal.Files.LineLength">
+    <properties>
+      <property name="lineLimit" value="120" />
+    </properties>
+  </rule>
+  <rule ref="PSR12.Functions.ReturnTypeDeclaration" />
+  <rule ref="Generic.PHP.RequireStrictTypes" />
+  <rule ref="Squiz.PHP.CommentedOutCode" />
+  <file>.</file>
+  <arg name="colors" />
+  <arg name="parallel" value="10" />
+</ruleset>

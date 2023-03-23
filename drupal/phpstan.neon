@@ -1,0 +1,13 @@
+parameters:
+  level: 9
+  reportUnmatchedIgnoredErrors: false
+  checkGenericClassInNonGenericObjectType: false
+  ignoreErrors:
+    # new static() is a best practice in Drupal, so we cannot fix that.
+    - "#^Unsafe usage of new static#"
+    - "#no value type specified in iterable type array#"
+    # String casts should happen as late as possible. https://drupal.stackexchange.com/a/312254
+    - "#expects string, Drupal\\\\Core\\\\StringTranslation\\\\TranslatableMarkup given#"
+    # phpstan does not detect func_get_args usage
+    # ignore error utnil https://www.drupal.org/project/drupal/issues/3236391 is resolved
+    - "#Method Drupal\\\\Core\\\\Form\\\\FormBuilderInterface::getForm\\(\\) invoked with#"

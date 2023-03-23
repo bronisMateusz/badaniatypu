@@ -1,0 +1,37 @@
+# Polish translation of Laboratorium Drogowe Wojciech Bogacki
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-03-23 19:57+0000\n"
+"PO-Revision-Date: 2023-03-23 19:57+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Breadcrumbs"
+msgstr "Breadcrumby"
+
+msgid "Help"
+msgstr "Pomoc"
+
+msgid "Main page content"
+msgstr "Zawartość strony głównej"
+
+msgid "Page title"
+msgstr "Tytuł strony"
+
+msgid "Primary admin actions"
+msgstr "Podstawowe działania administratora"
+
+msgid "Primary tabs"
+msgstr "Podstawowe karty"
+
+msgid "Secondary tabs"
+msgstr "Dodatkowe karty"
+
+msgid "Status messages"
+msgstr "Komunikaty o stanie"

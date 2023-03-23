@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: pl
+uuid: 69156065-35fb-4cef-8c58-e00a6a39c048
+name: 'Laboratorium Drogowe Wojciech Bogacki'
+mail: biuro@badaniatypu.pl
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: pl

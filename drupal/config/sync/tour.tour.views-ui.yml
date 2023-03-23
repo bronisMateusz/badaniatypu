@@ -1,0 +1,88 @@
+uuid: 685bb676-38eb-4765-a046-513af7f2ecf4
+langcode: pl
+status: true
+dependencies:
+  module:
+    - views_ui
+_core:
+  default_config_hash: XIYL1KF7ND2XQRa5AxvEcp8vgCN2kUGiuBNhCgxrPME
+id: views-ui
+label: 'Strona edycji widoku.'
+module: views_ui
+routes:
+  -
+    route_name: entity.view.edit_form
+  -
+    route_name: entity.view.edit_display_form
+tips:
+  views-main:
+    id: views-main
+    plugin: text
+    label: 'Zarządzaj ustawieniami widoku.'
+    weight: 1
+    body: 'Pokaż lub edytuj konfigurację.'
+  views-ui-displays:
+    id: views-ui-displays
+    plugin: text
+    label: 'Formaty wyświetlania dla tego widoku.'
+    weight: 2
+    selector: '#views-display-top'
+    body: 'Format wyświetlania znaczy tyle co sposób w jaki wyświetlone będą wyniki, np. jako strona lub blok. Widok może posiadać więcej niż jeden format wyświetlania, które zostaną wyświetlone w tym miejscu. Aktywny format wyświetlania został wyróżniony.'
+  views-ui-view-admin:
+    id: views-ui-view-admin
+    plugin: text
+    label: 'Administracja widoku'
+    weight: 3
+    position: right
+    selector: '#views-display-extra-actions'
+    body: 'Wykonaj czynności administracyjne, wliczając w sklonowanie tudzież dodanie opisu. Kliknij w przycisk rozwijania listy by zobaczyć wszystkie dostępne opcje.'
+  views-ui-format:
+    id: views-ui-format
+    plugin: text
+    label: 'Format wyjściowy'
+    weight: 4
+    selector: .views-ui-display-tab-bucket.format
+    body: 'Wybierz w jaki sposób mają zostać zaprezentowane wyniki. Np. wybierz <em>Zawartość</em> by wyświetlić każdą pozycję w całości, korzystając z własnych ustawień konfiguracji wyświetlania. Możesz również wybrać <em>Pola</em> które pozwolą Ci zaprezentować jedynie wybrane przez Ciebie pola. Poprzez zainstalowanie modułów można <em>rozszerzyć</em> podstawową funkcjonalność Drupala o dodatkowe formaty.'
+  views-ui-fields:
+    id: views-ui-fields
+    plugin: text
+    label: Pola
+    weight: 5
+    selector: .views-ui-display-tab-bucket.field
+    body: 'Jeśli widok korzysta z pól, zostaną one zaprezentowane w tym miejscu. Możesz kliknąć w pole aby je skonfigurować.'
+  views-ui-filter:
+    id: views-ui-filter
+    plugin: text
+    label: 'Przefiltruj swój widok'
+    weight: 6
+    selector: .views-ui-display-tab-bucket.filter
+    body: 'Dodaj filtry aby ograniczyć wyniki, np. by pokazać jedynie zawartość która jest <em>opublikowana</em> należy dodać filtr <em>Opublikowane</em> i wybrać <em>Tak</em>.'
+  views-ui-filter-operations:
+    id: views-ui-filter-operations
+    plugin: text
+    label: 'Przefiltruj akcje'
+    weight: 7
+    selector: '.views-ui-display-tab-bucket.filter .dropbutton-widget'
+    body: 'Dodaj, uporządkuj lub usuń filtry.'
+  views-ui-sorts:
+    id: views-ui-sorts
+    plugin: text
+    label: 'Kryteria sortowania'
+    weight: 8
+    selector: .views-ui-display-tab-bucket.sort
+    body: 'Zarządzaj kolejnością w jakiej wyświetlane są wyniki. Kliknij w aktywną regułę by ją skonfigurować.'
+  views-ui-sorts-operations:
+    id: views-ui-sorts-operations
+    plugin: text
+    label: 'Akcje sortowania'
+    weight: 9
+    selector: '.views-ui-display-tab-bucket.sort .dropbutton-widget'
+    body: 'Dodaj, uporządkuj lub usuń regułę sortowania.'
+  views-ui-preview:
+    id: views-ui-preview
+    plugin: text
+    label: Podgląd
+    weight: 10
+    position: right
+    selector: '#preview-submit'
+    body: 'Pokaż podgląd widoku.'

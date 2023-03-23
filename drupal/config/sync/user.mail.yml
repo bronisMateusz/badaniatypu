@@ -1,0 +1,43 @@
+_core:
+  default_config_hash: 6CZIzFifRq3qbdq3n3nDpEOO4hWIQtKOAQNPvGNGKeM
+langcode: pl
+cancel_confirm:
+  subject: 'Zgłoszenie anulowania konta [user:display-name] na [site:name]'
+  body: |-
+    [user:display-name]
+
+    A request to cancel your account has been made at [site:name].
+
+    You may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:
+
+    [user:cancel-url]
+
+    NOTE: The cancellation of your account is not reversible.
+
+    This link expires in one day and nothing will happen if it is not used.
+
+    --  [site:name] team
+password_reset:
+  subject: 'Zastępcze dane do logowania dla [user:display-name] na [site:name]'
+  body: "[user:display-name],\r\n\r\nW serwisie [site:name] została uruchomiona procedura resetowania twojego hasła.\r\n\r\nMożesz się zalogować klikając poniższy odnośnik bądź kopiując go w pole adresu przeglądarki:\r\n\r\n[user:one-time-login-url]\r\n\r\nOdnośnik może zostać użyty tylko raz a jego użycie umożliwi wpisanie własnego hasła. Odnośnik straci ważność po jednym dniu.\r\n\r\n--  redakcja strony [site:name]"
+register_admin_created:
+  subject: 'Administrator utworzył dla ciebie konto na stronie [site:name]'
+  body: "[user:display-name],\r\n\r\nAdministrator strony [site:name] stworzył dla Ciebie konto. Możesz się teraz zalogować klikając w poniższy odnośnik lub kopiując i wklejając go do przeglądarki:\r\n\r\n[user:one-time-login-url]\r\n\r\nTen odnośnik możesz zostać użyty tylko raz i kieruję na stronę, gdzie będzie można ustawić własne hasło.\r\n\r\nPo ustawieniu własnego hasło, będzie można logować się w przyszłości poprzez odnośnik [site:login-url] używając:\r\n\r\nnazwa użytkownika: [user:account-name]\r\nhasło: Twoje hasło\r\n\r\n--  Zespół [site:name]"
+register_no_approval_required:
+  subject: 'Szczegóły konta użytkownika [user:display-name] na [site:name]'
+  body: "[user:display-name],\r\n\r\nDziękujemy za rejestrację na stronie [site:name]. \r\nMożesz się teraz zalogować klikając w poniższy odnośnik lub kopiując i wklejając go do przeglądarki:\r\n\r\n[user:one-time-login-url]\r\n\r\nTen odnośnik możesz zostać użyty tylko raz i kieruję na stronę, gdzie będzie można ustawić własne hasło.\r\n\r\nPo ustawieniu własnego hasło, będzie można logować się w przyszłości poprzez odnośnik [site:login-url] używając:\r\n\r\nnazwa użytkownika: [user:account-name]\r\nhasło: Twoje hasło\r\n\r\n--  \r\nZespół [site:name]"
+register_pending_approval:
+  subject: 'Szczegóły konta dla [user:display-name] na [site:name] (w trakcie weryfikacji)'
+  body: "[user:display-name],\r\n\r\nDziękujemy za rejestrację na stronie [site:name]. Twoja prośba o utworzenie konta oczekuje na zatwierdzenie. Po zatwierdzeniu otrzymasz kolejny e-mail zawierający informacje o tym, jak się zalogować, ustawić hasło i inne szczegóły.\r\n\r\n--  Zespół [site:name]"
+register_pending_approval_admin:
+  subject: 'Szczegóły konta dla [user:display-name] na [site:name] (w trakcie weryfikacji)'
+  body: "[user:display-name] wypełnił formularz założenia konta.\r\n\r\n[user:edit-url]"
+status_activated:
+  subject: 'Informacje dotyczące konta  [user:display-name] na [site:name] (konto zatwierdzone)'
+  body: "[user:display-name],\r\n\r\nTwoje konto na stronie [site:name] zostało aktywowane.\r\n\r\nMożesz się teraz zalogować klikając w poniższy odnośnik lub kopiując i wklejając go do przeglądarki:\r\n\r\n[user:one-time-login-url]\r\n\r\nTen odnośnik możesz zostać użyty tylko raz i kieruję na stronę, gdzie będzie można ustawić własne hasło.\r\n\r\nPo ustawieniu własnego hasło, będzie można logować się w przyszłości poprzez odnośnik [site:login-url] używając:\r\n\r\nnazwa użytkownika: [user:account-name]\r\nhasło: Twoje hasło\r\n\r\n--  Zespół [site:name]"
+status_blocked:
+  subject: 'Informacje dotyczące konta [user:display-name] na [site:name] (zablokowane)'
+  body: "[user:display-name],\r\n\r\nTwoje konto na [site:name] zostało zablokowane.\r\n\r\n--  Zespół [site:name]"
+status_canceled:
+  subject: 'Szczegóły konta użytkownika [user:display-name] na [site:name] (anulowane)'
+  body: "[user:display-name],\r\n\r\nTwoje konto na stronie [site:name] zostało anulowane.\r\n\r\n-- Zespół [site:name]"

@@ -1,0 +1,81 @@
+version: '3.9'
+services:
+  drupal:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    restart: unless-stopped
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      - DRUSH_OPTIONS_URI=${DOMAIN}:${TRAEFIK_HTTP_PORT:-80}
+    volumes:
+      - ./data/drupal/files:/var/www/drupal/web/sites/default/files
+      - ./data/drupal/private_files:/var/www/drupal/private_files
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal-http.entrypoints=web'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal-http.rule=Host(`${DOMAIN}`)'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal-http.middlewares=${PROJECT_NAME}-redirect-to-https'
+      - 'traefik.http.middlewares.${PROJECT_NAME}-redirect-to-https.redirectscheme.scheme=https'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal.rule=Host(`${DOMAIN}`)'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal.entrypoints=web-secure'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal.service=${PROJECT_NAME}-drupal'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal.tls=true'
+      - 'traefik.http.services.${PROJECT_NAME}-drupal.loadbalancer.server.port=80'
+      - 'traefik.docker.network=traefik'
+    networks:
+      - traefik
+      - backend
+
+  db:
+    image: mariadb:10.11
+    restart: unless-stopped
+    command: --transaction-isolation=READ-COMMITTED
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASS}
+      MARIADB_DATABASE: ${DB_NAME}
+      MARIADB_USER: ${DB_USER}
+      MARIADB_PASSWORD: ${DB_PASS}
+    volumes:
+      - 'db_data:/var/lib/mysql'
+    networks:
+      - backend
+
+  traefik:
+    image: traefik:2.9
+    profiles: ['traefik']
+    restart: unless-stopped
+    command:
+      - '--api.insecure=true'
+      - '--providers.docker=true'
+      - '--providers.docker.exposedbydefault=false'
+      - '--providers.docker.network=traefik'
+      - '--providers.file.filename=/etc/traefik/dynamic.yml'
+      - '--entrypoints.web.address=:80'
+      - "--entrypoints.web.http.redirections.entryPoint.to=web-secure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+      - '--entrypoints.web-secure.address=:443'
+      - '--entrypoints.dba.address=:81'
+    ports:
+      - '${TRAEFIK_HTTP_PORT:-80}:80'
+      - '${TRAEFIK_HTTPS_PORT:-443}:443'
+      - '${TRAEFIK_DBA_PORT:-81}:81'
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
+      - './data/certs:/etc/certs'
+      - './config/traefik-dynamic.yml:/etc/traefik/dynamic.yml:ro'
+    networks:
+      - traefik
+
+volumes:
+  db_data:
+networks:
+  traefik:
+    name: traefik
+  backend:

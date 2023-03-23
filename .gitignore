@@ -1,0 +1,7 @@
+/data/*
+
+/.env
+/*.env
+
+# Ignore .DS_Store file
+.DS_Store

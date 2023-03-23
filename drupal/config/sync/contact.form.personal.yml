@@ -1,0 +1,13 @@
+uuid: e9db70d6-c5d1-4a72-bb4e-80868176ddc2
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 'Osobisty formularz kontaktowy'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Wiadomość została wysłana.'
+redirect: ''

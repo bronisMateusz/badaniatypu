@@ -1,0 +1,55 @@
+uuid: 0750e4f0-13c6-4613-a427-6ec6bdb3ac2d
+langcode: pl
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: Okz8QMYRGvq95nqLGYjp8gLiy93DKoMEzEVZVwEeg4M
+id: language
+label: Język
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.collection
+tips:
+  language-overview:
+    id: language-overview
+    plugin: text
+    label: Języki
+    weight: 1
+    body: '<p>Strona "Języki" umożliwia dodawanie, edycję, usuwanie i uporządkowanie języków witryny.</p>'
+  language-add:
+    id: language-add
+    plugin: text
+    label: 'Dodawanie języków'
+    weight: 2
+    selector: .button-action
+    body: '<p>Aby dodać więcej języków, skorzystaj z przycisku "Dodaj język".</p><p>Dodane języki zostaną wyświetlone na liście także będzie możliwość ich późniejszej zmiany lub usunięcia.</p>'
+  language-reorder:
+    id: language-reorder
+    plugin: text
+    label: 'Uporządkowanie języków.'
+    weight: 3
+    selector: .draggable
+    body: '<p>Aby zmienić kolejność języków na stronie, użyj ikony przeciągania obok każdego z języków.</p><p>Poniższa kolejność będzie tą, w jakiej języki zostaną zaprezentowane w bloku zmiany języki dostarczonego przez moduły Interface Translation oraz Content Translation.</p><p>Kiedy skończysz zmieniać kolejność języków, kliknij przycisk "Zapisz konfigurację" aby zmiany zostały zapisane.</p>'
+  language-default:
+    id: language-default
+    plugin: text
+    label: 'Ustaw jako język domyślny'
+    weight: 4
+    selector: .js-form-item-site-default-language
+    body: '<p>Możesz zmienić domyślny język strony na jeden z zainstalowanych języków. Strona skorzysta z domyślnego języka gdy nie dokonano innego wyboru a język musi zostać wybrany, np. dla wyświetlonego języka interfejsu.</p>'
+  language-operations:
+    id: language-operations
+    plugin: text
+    label: 'Modyfikacja języków'
+    weight: 5
+    selector: .dropbutton-wrapper
+    body: '<p>Operacje umożliwiają modyfikacje i usunięcie języków.</p><p>Możesz zmodyfikować nazwę i kierunek języka.</p><p>Usunięte języki mogą zostać dodane ponownie w późniejszym czasie. Usunięcie języka spowoduje usunięcie wszystkich tłumaczeń dla tego języka, a treść utworzona w danym języku zostanie przyporządkowana do języka neutralnego. Pamiętaj że nie możesz usunąć domyślnego języka strony.</p>'
+  language-continue:
+    id: language-continue
+    plugin: text
+    label: Kontynuując
+    weight: 6
+    body: '<p>Teraz, gdy masz ogląd na stronę "Języki", możesz:<ul><li><a href="[site:url]admin/config/regional/language/add">Dodać język</a></li><li>Zmienić kolejność języków</li><li>Zmodyfikować język</li><li>Usunąć język</li></ul></p>'

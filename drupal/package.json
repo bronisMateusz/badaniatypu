@@ -1,0 +1,12 @@
+{
+  "name": "drupal",
+  "private": true,
+  "workspaces": [
+    "web/themes/custom/*",
+    "web/modules/custom/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach --parallel --exclude drupal run build"
+  },
+  "packageManager": "yarn@3.2.3"
+}

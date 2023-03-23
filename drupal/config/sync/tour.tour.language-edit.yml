@@ -1,0 +1,48 @@
+uuid: 464d0d68-0fa8-4cba-ab15-09c09338e9be
+langcode: pl
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: gjYvYwMqulNsq7VmScWKOqEUxar9AX0TvG8vfCCguUQ
+id: language-edit
+label: 'Edycja języków'
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.edit_form
+tips:
+  language-edit-overview:
+    id: language-edit-overview
+    plugin: text
+    label: 'Edycja języków'
+    weight: 1
+    body: '<p>Ta strona umożliwia edycję języka witryny, włączając w to języki własne.</p>'
+  language-edit-langcode:
+    id: language-edit-langcode
+    plugin: text
+    label: 'Kod języka'
+    weight: 2
+    selector: '#edit-langcode-view'
+    body: '<p>Zmiana kodu języka nie jest możliwa, jako że system korzysta z niego aby kontrolować użycie języka.</p>'
+  language-edit-label:
+    id: language-edit-label
+    plugin: text
+    label: 'Nazwa języka'
+    weight: 3
+    selector: '#edit-label'
+    body: '<p>Nazwa języka używana jest na całej stronie, dla wszystkich użytkowników, i zapisana jest w języku Angielskim. Nazwy wbudowanych języków mogą zostać przetłumaczone korzystając z modułu Interface Translation, a nazwy zarówno wbudowanych jak i własnych języków mogą zostać przetłumaczone z pomocą modułu Configuration Translation.</p>'
+  language-edit-direction:
+    id: language-edit-direction
+    plugin: text
+    label: 'Kierunek pisowni języka'
+    weight: 4
+    selector: '#edit-direction--wrapper--description'
+    body: '<p>Wybierz czy kierunek języka to "Z lewej do prawej" czy "Z prawej do lewej".</p><p>Pamiętaj, że nie wszystkie skórki wspierają "Z prawej do lewej" więc sprawdź czy twoja skórka wspiera ten kierunek.</p>'
+  language-edit-continue:
+    id: language-edit-continue
+    plugin: text
+    label: Kontynuując
+    weight: 5
+    body: '<p>Teraz, gdy masz podgląd na funkcję "Edycja języka", możesz kontynuować:<ul><li>Edycję języka</li><li><a href="[site:url]admin/config/regional/language">Przegląd listy skonfigurowanych języków</a></li></ul></p>'

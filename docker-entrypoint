@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+if [ $# -gt 0 ]; then
+  exec "$@"
+fi
+
+# Configure cron.
+printenv | grep 'DB' > /var/www/container.env
+service cron start
+
+# Start php-fpm.
+/usr/sbin/php-fpm8.2 -D
+
+# Start apache.
+exec apache2ctl -D FOREGROUND

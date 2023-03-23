@@ -1,0 +1,1 @@
+* * * * * cd /var/www/drupal && export $(cat ../container.env | xargs) && vendor/bin/drush cron
