@@ -19,14 +19,13 @@ services:
       - ./data/drupal/private_files:/var/www/drupal/private_files
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.routers.${PROJECT_NAME}-drupal-http.entrypoints=web'
-      - 'traefik.http.routers.${PROJECT_NAME}-drupal-http.rule=Host(`${DOMAIN}`)'
-      - 'traefik.http.routers.${PROJECT_NAME}-drupal-http.middlewares=${PROJECT_NAME}-redirect-to-https'
-      - 'traefik.http.middlewares.${PROJECT_NAME}-redirect-to-https.redirectscheme.scheme=https'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal-secure.rule=Host(`${DOMAIN}`)'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal-secure.entrypoints=web-secure'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal-secure.service=${PROJECT_NAME}-drupal'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal-secure.tls=true'
       - 'traefik.http.routers.${PROJECT_NAME}-drupal.rule=Host(`${DOMAIN}`)'
-      - 'traefik.http.routers.${PROJECT_NAME}-drupal.entrypoints=web-secure'
+      - 'traefik.http.routers.${PROJECT_NAME}-drupal.entrypoints=web'
       - 'traefik.http.routers.${PROJECT_NAME}-drupal.service=${PROJECT_NAME}-drupal'
-      - 'traefik.http.routers.${PROJECT_NAME}-drupal.tls=true'
       - 'traefik.http.services.${PROJECT_NAME}-drupal.loadbalancer.server.port=80'
       - 'traefik.docker.network=traefik'
     networks:
@@ -58,8 +57,8 @@ services:
       - '--providers.docker.network=traefik'
       - '--providers.file.filename=/etc/traefik/dynamic.yml'
       - '--entrypoints.web.address=:80'
-      - "--entrypoints.web.http.redirections.entryPoint.to=web-secure"
-      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+      - '--entrypoints.web.http.redirections.entryPoint.to=web-secure'
+      - '--entrypoints.web.http.redirections.entryPoint.scheme=https'
       - '--entrypoints.web-secure.address=:443'
       - '--entrypoints.dba.address=:81'
     ports:
