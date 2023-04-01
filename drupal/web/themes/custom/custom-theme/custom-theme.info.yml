@@ -1,5 +1,0 @@
-name: Custom theme
-description: Custom drupal theme.
-type: theme
-base theme: classy
-core_version_requirement: ^10

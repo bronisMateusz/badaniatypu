@@ -1,0 +1,5 @@
+global-styling:
+  vite: true
+  css:
+    theme:
+      assets/scss/style.scss: {}
