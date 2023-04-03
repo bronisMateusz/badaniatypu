@@ -52,7 +52,7 @@ msgid "Content"
 msgstr "Zawartość"
 
 msgid "Default"
-msgstr "Domyślnie"
+msgstr "Domyślny"
 
 msgid "Delete"
 msgstr "Usuń"

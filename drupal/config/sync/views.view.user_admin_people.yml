@@ -16,7 +16,7 @@ base_field: uid
 display:
   default:
     id: default
-    display_title: Domyślnie
+    display_title: Domyślny
     display_plugin: default
     position: 0
     display_options:
