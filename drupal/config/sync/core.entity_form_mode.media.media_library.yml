@@ -10,6 +10,6 @@ dependencies:
 _core:
   default_config_hash: Tdhz-aDHfDoV1Ul9umtItxGTrjkFzoNAkDw8FWXjYA0
 id: media.media_library
-label: 'Media library'
+label: 'Biblioteka mediów'
 targetEntityType: media
 cache: true

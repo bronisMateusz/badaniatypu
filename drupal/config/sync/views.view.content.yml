@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: vBKWYGGDoAX-tFd1JErB8tZLSxx3lJ0foouVsgpcbB4
 id: content
-label: Content
+label: Treść
 module: node
 description: 'Wyszukiwanie i zarządzanie zawartością.'
 tag: default
@@ -17,11 +17,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Domyślnie
     display_plugin: default
     position: 0
     display_options:
-      title: Content
+      title: Treść
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -132,7 +132,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Author
+          label: Autor
           exclude: false
           alter:
             alter_text: false
@@ -163,8 +163,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Unpublished
-            format_custom_true: Published
+            format_custom_false: 'Cofnięto publikację'
+            format_custom_true: Opublikowano
         changed:
           id: changed
           table: node_field_data
@@ -172,7 +172,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: Updated
+          label: Zaktualizowano
           exclude: false
           alter:
             alter_text: false
@@ -195,7 +195,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: Operations
+          label: Operacja
           exclude: false
           alter:
             alter_text: false
@@ -242,20 +242,20 @@ display:
         options:
           items_per_page: 50
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
+            next: 'Następne ›'
+            previous: '‹ Poprzednie'
+            first: '« Pierwsze'
+            last: 'Ostatnie »'
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtr
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj według'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
       access:
         type: perm
         options:
@@ -388,7 +388,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: 'Status publikacji'
             description: ''
             identifier: status
             optional: true
@@ -399,11 +399,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Opublikowano
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Cofnięto publikację'
                 operator: '='
                 value: '0'
         langcode:
@@ -422,7 +422,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Język
             description: ''
             use_operator: false
             operator: langcode_op
@@ -585,7 +585,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Strona
     display_plugin: page
     position: 1
     display_options:
@@ -593,14 +593,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Treść
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Content
+        title: Treść
         description: 'Znajdź i zarządzaj treścią'
         weight: -10
         menu_name: admin

@@ -17,7 +17,7 @@ base_field: fid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Domyślnie
     display_plugin: default
     position: 0
     display_options:
@@ -66,7 +66,7 @@ display:
           entity_type: file
           entity_field: filename
           plugin_id: field
-          label: Name
+          label: Nazwa
           exclude: false
           alter:
             alter_text: false
@@ -456,26 +456,26 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'Następne ›'
+            previous: '‹ Poprzednie'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Pozycji na stronie'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Wszystko -'
             offset: false
-            offset_label: Offset
+            offset_label: Przesunięcie
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtr
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj według'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
       access:
         type: perm
         options:
@@ -991,16 +991,16 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'Następne ›'
+            previous: '‹ Poprzednie'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Pozycji na stronie'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Wszystko -'
             offset: false
-            offset_label: Offset
+            offset_label: Przesunięcie
       empty: {  }
       arguments:
         fid:
@@ -1017,7 +1017,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Wszystko
           title_enable: true
           title: 'Informacje o wykorzystaniu pliku dla {{ arguments.fid }}'
           default_argument_type: fixed

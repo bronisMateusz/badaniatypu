@@ -1,10 +1,10 @@
-# Polish translation of Laboratorium Drogowe Wojciech Bogacki
+# Polish translation of badaniatypu
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2023-03-23 19:57+0000\n"
-"PO-Revision-Date: 2023-03-23 19:57+0000\n"
+"POT-Creation-Date: 2023-04-03 20:51+0200\n"
+"PO-Revision-Date: 2023-04-03 20:51+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -12,14 +12,140 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgid "- All -"
+msgstr "- Wszystko -"
+
+msgid "A locally hosted audio file."
+msgstr "Lokalnie hostowany plik audio."
+
+msgid "A locally hosted video file."
+msgstr "Lokalnie hostowany plik wideo."
+
+msgid "A remotely hosted video from YouTube or Vimeo."
+msgstr "Zdalnie hostowany film z serwisu YouTube lub Vimeo."
+
+msgid "Action"
+msgstr "Działanie"
+
+msgid "All"
+msgstr "Wszystko"
+
+msgid "An uploaded file or document, such as a PDF."
+msgstr "Przesłany plik lub dokument, taki jak PDF."
+
+msgid "Apply filters"
+msgstr "Zastosuj filtry"
+
+msgid "Asc"
+msgstr "Rosnąco"
+
+msgid "Audio file"
+msgstr "Plik dźwiękowy"
+
+msgid "Author"
+msgstr "Autor"
+
 msgid "Breadcrumbs"
 msgstr "Breadcrumby"
+
+msgid "Content"
+msgstr "Treść"
+
+msgid "Default"
+msgstr "Domyślnie"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "Delete media"
+msgstr "Usuń media"
+
+msgid "Delete {{ name }}"
+msgstr "Usuń {{ name }}"
+
+msgid "Desc"
+msgstr "Malejąco"
+
+msgid "Development"
+msgstr "Development"
+
+msgid "Document"
+msgstr "Dokument"
+
+msgid "Edit"
+msgstr "Edytuj"
+
+msgid "Edit {{ name }}"
+msgstr "Edytuj {{ name }}"
+
+msgid "Filter"
+msgstr "Filtr"
+
+msgid "Find and manage media."
+msgstr "Znajdź i zarządzaj mediami."
+
+msgid "Full content"
+msgstr "Pełna treść"
+
+msgid "Grid"
+msgstr "Siatka"
 
 msgid "Help"
 msgstr "Pomoc"
 
+msgid "Image"
+msgstr "Obraz"
+
+msgid "Items per page"
+msgstr "Pozycji na stronie"
+
+msgid "Language"
+msgstr "Język"
+
+msgid "Last »"
+msgstr "Ostatnie »"
+
 msgid "Main page content"
 msgstr "Zawartość strony głównej"
+
+msgid "Media Library thumbnail (220×220)"
+msgstr "Miniaturka biblioteki mediów (220×220)"
+
+msgid "Media library"
+msgstr "Biblioteka mediów"
+
+msgid "Media name"
+msgstr "Nazwa"
+
+msgid "Media type"
+msgstr "Rodzaj"
+
+msgid "Name"
+msgstr "Nazwa"
+
+msgid "Name (A-Z)"
+msgstr "Nazwa (A-Z)"
+
+msgid "Name (Z-A)"
+msgstr "Nazwa (Z-A)"
+
+msgid "Newest first"
+msgstr "Najpierw najświeższe"
+
+msgid "Next ›"
+msgstr "Następne ›"
+
+msgid "No media available."
+msgstr "Brak dostępnych mediów."
+
+msgid "Offset"
+msgstr "Przesunięcie"
+
+msgid "Operations"
+msgstr "Operacja"
+
+msgid "Page"
+msgstr "Strona"
 
 msgid "Page title"
 msgstr "Tytuł strony"
@@ -30,8 +156,79 @@ msgstr "Podstawowe działania administratora"
 msgid "Primary tabs"
 msgstr "Podstawowe karty"
 
+msgid "Publish media"
+msgstr "Opublikuj"
+
+msgid "Published"
+msgstr "Opublikowano"
+
+msgid "Published status"
+msgstr "Status publikacji"
+
+msgid "Remote video"
+msgstr "Zdalne wideo"
+
+msgid "Reset"
+msgstr "Resetuj"
+
+msgid "Save media"
+msgstr "Zapisz"
+
 msgid "Secondary tabs"
 msgstr "Dodatkowe karty"
 
+msgid "Sort by"
+msgstr "Sortuj według"
+
 msgid "Status messages"
 msgstr "Komunikaty o stanie"
+
+msgid "Table"
+msgstr "Tabela"
+
+msgid "Thumbnail"
+msgstr "Miniaturka"
+
+msgid "True"
+msgstr "Prawda"
+
+msgid "Type"
+msgstr "Fałsz"
+
+msgid "Unpublish media"
+msgstr "Cofnij publikację"
+
+msgid "Unpublished"
+msgstr "Cofnięto publikację"
+
+msgid "Updated"
+msgstr "Zaktualizowano"
+
+msgid "Use local images for reusable media."
+msgstr "Użyj lokalnych obrazów dla mediów wielokrotnego użytku."
+
+msgid "Users"
+msgstr "Użytkownicy"
+
+msgid "Video"
+msgstr "Wideo"
+
+msgid "Video URL"
+msgstr "Adres wideo"
+
+msgid "Video file"
+msgstr "Plik wideo"
+
+msgid "Widget"
+msgstr "Widget"
+
+msgid "Widget (table)"
+msgstr "Widget (tabela)"
+
+msgid "« First"
+msgstr "« Pierwsze"
+
+msgid "‹ Previous"
+msgstr "‹ Poprzednie"
+
+
