@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: vBKWYGGDoAX-tFd1JErB8tZLSxx3lJ0foouVsgpcbB4
 id: content
-label: Treść
+label: Zawartość
 module: node
 description: 'Wyszukiwanie i zarządzanie zawartością.'
 tag: default
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Treść
+      title: Zawartość
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -163,8 +163,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: 'Cofnięto publikację'
-            format_custom_true: Opublikowano
+            format_custom_false: Nieopublikowany
+            format_custom_true: Opublikowane
         changed:
           id: changed
           table: node_field_data
@@ -172,7 +172,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: Zaktualizowano
+          label: Uaktualniono
           exclude: false
           alter:
             alter_text: false
@@ -195,7 +195,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: Operacja
+          label: Operacje
           exclude: false
           alter:
             alter_text: false
@@ -242,17 +242,17 @@ display:
         options:
           items_per_page: 50
           tags:
-            next: 'Następne ›'
-            previous: '‹ Poprzednie'
-            first: '« Pierwsze'
-            last: 'Ostatnie »'
+            next: 'Następna ›'
+            previous: '‹ Poprzednia'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
       exposed_form:
         type: basic
         options:
           submit_button: Filtr
           reset_button: true
           reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj według'
+          exposed_sorts_label: 'Sortuj po'
           expose_sort_order: true
           sort_asc_label: Rosnąco
           sort_desc_label: Malejąco
@@ -399,11 +399,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Opublikowano
+                title: Opublikowane
                 operator: '='
                 value: '1'
               2:
-                title: 'Cofnięto publikację'
+                title: Nieopublikowany
                 operator: '='
                 value: '0'
         langcode:
@@ -593,14 +593,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Treść
+        title: Zawartość
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Treść
+        title: Zawartość
         description: 'Znajdź i zarządzaj treścią'
         weight: -10
         menu_name: admin

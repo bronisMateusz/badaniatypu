@@ -25,7 +25,7 @@ msgid "A remotely hosted video from YouTube or Vimeo."
 msgstr "Zdalnie hostowany film z serwisu YouTube lub Vimeo."
 
 msgid "Action"
-msgstr "Działanie"
+msgstr "Akcja"
 
 msgid "All"
 msgstr "Wszystko"
@@ -49,7 +49,7 @@ msgid "Breadcrumbs"
 msgstr "Breadcrumby"
 
 msgid "Content"
-msgstr "Treść"
+msgstr "Zawartość"
 
 msgid "Default"
 msgstr "Domyślnie"
@@ -85,7 +85,7 @@ msgid "Find and manage media."
 msgstr "Znajdź i zarządzaj mediami."
 
 msgid "Full content"
-msgstr "Pełna treść"
+msgstr "Pełna zawartość"
 
 msgid "Grid"
 msgstr "Siatka"
@@ -97,13 +97,13 @@ msgid "Image"
 msgstr "Obraz"
 
 msgid "Items per page"
-msgstr "Pozycji na stronie"
+msgstr "Elementów na stronę"
 
 msgid "Language"
 msgstr "Język"
 
 msgid "Last »"
-msgstr "Ostatnie »"
+msgstr "Ostatnia »"
 
 msgid "Main page content"
 msgstr "Zawartość strony głównej"
@@ -133,7 +133,7 @@ msgid "Newest first"
 msgstr "Najpierw najświeższe"
 
 msgid "Next ›"
-msgstr "Następne ›"
+msgstr "Następna ›"
 
 msgid "No media available."
 msgstr "Brak dostępnych mediów."
@@ -142,7 +142,7 @@ msgid "Offset"
 msgstr "Przesunięcie"
 
 msgid "Operations"
-msgstr "Operacja"
+msgstr "Operacje"
 
 msgid "Page"
 msgstr "Strona"
@@ -160,7 +160,7 @@ msgid "Publish media"
 msgstr "Opublikuj"
 
 msgid "Published"
-msgstr "Opublikowano"
+msgstr "Opublikowane"
 
 msgid "Published status"
 msgstr "Status publikacji"
@@ -178,7 +178,7 @@ msgid "Secondary tabs"
 msgstr "Dodatkowe karty"
 
 msgid "Sort by"
-msgstr "Sortuj według"
+msgstr "Sortuj po"
 
 msgid "Status messages"
 msgstr "Komunikaty o stanie"
@@ -199,10 +199,10 @@ msgid "Unpublish media"
 msgstr "Cofnij publikację"
 
 msgid "Unpublished"
-msgstr "Cofnięto publikację"
+msgstr "Nieopublikowany"
 
 msgid "Updated"
-msgstr "Zaktualizowano"
+msgstr "Uaktualniono"
 
 msgid "Use local images for reusable media."
 msgstr "Użyj lokalnych obrazów dla mediów wielokrotnego użytku."
@@ -226,9 +226,9 @@ msgid "Widget (table)"
 msgstr "Widget (tabela)"
 
 msgid "« First"
-msgstr "« Pierwsze"
+msgstr "« Pierwsza"
 
 msgid "‹ Previous"
-msgstr "‹ Poprzednie"
+msgstr "‹ Poprzednia"
 
 

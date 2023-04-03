@@ -34,13 +34,13 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Następne ›'
-            previous: '‹ Poprzednie'
-            first: '« Pierwsze'
-            last: 'Ostatnie »'
+            next: 'Następna ›'
+            previous: '‹ Poprzednia'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Pozycji na stronie'
+            items_per_page_label: 'Elementów na stronę'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Wszystko -'
@@ -53,7 +53,7 @@ display:
           submit_button: Zastosuj
           reset_button: false
           reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj według'
+          exposed_sorts_label: 'Sortuj po'
           expose_sort_order: true
           sort_asc_label: Rosnąco
           sort_desc_label: Malejąco

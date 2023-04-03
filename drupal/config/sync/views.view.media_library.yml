@@ -81,7 +81,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Działanie
+          action_title: Akcja
           include_exclude: exclude
           selected_actions: {  }
         rendered_entity:
@@ -147,7 +147,7 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Pozycji na stronie'
+            items_per_page_label: 'Elementów na stronę'
             items_per_page_options: '6, 12, 24, 48'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Wszystko -'
@@ -159,7 +159,7 @@ display:
           submit_button: 'Zastosuj filtry'
           reset_button: false
           reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj według'
+          exposed_sorts_label: 'Sortuj po'
           expose_sort_order: false
           sort_asc_label: Rosnąco
           sort_desc_label: Malejąco
@@ -260,7 +260,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: Opublikowano
+            label: Opublikowane
             description: ''
             identifier: status
             optional: true
@@ -271,11 +271,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Opublikowano
+                title: Opublikowane
                 operator: '='
                 value: '1'
               2:
-                title: 'Cofnięto publikację'
+                title: Nieopublikowany
                 operator: '='
                 value: '0'
         name:
@@ -542,7 +542,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Działanie
+          action_title: Akcja
           include_exclude: exclude
           selected_actions: {  }
         name:
@@ -1166,7 +1166,7 @@ display:
           entity_type: media
           entity_field: changed
           plugin_id: field
-          label: Zaktualizowano
+          label: Uaktualniono
           type: timestamp
           settings:
             date_format: short

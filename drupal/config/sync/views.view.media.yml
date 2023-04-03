@@ -76,7 +76,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Działanie
+          action_title: Akcja
           include_exclude: exclude
           selected_actions: {  }
         thumbnail__target_id:
@@ -379,8 +379,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: 'Cofnięto publikację'
-            format_custom_true: Opublikowano
+            format_custom_false: Nieopublikowany
+            format_custom_true: Opublikowane
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -401,7 +401,7 @@ display:
           entity_type: media
           entity_field: changed
           plugin_id: field
-          label: Zaktualizowano
+          label: Uaktualniono
           exclude: false
           alter:
             alter_text: false
@@ -467,7 +467,7 @@ display:
           admin_label: ''
           entity_type: media
           plugin_id: entity_operations
-          label: Operacja
+          label: Operacje
           exclude: false
           alter:
             alter_text: false
@@ -517,13 +517,13 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'Następne ›'
-            previous: '‹ Poprzednie'
-            first: '« Pierwsze'
-            last: 'Ostatnie »'
+            next: 'Następna ›'
+            previous: '‹ Poprzednia'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Pozycji na stronie'
+            items_per_page_label: 'Elementów na stronę'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Wszystko -'
@@ -536,7 +536,7 @@ display:
           submit_button: Filtr
           reset_button: false
           reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj według'
+          exposed_sorts_label: 'Sortuj po'
           expose_sort_order: true
           sort_asc_label: Rosnąco
           sort_desc_label: Malejąco
@@ -704,11 +704,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Opublikowano
+                title: Opublikowane
                 operator: '='
                 value: '1'
               2:
-                title: 'Cofnięto publikację'
+                title: Nieopublikowany
                 operator: '='
                 value: '0'
         status_extra:

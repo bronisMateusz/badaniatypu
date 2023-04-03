@@ -163,7 +163,7 @@ display:
           entity_type: block_content
           entity_field: changed
           plugin_id: field
-          label: Zaktualizowano
+          label: Uaktualniono
           exclude: false
           alter:
             alter_text: false
@@ -218,7 +218,7 @@ display:
           admin_label: ''
           entity_type: block_content
           plugin_id: entity_operations
-          label: Operacja
+          label: Operacje
           exclude: false
           alter:
             alter_text: false
@@ -268,11 +268,11 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'Następne ›'
-            previous: '‹ Poprzednie'
+            next: 'Następna ›'
+            previous: '‹ Poprzednia'
           expose:
             items_per_page: false
-            items_per_page_label: 'Pozycji na stronie'
+            items_per_page_label: 'Elementów na stronę'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Wszystko -'
@@ -284,7 +284,7 @@ display:
           submit_button: Zastosuj
           reset_button: true
           reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj według'
+          exposed_sorts_label: 'Sortuj po'
           expose_sort_order: true
           sort_asc_label: Rosnąco
           sort_desc_label: Malejąco
