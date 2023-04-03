@@ -1,4 +1,4 @@
-uuid: 0750e4f0-13c6-4613-a427-6ec6bdb3ac2d
+uuid: f0097e76-d1e1-41e7-a9e9-20b15289f16e
 langcode: pl
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: Okz8QMYRGvq95nqLGYjp8gLiy93DKoMEzEVZVwEeg4M
 id: language
-label: Język
+label: Language
 module: language
 routes:
   -

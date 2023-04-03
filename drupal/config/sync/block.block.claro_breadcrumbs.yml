@@ -1,4 +1,4 @@
-uuid: 04e7c876-aa56-4f19-9b16-df96a057d235
+uuid: efd5ef59-f50f-4891-8fba-7da3af819d9e
 langcode: pl
 status: true
 dependencies:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: Breadcrumby
+  label: Breadcrumbs
   label_display: '0'
   provider: system
 visibility: {  }

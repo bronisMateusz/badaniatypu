@@ -1,4 +1,4 @@
-uuid: 554e6499-f933-423a-99ba-ddf0f696952a
+uuid: 968eb91a-2ff9-4562-a8c4-4de30c582e6c
 langcode: pl
 status: true
 dependencies:
@@ -16,7 +16,7 @@ base_field: uid
 display:
   default:
     id: default
-    display_title: Domyślny
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -352,7 +352,7 @@ display:
           admin_label: ''
           entity_type: user
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -466,29 +466,29 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Następna ›'
-            previous: '‹ Poprzednia'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementów na stronę'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Wszystko -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Przesunięcie
+            offset_label: Offset
           quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Filtr
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -894,7 +894,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Strona
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:

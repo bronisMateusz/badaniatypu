@@ -1,0 +1,48 @@
+uuid: 9d6b81a2-a390-4e29-8309-c3112409ba4e
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.redirect_to_page
+    - field.field.block_content.redirect_to_page.field_background
+    - field.field.block_content.redirect_to_page.field_image
+    - field.field.block_content.redirect_to_page.field_link
+  module:
+    - link
+id: block_content.redirect_to_page.default
+targetEntityType: block_content
+bundle: redirect_to_page
+mode: default
+content:
+  field_background:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link_separate
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

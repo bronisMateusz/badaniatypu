@@ -1,0 +1,22 @@
+uuid: 6bca530d-007d-4754-aff6-eab2e92df25a
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - badaniatypu
+_core:
+  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E
+id: badaniatypu_breadcrumbs
+theme: badaniatypu
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: b281076e-bd0c-49ab-8a66-9304b543332f
+langcode: pl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Strona główna'
+type: front_page
+description: 'Użyj tego typu treści żeby utworzyć <em>Stronę gówną</em>, która ma możliwość wyboru, do której firmy przejść.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

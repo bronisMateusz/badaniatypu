@@ -1,0 +1,26 @@
+uuid: e89653de-2904-42b5-a22d-64160adb77fc
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - badaniatypu
+_core:
+  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
+id: badaniatypu_page_title
+theme: badaniatypu
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Tytuł strony'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

@@ -1,4 +1,4 @@
-uuid: d9af4918-c855-4f7a-a49d-5a0ec4a4cf4a
+uuid: 75d0179a-ec47-41ad-84aa-d2262b4a4589
 langcode: pl
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
 id: node_search
-label: Zawartość
+label: Content
 path: node
 weight: -10
 plugin: node_search

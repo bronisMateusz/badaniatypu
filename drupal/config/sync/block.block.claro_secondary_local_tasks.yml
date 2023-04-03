@@ -1,4 +1,4 @@
-uuid: 928fe681-fd4b-44c7-8e6e-cf9c7174425f
+uuid: fd840122-fd81-49cf-969f-7852bdfbb03d
 langcode: pl
 status: true
 dependencies:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Dodatkowe karty'
+  label: 'Secondary tabs'
   label_display: '0'
   provider: core
   primary: false

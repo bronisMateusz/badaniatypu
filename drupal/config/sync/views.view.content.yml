@@ -1,4 +1,4 @@
-uuid: 4a6d970d-d6aa-4055-aba8-3ee2e7c8530e
+uuid: 63052bdc-3269-4a24-a50f-1e546d024e84
 langcode: pl
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: vBKWYGGDoAX-tFd1JErB8tZLSxx3lJ0foouVsgpcbB4
 id: content
-label: Zawartość
+label: Content
 module: node
 description: 'Wyszukiwanie i zarządzanie zawartością.'
 tag: default
@@ -17,11 +17,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Domyślny
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
-      title: Zawartość
+      title: Content
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -132,7 +132,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -163,8 +163,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Nieopublikowany
-            format_custom_true: Opublikowane
+            format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           id: changed
           table: node_field_data
@@ -172,7 +172,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: Uaktualniono
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -195,7 +195,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -242,20 +242,20 @@ display:
         options:
           items_per_page: 50
           tags:
-            next: 'Następna ›'
-            previous: '‹ Poprzednia'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
       exposed_form:
         type: basic
         options:
-          submit_button: Filtr
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -388,7 +388,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Status publikacji'
+            label: 'Published status'
             description: ''
             identifier: status
             optional: true
@@ -399,11 +399,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Opublikowane
+                title: Published
                 operator: '='
                 value: '1'
               2:
-                title: Nieopublikowany
+                title: Unpublished
                 operator: '='
                 value: '0'
         langcode:
@@ -422,7 +422,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Język
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -585,7 +585,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Strona
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:
@@ -593,14 +593,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Zawartość
+        title: Content
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Zawartość
+        title: Content
         description: 'Znajdź i zarządzaj treścią'
         weight: -10
         menu_name: admin

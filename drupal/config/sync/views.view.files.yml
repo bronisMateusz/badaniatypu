@@ -1,4 +1,4 @@
-uuid: 0b12b867-298b-4553-a750-60bfd2e66b7e
+uuid: 7c1e02c5-2852-4e80-a264-8bce4275ef58
 langcode: pl
 status: true
 dependencies:
@@ -17,7 +17,7 @@ base_field: fid
 display:
   default:
     id: default
-    display_title: Domyślny
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -66,7 +66,7 @@ display:
           entity_type: file
           entity_field: filename
           plugin_id: field
-          label: Nazwa
+          label: Name
           exclude: false
           alter:
             alter_text: false
@@ -456,26 +456,26 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Następna ›'
-            previous: '‹ Poprzednia'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementów na stronę'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Wszystko -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Przesunięcie
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
-          submit_button: Filtr
+          submit_button: Filter
           reset_button: false
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -991,16 +991,16 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Następna ›'
-            previous: '‹ Poprzednia'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementów na stronę'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Wszystko -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Przesunięcie
+            offset_label: Offset
       empty: {  }
       arguments:
         fid:
@@ -1017,7 +1017,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Wszystko
+            title: All
           title_enable: true
           title: 'Informacje o wykorzystaniu pliku dla {{ arguments.fid }}'
           default_argument_type: fixed

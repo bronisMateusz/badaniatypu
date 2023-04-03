@@ -1,4 +1,4 @@
-uuid: 5c4b73e7-e3c0-421d-ac2e-98c5be7fe258
+uuid: f082a64d-9fde-44ad-bb65-7399227ef5ef
 langcode: pl
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Informacja zwrotna na temat strony.'
 recipients:
-  - admin@example.com
+  - biuro@badaniatypu.pl
 reply: ''
 weight: 0
 message: 'Wiadomość została wysłana.'

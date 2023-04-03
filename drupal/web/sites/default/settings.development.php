@@ -1,6 +1,6 @@
 <?php
 
 /**
- * Enable development config split.
+ * Enable local development services.
  */
-$config['config_split.config_split.development']['status'] = TRUE;
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';

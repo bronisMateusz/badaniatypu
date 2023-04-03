@@ -1,4 +1,4 @@
-uuid: 4f81a40b-7bcf-457b-87d8-94b61b69fddd
+uuid: 2157eeed-cd69-445d-8e7c-1068f2a7fd88
 langcode: pl
 status: true
 dependencies:
@@ -13,7 +13,7 @@ id: node.article.field_image
 field_name: field_image
 entity_type: node
 bundle: article
-label: Obraz
+label: Image
 description: ''
 required: false
 translatable: true

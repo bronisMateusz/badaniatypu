@@ -1,4 +1,4 @@
-uuid: 0dbc6dc3-da3f-4c48-a319-6e050b53a460
+uuid: 693d4805-7134-4e58-af07-a74632c725b9
 langcode: pl
 status: true
 dependencies:
@@ -17,7 +17,7 @@ base_field: cid
 display:
   default:
     id: default
-    display_title: Domyślny
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -73,7 +73,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Akcja
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -218,7 +218,7 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -347,7 +347,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: field
-          label: Uaktualniono
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -413,7 +413,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -534,23 +534,23 @@ display:
             last: 'ostatnia »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementów na stronę'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Wszystko -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Przesunięcie
+            offset_label: Offset
           quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Filtr
+          submit_button: Filter
           reset_button: false
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -730,7 +730,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Język
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -951,7 +951,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Akcja
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -1096,7 +1096,7 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -1225,7 +1225,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: field
-          label: Uaktualniono
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -1291,7 +1291,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -1540,7 +1540,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Język
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op

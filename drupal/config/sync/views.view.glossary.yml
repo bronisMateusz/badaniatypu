@@ -1,4 +1,4 @@
-uuid: 4fe87fa0-28cd-4a8f-ad55-49a74d343173
+uuid: 9c69c1ee-1c01-4ca0-bbb7-b1dabe5d7bac
 langcode: pl
 status: false
 dependencies:
@@ -19,7 +19,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Domyślny
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -85,7 +85,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -195,22 +195,22 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementów na stronę'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Wszystko -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Przesunięcie
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
           submit_button: Zastosuj
           reset_button: false
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: perm
         options:
@@ -446,7 +446,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Strona
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:

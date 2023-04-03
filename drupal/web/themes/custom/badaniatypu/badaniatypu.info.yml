@@ -1,9 +1,13 @@
 name: badaniatypu
-description: Badaniatypu site theme.
 type: theme
-'base theme': stable9
+base theme: stable9
+description: Badaniatypu site theme.
 starterkit: true
-libraries:
-  - badaniatypu/global-styling
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.0.7'
+libraries:
+  - badaniatypu/global-styling
+libraries-override:
+  layout_builder/twocol_section: badaniatypu/layout_builder_twocol_section
+libraries-extend:
+  

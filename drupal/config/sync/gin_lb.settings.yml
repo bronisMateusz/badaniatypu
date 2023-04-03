@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: yudQ8EMv_5QWoQFQzfYtTojr5cUbr6guPoPD58sNx88
+langcode: pl
+toastify_loading: cdn
+enable_preview_regions: false
+hide_discard_revert_buttons: true
+save_behavior: stay
