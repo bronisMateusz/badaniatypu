@@ -1,0 +1,21 @@
+uuid: 897f7832-185d-4512-8e5c-0327d8db00b0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_oembed_video
+    - media.type.remote_video
+_core:
+  default_config_hash: Eo4HHenV5iZat_kEWgr_wydD3TgwURMCzwt-7qIEyoM
+id: media.remote_video.field_media_oembed_video
+field_name: field_media_oembed_video
+entity_type: media
+bundle: remote_video
+label: 'Adres wideo'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

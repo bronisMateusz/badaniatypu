@@ -1,0 +1,10 @@
+uuid: ee65dd96-f8d6-4d8f-ae06-d6d287ea5049
+langcode: pl
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.reverse
+label: Odwrócony
+targetEntityType: block_content
+cache: true

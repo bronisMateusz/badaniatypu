@@ -1,0 +1,25 @@
+global-styling:
+  vite: true
+  css:
+    component:
+      assets/scss/components/node.scss: {}
+    theme:
+      assets/scss/style.scss: {}
+
+block--inline-block--redirect-to-page:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--inline-block--redirect-to-page.scss: {}
+
+layout_builder_twocol_section:
+  vite: true
+  css:
+    layout:
+      assets/scss/layout/layout-builder-twocol-section.scss: {}
+
+node--front-page:
+  vite: true
+  css:
+    theme:
+      assets/scss/content/node--front-page.scss: {}

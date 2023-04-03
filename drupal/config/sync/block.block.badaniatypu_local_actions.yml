@@ -1,0 +1,20 @@
+uuid: a187d7ee-bb7c-48ad-9764-6e74efeee23c
+langcode: pl
+status: false
+dependencies:
+  theme:
+    - badaniatypu
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: badaniatypu_local_actions
+theme: badaniatypu
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

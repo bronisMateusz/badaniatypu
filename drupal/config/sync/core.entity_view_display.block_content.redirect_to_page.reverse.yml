@@ -1,0 +1,54 @@
+uuid: a779d812-a5f8-4dae-939b-f10336629286
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.redirect_to_page
+    - core.entity_view_mode.block_content.reverse
+    - field.field.block_content.redirect_to_page.field_background
+    - field.field.block_content.redirect_to_page.field_image
+    - field.field.block_content.redirect_to_page.field_link
+  module:
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.redirect_to_page.reverse
+targetEntityType: block_content
+bundle: redirect_to_page
+mode: reverse
+content:
+  field_background:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link_separate
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

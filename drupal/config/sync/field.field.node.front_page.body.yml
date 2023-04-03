@@ -1,0 +1,23 @@
+uuid: 674e2838-21df-4328-b440-cbf8796dec1c
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.front_page
+  module:
+    - text
+id: node.front_page.body
+field_name: body
+entity_type: node
+bundle: front_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

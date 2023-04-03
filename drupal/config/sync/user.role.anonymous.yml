@@ -1,4 +1,4 @@
-uuid: fe7d159b-284d-452f-b64c-5b87fc40b4a4
+uuid: ddcdde36-6100-4797-b970-30f56cdfbf5e
 langcode: pl
 status: true
 dependencies:
@@ -8,6 +8,7 @@ dependencies:
     - comment
     - contact
     - filter
+    - media
     - search
     - system
 _core:
@@ -22,3 +23,4 @@ permissions:
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view media'

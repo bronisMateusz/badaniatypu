@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "../../../core/.eslintrc.json"
+  ],
+  "ignorePatterns": ["vite.config.js", "dist/*", "libraries/*"]
+}

@@ -1,0 +1,13 @@
+uuid: ff46df68-8621-43ec-a621-08c43de04bb5
+langcode: pl
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: CsK6TseQ2DatEbZgbd30swOlZ28_HHwAESU2LvEnWq0
+id: media_unpublish_action
+label: 'Cofnij publikację'
+type: media
+plugin: 'entity:unpublish_action:media'
+configuration: {  }

@@ -1,0 +1,8 @@
+uuid: 32f2d738-6999-42c4-947f-f5021d9034c8
+langcode: pl
+status: true
+dependencies: {  }
+id: redirect_to_page
+label: 'Przekierowanie do strony'
+revision: 0
+description: 'Blok przekierowujący do strony danej firmy.'

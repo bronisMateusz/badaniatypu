@@ -1,0 +1,74 @@
+uuid: 90a2cf49-9191-4012-9622-2c5b040dd651
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.redirect_to_page
+    - field.field.node.front_page.body
+    - field.field.node.front_page.layout_builder__layout
+    - node.type.front_page
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Wybór strony'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          b852f273-cc70-4223-bb8a-c5217b7f1ce2:
+            uuid: b852f273-cc70-4223-bb8a-c5217b7f1ce2
+            region: first
+            configuration:
+              id: 'inline_block:redirect_to_page'
+              label: 'Odnośnik do laboratorium'
+              label_display: '0'
+              provider: layout_builder
+              view_mode: default
+              context_mapping: {  }
+              block_revision_id: 4
+              block_serialized: null
+            weight: 0
+            additional: {  }
+          0f9dcc28-d8ea-4a5d-af27-e7c57b984e7c:
+            uuid: 0f9dcc28-d8ea-4a5d-af27-e7c57b984e7c
+            region: second
+            configuration:
+              id: 'inline_block:redirect_to_page'
+              label: 'Odnośnik do spółki'
+              label_display: '0'
+              provider: layout_builder
+              view_mode: reverse
+              context_mapping: {  }
+              block_revision_id: 5
+              block_serialized: null
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.front_page.default
+targetEntityType: node
+bundle: front_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

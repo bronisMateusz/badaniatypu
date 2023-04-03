@@ -1,0 +1,16 @@
+uuid: 311de6f6-4033-4f55-8d87-5d3d72519681
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hzgvcRgZHltqWf8hBmttoWh95tCJoPL25lPq9YSIRsY
+id: video
+label: Wideo
+description: 'Lokalnie hostowany plik wideo.'
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_video_file
+field_map:
+  name: name

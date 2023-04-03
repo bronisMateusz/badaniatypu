@@ -1,4 +1,4 @@
-uuid: 832776dc-75bf-492a-868c-8e932b073372
+uuid: 34b0b545-b18c-4dea-9047-e96ba0b9c6a6
 langcode: pl
 status: true
 dependencies:
@@ -179,7 +179,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: Typ
+          label: Fałsz
           exclude: false
           alter:
             alter_text: false
@@ -513,7 +513,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Typ
+            label: Fałsz
             description: ''
             use_operator: false
             operator: type_op

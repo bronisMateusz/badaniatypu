@@ -1,6 +1,5 @@
 version: '3.9'
 services:
-
   drupal:
     environment:
       - ENVIRONMENT=development
@@ -11,19 +10,21 @@ services:
       - ./config/custom.php.ini:/etc/php/8.2/cli/conf.d/custom.php.ini
       - ./config/custom.php.ini:/etc/php/8.2/fpm/conf.d/custom.php.ini
       - ./config/vhost.apache2.conf:/etc/apache2/sites-available/000-default.conf
+    ports:
+      - '${VITE_PORT:-3000}:${VITE_PORT:-3000}'
 
   adminer:
     image: adminer
-    profiles: ["adminer"]
+    profiles: ['adminer']
     restart: unless-stopped
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.${PROJECT_NAME}-adminer.rule=Host(`${DOMAIN}`)"
-      - "traefik.http.routers.${PROJECT_NAME}-adminer.entrypoints=dba"
-      - "traefik.http.routers.${PROJECT_NAME}-adminer.service=${PROJECT_NAME}-adminer"
-      - "traefik.http.routers.${PROJECT_NAME}-adminer.tls=true"
-      - "traefik.http.services.${PROJECT_NAME}-adminer.loadbalancer.server.port=8082"
-      - "traefik.docker.network=traefik"
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.${PROJECT_NAME}-adminer.rule=Host(`${DOMAIN}`)'
+      - 'traefik.http.routers.${PROJECT_NAME}-adminer.entrypoints=dba'
+      - 'traefik.http.routers.${PROJECT_NAME}-adminer.service=${PROJECT_NAME}-adminer'
+      - 'traefik.http.routers.${PROJECT_NAME}-adminer.tls=true'
+      - 'traefik.http.services.${PROJECT_NAME}-adminer.loadbalancer.server.port=8080'
+      - 'traefik.docker.network=traefik'
     networks:
       - traefik
       - backend

@@ -1,0 +1,29 @@
+uuid: b4df3ad3-7b3f-4c5e-9f8c-0d52b9b2ba1a
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.redirect_to_page
+    - field.storage.block_content.field_background
+    - media.type.image
+id: block_content.redirect_to_page.field_background
+field_name: field_background
+entity_type: block_content
+bundle: redirect_to_page
+label: Tło
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

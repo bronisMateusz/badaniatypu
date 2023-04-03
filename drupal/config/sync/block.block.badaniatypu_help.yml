@@ -1,0 +1,22 @@
+uuid: b5c991ed-0c92-48d5-afe5-05e01f392c63
+langcode: pl
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - badaniatypu
+_core:
+  default_config_hash: 8nOAry2oKqJOr0zbrlJ3sZHDFJLIO6j-0vT0K_TYca4
+id: badaniatypu_help
+theme: badaniatypu
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

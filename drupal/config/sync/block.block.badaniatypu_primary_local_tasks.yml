@@ -1,0 +1,22 @@
+uuid: 872e2f65-0278-4ec2-a723-06e51aaf7169
+langcode: pl
+status: false
+dependencies:
+  theme:
+    - badaniatypu
+_core:
+  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
+id: badaniatypu_primary_local_tasks
+theme: badaniatypu
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

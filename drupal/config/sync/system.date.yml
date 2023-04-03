@@ -3,9 +3,9 @@ _core:
 langcode: pl
 first_day: 0
 country:
-  default: ''
+  default: PL
 timezone:
-  default: ''
+  default: Europe/Warsaw
   user:
     configurable: true
     default: 0

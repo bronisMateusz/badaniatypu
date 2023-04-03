@@ -83,8 +83,17 @@ if (
 }
 
 /**
- * Load local settings overrides.
+ * Vite integration configuration overrides.
  */
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
+$settings['vite']['overrides']['badaniatypu']['devServerUrl'] = 'http://localhost:' . $_ENV['VITE_PORT'];
+
+/**
+ * Load development settings overrides.
+ */
+if (
+  file_exists($app_root . '/' . $site_path . '/../settings.development.php')
+  && isset($_ENV['ENVIRONMENT'])
+  && $_ENV['ENVIRONMENT'] === 'dev'
+) {
+  include $app_root . '/' . $site_path . '/../settings.development.php';
 }

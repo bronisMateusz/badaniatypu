@@ -1,0 +1,23 @@
+uuid: f045ca14-a52b-44fa-bba9-b023e1906423
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.redirect_to_page
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.redirect_to_page.field_link
+field_name: field_link
+entity_type: block_content
+bundle: redirect_to_page
+label: Odnośnik
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link
