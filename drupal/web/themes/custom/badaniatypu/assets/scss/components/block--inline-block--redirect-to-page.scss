@@ -1,0 +1,116 @@
+@use '../base/variables.scss' as *;
+
+.block-redirect-to-page {
+  display: grid;
+  position: relative;
+
+  &.default {
+
+    .field--name-field-link a:hover,
+    .tile:nth-of-type(3),
+    .tile:hover {
+      background-color: rgba($color: $first-brand-color, $alpha: 0.75);
+    }
+  }
+
+  &.reverse {
+
+    .field--name-field-link a:hover,
+    .tile:nth-of-type(3),
+    .tile:hover {
+      background-color: rgba($color: $second-brand-color, $alpha: 0.75);
+    }
+
+    .field--name-field-image {
+      bottom: calc(100% / 3);
+      left: 0;
+    }
+
+    .tile:nth-of-type(3) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+  }
+
+  .field--name-field {
+    &-background {
+      img {
+        height: 100%;
+        margin-bottom: -3px;
+        width: 100%;
+      }
+    }
+
+    &-image {
+      background-color: white;
+      bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      height: calc(100% / 3);
+      place-content: center;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      z-index: 1;
+
+      img {
+        height: 100%;
+        scale: .75;
+        width: 100%;
+      }
+    }
+
+    &-link a {
+      color: white;
+      display: grid;
+      inset: 0;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      position: absolute;
+      text-align: right;
+      text-decoration: none;
+      transition: background-color .5s;
+      z-index: 0;
+
+      .tile {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        place-content: flex-end;
+        transition: background-color .5s;
+
+        p {
+          border-bottom: 1px solid white;
+          font-size: .875rem;
+          padding-bottom: 8px;
+          position: relative;
+          text-transform: lowercase;
+          transition: transform 1s ease-out;
+
+          &::after {
+            background-color: white;
+            bottom: -1px;
+            content: '';
+            display: block;
+            height: 1px;
+            position: absolute;
+            transition: width .3s ease-out;
+            width: 0;
+          }
+        }
+      }
+
+      &:hover {
+        .tile p {
+          transform: translateY(-10px);
+
+          &::after {
+            background-color: #3AB0E0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
