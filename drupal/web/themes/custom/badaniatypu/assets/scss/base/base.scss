@@ -13,4 +13,12 @@ html {
 
 body {
   background-color: #f4f4f4;
+  color: $black;
+  line-height: 1.5rem;
+}
+
+a {
+  &:not(:hover) {
+    text-decoration: none;
+  }
 }
