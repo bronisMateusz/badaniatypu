@@ -1,12 +1,10 @@
-uuid: aa1cf223-4f4c-45e0-8c2e-0e4bde5ed324
+uuid: 540f2516-24e7-4915-8dd6-165fd37587a8
 langcode: pl
 status: true
 dependencies:
   config:
     - block_content.type.footer
     - field.storage.block_content.field_fax_number
-  module:
-    - telephone_type
 id: block_content.footer.field_fax_number
 field_name: field_fax_number
 entity_type: block_content
@@ -17,5 +15,9 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: telephone_type
+settings:
+  min: null
+  max: null
+  prefix: 'Fax: '
+  suffix: ''
+field_type: integer

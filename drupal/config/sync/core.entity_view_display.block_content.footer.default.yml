@@ -11,9 +11,100 @@ dependencies:
     - field.field.block_content.footer.field_text_formatted_long
   module:
     - address
+    - layout_builder
+    - layout_discovery
     - telephone
-    - telephone_type
     - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ac439d72-11a2-4f6c-98e6-88defe05d713:
+            uuid: ac439d72-11a2-4f6c-98e6-88defe05d713
+            region: content
+            configuration:
+              id: 'field_block:block_content:footer:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2bb03ede-faf1-4aa0-870b-3a6fdb651415:
+            uuid: 2bb03ede-faf1-4aa0-870b-3a6fdb651415
+            region: content
+            configuration:
+              id: 'field_block:block_content:footer:field_address'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: address_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b436ea58-d38e-432e-8116-4f86f3fd55f0:
+            uuid: b436ea58-d38e-432e-8116-4f86f3fd55f0
+            region: content
+            configuration:
+              id: 'field_block:block_content:footer:field_phone_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          97483622-f30e-48d9-850b-aade9de70ee2:
+            uuid: 97483622-f30e-48d9-850b-aade9de70ee2
+            region: content
+            configuration:
+              id: 'field_block:block_content:footer:field_fax_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: hidden
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          03c5df05-64c2-40bd-b73e-91fbb1a4e38d:
+            uuid: 03c5df05-64c2-40bd-b73e-91fbb1a4e38d
+            region: content
+            configuration:
+              id: 'field_block:block_content:footer:field_text_formatted_long'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
 id: block_content.footer.default
 targetEntityType: block_content
 bundle: footer
@@ -21,25 +112,23 @@ mode: default
 content:
   field_address:
     type: address_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
   field_fax_number:
-    type: telephone_type_link
-    label: above
+    type: number_integer
+    label: hidden
     settings:
-      label: short
-      location: prefix
-      separator: ': '
-      title: ''
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
     weight: 3
     region: content
   field_image:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -47,7 +136,7 @@ content:
     region: content
   field_phone_number:
     type: telephone_link
-    label: above
+    label: hidden
     settings:
       title: ''
     third_party_settings: {  }
@@ -55,7 +144,7 @@ content:
     region: content
   field_text_formatted_long:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 4

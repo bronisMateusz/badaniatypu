@@ -13,7 +13,7 @@ dependencies:
   module:
     - address
     - layout_builder
-    - telephone_type
+    - telephone
     - text
 third_party_settings:
   layout_builder:
@@ -26,43 +26,35 @@ mode: without_logo
 content:
   field_address:
     type: address_default
-    label: above
+    label: hidden
     settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_fax_number:
-    type: telephone_type_link
-    label: above
-    settings:
-      label: short
-      location: prefix
-      separator: ': '
-      title: ''
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_image:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
     third_party_settings: {  }
     weight: 0
     region: content
-  field_phone_number:
-    type: basic_string
-    label: above
-    settings: {  }
+  field_fax_number:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
     weight: 2
     region: content
+  field_phone_number:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_text_formatted_long:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
 hidden:
+  field_image: true
   langcode: true

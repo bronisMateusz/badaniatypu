@@ -1,16 +1,17 @@
-uuid: 69ea1260-5d8b-4adc-832f-1196f39603a2
+uuid: 32129a9c-3133-4601-9f38-eccd9a2ce3e9
 langcode: pl
 status: true
 dependencies:
   module:
     - block_content
-    - telephone_type
 id: block_content.field_fax_number
 field_name: field_fax_number
 entity_type: block_content
-type: telephone_type
-settings: {  }
-module: telephone_type
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
 locked: false
 cardinality: 1
 translatable: true
