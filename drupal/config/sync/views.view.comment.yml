@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Comments
+      title: Komentarze
       fields:
         comment_bulk_form:
           id: comment_bulk_form

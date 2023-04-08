@@ -1,4 +1,4 @@
-uuid: 32129a9c-3133-4601-9f38-eccd9a2ce3e9
+uuid: 4101333d-44da-4178-98f4-9369d480d759
 langcode: pl
 status: true
 dependencies:
@@ -7,10 +7,11 @@ dependencies:
 id: block_content.field_fax_number
 field_name: field_fax_number
 entity_type: block_content
-type: integer
+type: string
 settings:
-  unsigned: false
-  size: normal
+  max_length: 12
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

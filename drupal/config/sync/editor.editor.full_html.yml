@@ -19,6 +19,7 @@ settings:
       - superscript
       - subscript
       - removeFormat
+      - fontColor
       - '|'
       - link
       - '|'
@@ -42,13 +43,15 @@ settings:
         - heading4
         - heading5
         - heading6
-    ckeditor5_imageResize:
-      allow_resize: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
     ckeditor5_list:
       reversed: true
       startIndex: true
-    ckeditor5_sourceEditing:
-      allowed_tags: {  }
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_font_colors:
+      colors: '[{"color":"#004987","label":"Laboratorium"},{"color":"#e94519","label":"Sp\u00f3\u0142ka"}]'
 image_upload:
   status: true
   scheme: public

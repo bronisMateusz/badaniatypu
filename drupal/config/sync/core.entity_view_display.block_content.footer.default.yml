@@ -47,13 +47,18 @@ third_party_settings:
             region: first
             configuration:
               id: 'field_block:block_content:footer:field_address'
+              label: Adres
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: address_default
                 label: hidden
-                settings: {  }
+                settings:
+                  skip_domestic_country: 1
+                  domestic_country: site_default
                 third_party_settings: {  }
             weight: 1
             additional: {  }
@@ -71,23 +76,6 @@ third_party_settings:
                 settings:
                   title: ''
                 third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          97483622-f30e-48d9-850b-aade9de70ee2:
-            uuid: 97483622-f30e-48d9-850b-aade9de70ee2
-            region: first
-            configuration:
-              id: 'field_block:block_content:footer:field_fax_number'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: number_integer
-                label: hidden
-                settings:
-                  thousand_separator: ''
-                  prefix_suffix: true
-                third_party_settings: {  }
             weight: 3
             additional: {  }
           03c5df05-64c2-40bd-b73e-91fbb1a4e38d:
@@ -104,6 +92,25 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             weight: 0
+            additional: {  }
+          28eb910b-4ab5-4151-bd0a-703e2dfe9083:
+            uuid: 28eb910b-4ab5-4151-bd0a-703e2dfe9083
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_fax_number'
+              label: Faks
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
             additional: {  }
         third_party_settings: {  }
 id: block_content.footer.default

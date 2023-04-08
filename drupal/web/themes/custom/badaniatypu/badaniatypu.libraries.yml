@@ -6,6 +6,12 @@ global-styling:
     theme:
       assets/scss/style.scss: {}
 
+block--block-content--footer--without-logo:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--block-content--footer--without-logo.scss: {}
+
 block--inline-block--redirect-to-page:
   vite: true
   css:

@@ -20,7 +20,7 @@ default_value:
     langcode: null
     country_code: PL
     administrative_area: null
-    locality: null
+    locality: ''
     dependent_locality: null
     postal_code: ''
     sorting_code: null
