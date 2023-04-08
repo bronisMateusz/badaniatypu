@@ -15,10 +15,84 @@ dependencies:
     - layout_builder
     - telephone
     - text
+  theme:
+    - badaniatypu
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_always_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          3f3107f8-8758-4f85-87b6-31a4a0be562d:
+            uuid: 3f3107f8-8758-4f85-87b6-31a4a0be562d
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_address'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: address_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7a654946-dddc-4829-bcac-3d3cc1f7cc36:
+            uuid: 7a654946-dddc-4829-bcac-3d3cc1f7cc36
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_phone_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          f1cf823a-f1e8-46a2-8ab2-fb20e7a59a0b:
+            uuid: f1cf823a-f1e8-46a2-8ab2-fb20e7a59a0b
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_fax_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: hidden
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          4aefef25-b450-4953-83f0-e22f9ebce42f:
+            uuid: 4aefef25-b450-4953-83f0-e22f9ebce42f
+            region: second
+            configuration:
+              id: 'field_block:block_content:footer:field_text_formatted_long'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: block_content.footer.without_logo
 targetEntityType: block_content
 bundle: footer

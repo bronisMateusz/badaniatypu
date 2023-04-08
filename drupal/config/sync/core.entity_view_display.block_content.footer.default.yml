@@ -12,22 +12,23 @@ dependencies:
   module:
     - address
     - layout_builder
-    - layout_discovery
     - telephone
     - text
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
           label: ''
+          context_mapping: {  }
+          column_widths: 50-50
         components:
           ac439d72-11a2-4f6c-98e6-88defe05d713:
             uuid: ac439d72-11a2-4f6c-98e6-88defe05d713
-            region: content
+            region: first
             configuration:
               id: 'field_block:block_content:footer:field_image'
               label_display: '0'
@@ -43,7 +44,7 @@ third_party_settings:
             additional: {  }
           2bb03ede-faf1-4aa0-870b-3a6fdb651415:
             uuid: 2bb03ede-faf1-4aa0-870b-3a6fdb651415
-            region: content
+            region: first
             configuration:
               id: 'field_block:block_content:footer:field_address'
               label_display: '0'
@@ -58,7 +59,7 @@ third_party_settings:
             additional: {  }
           b436ea58-d38e-432e-8116-4f86f3fd55f0:
             uuid: b436ea58-d38e-432e-8116-4f86f3fd55f0
-            region: content
+            region: first
             configuration:
               id: 'field_block:block_content:footer:field_phone_number'
               label_display: '0'
@@ -74,7 +75,7 @@ third_party_settings:
             additional: {  }
           97483622-f30e-48d9-850b-aade9de70ee2:
             uuid: 97483622-f30e-48d9-850b-aade9de70ee2
-            region: content
+            region: first
             configuration:
               id: 'field_block:block_content:footer:field_fax_number'
               label_display: '0'
@@ -91,7 +92,7 @@ third_party_settings:
             additional: {  }
           03c5df05-64c2-40bd-b73e-91fbb1a4e38d:
             uuid: 03c5df05-64c2-40bd-b73e-91fbb1a4e38d
-            region: content
+            region: second
             configuration:
               id: 'field_block:block_content:footer:field_text_formatted_long'
               label_display: '0'
@@ -102,7 +103,7 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 4
+            weight: 0
             additional: {  }
         third_party_settings: {  }
 id: block_content.footer.default

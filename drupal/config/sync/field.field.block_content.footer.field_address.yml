@@ -15,10 +15,25 @@ label: Adres
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    langcode: null
+    country_code: PL
+    administrative_area: null
+    locality: null
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: null
+    organization: null
+    given_name: null
+    additional_name: null
+    family_name: null
 default_value_callback: ''
 settings:
-  available_countries: {  }
+  available_countries:
+    PL: PL
   langcode_override: ''
   field_overrides:
     givenName:
@@ -34,8 +49,6 @@ settings:
     sortingCode:
       override: hidden
     dependentLocality:
-      override: hidden
-    locality:
       override: hidden
     administrativeArea:
       override: hidden

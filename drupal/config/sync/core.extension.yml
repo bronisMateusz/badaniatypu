@@ -58,10 +58,12 @@ module:
   text: 0
   toolbar: 0
   tour: 0
+  update: 0
   user: 0
   views_ui: 0
   vite: 0
   views: 10
+  standard: 1000
 theme:
   claro: 0
   gin: 0
