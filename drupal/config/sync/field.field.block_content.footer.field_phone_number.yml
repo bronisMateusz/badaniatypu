@@ -1,0 +1,21 @@
+uuid: 867f3e76-abe3-404e-b4e4-8c58d2c8630f
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_phone_number
+  module:
+    - telephone
+id: block_content.footer.field_phone_number
+field_name: field_phone_number
+entity_type: block_content
+bundle: footer
+label: 'Numery telefonu'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

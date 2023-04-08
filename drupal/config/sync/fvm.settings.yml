@@ -1,0 +1,35 @@
+block_content__footer: 1
+block_content__footer__view_modes:
+  without_logo: 0
+block_content__redirect_to_page: 0
+block_content__redirect_to_page__view_modes:
+  reverse: 0
+hide_layout_builder_field: 0
+media__audio: 0
+media__audio__view_modes:
+  media_library: 0
+media__document: 0
+media__document__view_modes:
+  media_library: 0
+media__image: 0
+media__image__view_modes:
+  media_library: 0
+media__remote_video: 0
+media__remote_video__view_modes:
+  media_library: 0
+media__video: 0
+media__video__view_modes:
+  media_library: 0
+node__article: 0
+node__article__view_modes:
+  rss: 0
+  teaser: 0
+node__front_page: 0
+node__front_page__view_modes:
+  teaser: 0
+node__page: 0
+node__page__view_modes:
+  teaser: 0
+user__user: 0
+user__user__view_modes:
+  compact: 0

@@ -1,0 +1,21 @@
+uuid: 912a2fab-7c00-4eb1-b33c-52412b731cf0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_text_formatted_long
+  module:
+    - text
+id: block_content.footer.field_text_formatted_long
+field_name: field_text_formatted_long
+entity_type: block_content
+bundle: footer
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

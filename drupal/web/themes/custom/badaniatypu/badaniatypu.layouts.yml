@@ -1,0 +1,14 @@
+layout_twocol_always_section:
+  label: "Two column always"
+  class: '\Drupal\layout_builder\Plugin\Layout\TwoColumnLayout'
+  template: templates/layout/layout--twocol-always-section
+  library: badaniatypu/layout_twocol_always_section
+  category: "Columns: 2"
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second

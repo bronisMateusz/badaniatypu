@@ -1,0 +1,21 @@
+uuid: aa1cf223-4f4c-45e0-8c2e-0e4bde5ed324
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_fax_number
+  module:
+    - telephone_type
+id: block_content.footer.field_fax_number
+field_name: field_fax_number
+entity_type: block_content
+bundle: footer
+label: Faks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone_type

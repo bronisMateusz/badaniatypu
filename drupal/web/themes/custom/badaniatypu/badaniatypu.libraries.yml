@@ -23,3 +23,10 @@ node--front-page:
   css:
     theme:
       assets/scss/content/node--front-page.scss: {}
+
+layout_twocol_always_section:
+  vite: true
+  css:
+    layout:
+      assets/scss/layout/layout-builder-twocol-always-section.scss: {}
+

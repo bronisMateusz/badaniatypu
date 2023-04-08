@@ -9,6 +9,7 @@ dependencies:
     - node.type.front_page
   module:
     - layout_builder
+    - layout_discovery
     - text
     - user
 third_party_settings:
@@ -51,6 +52,13 @@ third_party_settings:
               block_serialized: null
             weight: 0
             additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components: {  }
         third_party_settings: {  }
 id: node.front_page.default
 targetEntityType: node

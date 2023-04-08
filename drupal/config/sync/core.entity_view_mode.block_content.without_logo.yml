@@ -1,0 +1,10 @@
+uuid: a19af83d-0c64-468f-abbe-46275add22a4
+langcode: pl
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.without_logo
+label: 'Bez logo'
+targetEntityType: block_content
+cache: true
