@@ -35,4 +35,3 @@ layout_twocol_always_section:
   css:
     layout:
       assets/scss/layout/layout-builder-twocol-always-section.scss: {}
-
