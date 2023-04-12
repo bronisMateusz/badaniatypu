@@ -29,6 +29,7 @@
         "drupal/gin_login": "^2.0.1",
         "drupal/gin_toolbar": "^1.0",
         "drupal/layout_options": "^1.2",
+        "drupal/pathauto": "^1.11",
         "drupal/svg_image": "^3.0.1",
         "drupal/vite": "^1.0",
         "drush/drush": "^11.5.1"
