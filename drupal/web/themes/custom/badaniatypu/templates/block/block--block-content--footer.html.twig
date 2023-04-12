@@ -31,8 +31,10 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
+    content['#view_mode']
   ]
 %}
+{{ attach_library('badaniatypu/block--block-content--footer') }}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}

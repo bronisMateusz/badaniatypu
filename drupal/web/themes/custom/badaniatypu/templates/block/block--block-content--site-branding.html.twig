@@ -31,10 +31,8 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    content['#view_mode']
   ]
 %}
-{{ attach_library('badaniatypu/block--block-content--footer--without-logo') }}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -42,6 +40,11 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {{ content }}
+    <a href="{{ content.field_link.0['#url'] }}">
+      {{ content.field_image }}
+    </a>
+    <a href="{{ content.field_link_2.0['#url'] }}">
+      {{ content.field_image_2 }}
+    </a>
   {% endblock %}
 </div>
