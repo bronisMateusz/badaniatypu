@@ -1,0 +1,22 @@
+uuid: ff61e726-237c-4ab2-8cd7-68a3143dea27
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.front_page
+id: node.front_page.promote
+field_name: promote
+entity_type: node
+bundle: front_page
+label: 'Promowany na stronie głównej'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

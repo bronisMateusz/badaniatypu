@@ -1,16 +1,15 @@
-uuid: a4df7839-4eaf-465b-92ea-363d9ad91e35
+uuid: a31311e0-2110-41c2-a012-f4d70c95b00c
 langcode: pl
 status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.front_page.view_mode_selection
-    - node.type.front_page
+    - node.type.welcome_page
   module:
     - user
-id: node.front_page.teaser
+id: node.welcome_page.teaser
 targetEntityType: node
-bundle: front_page
+bundle: welcome_page
 mode: teaser
 content:
   links:
@@ -20,4 +19,3 @@ content:
     region: content
 hidden:
   langcode: true
-  view_mode_selection: true

@@ -1,16 +1,14 @@
-uuid: 57eb96b5-318c-45f4-bc81-22dee1cda2ee
+uuid: 4186d805-c828-4648-8b8c-29b117fb4470
 langcode: pl
 status: true
 dependencies:
   config:
-    - field.field.node.front_page.view_mode_selection
-    - node.type.front_page
+    - node.type.welcome_page
   module:
-    - fvm
     - path
-id: node.front_page.default
+id: node.welcome_page.default
 targetEntityType: node
-bundle: front_page
+bundle: welcome_page
 mode: default
 content:
   created:
@@ -70,13 +68,5 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  view_mode_selection:
-    type: fvm_options_select
-    weight: 121
-    region: content
-    settings:
-      default_option: Domyślny
-      remove_default_option: 0
     third_party_settings: {  }
 hidden: {  }

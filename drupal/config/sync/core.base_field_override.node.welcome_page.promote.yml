@@ -1,0 +1,22 @@
+uuid: ebe0d038-7e45-413f-aa2f-892642455357
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.welcome_page
+id: node.welcome_page.promote
+field_name: promote
+entity_type: node
+bundle: welcome_page
+label: 'Promowany na stronie głównej'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

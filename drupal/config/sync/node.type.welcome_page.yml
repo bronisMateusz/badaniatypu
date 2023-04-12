@@ -1,0 +1,17 @@
+uuid: 6f9f12bd-78f4-48bc-bb8c-d02f508a2c5d
+langcode: pl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Strona powitalna'
+type: welcome_page
+description: 'Użyj tego typu treści żeby utworzyć <em>Stronę powitalną</em>, która ma możliwość wyboru, do której firmy przejść.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

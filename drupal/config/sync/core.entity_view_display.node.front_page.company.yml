@@ -1,11 +1,12 @@
-uuid: 90a2cf49-9191-4012-9622-2c5b040dd651
+uuid: a47d1b2f-23e0-40e6-8ee7-0a7608da36df
 langcode: pl
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.company
     - field.field.node.front_page.view_mode_selection
     - node.type.front_page
-    - system.menu.lab-menu
+    - system.menu.company-menu
   module:
     - layout_builder
     - layout_discovery
@@ -22,12 +23,12 @@ third_party_settings:
           label: ''
           context_mapping: {  }
         components:
-          589ef9d9-a4b4-4df4-a95e-7366509d5eca:
-            uuid: 589ef9d9-a4b4-4df4-a95e-7366509d5eca
+          57b6cde1-943b-43ce-9a6e-4a5ab2e8286a:
+            uuid: 57b6cde1-943b-43ce-9a6e-4a5ab2e8286a
             region: content
             configuration:
-              id: 'system_menu_block:lab-menu'
-              label: 'Menu laboratorium'
+              id: 'system_menu_block:company-menu'
+              label: 'Menu spółki'
               label_display: '0'
               provider: system
               context_mapping: {  }
@@ -37,24 +38,13 @@ third_party_settings:
             weight: 0
             additional: {  }
         third_party_settings: {  }
-id: node.front_page.default
+id: node.front_page.company
 targetEntityType: node
 bundle: front_page
-mode: default
-content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
+mode: company
+content: {  }
 hidden:
   langcode: true
   layout_builder__layout: true
+  links: true
   view_mode_selection: true

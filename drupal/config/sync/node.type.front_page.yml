@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: 'Strona główna'
 type: front_page
-description: 'Użyj tego typu treści żeby utworzyć <em>Stronę gówną</em>, która ma możliwość wyboru, do której firmy przejść.'
+description: 'Użyj tego typu treści żeby utworzyć <em>Stronę główną</em> dla danej firmy'
 help: ''
 new_revision: true
 preview_mode: 1

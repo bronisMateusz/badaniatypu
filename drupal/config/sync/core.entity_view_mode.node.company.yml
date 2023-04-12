@@ -1,0 +1,10 @@
+uuid: c219c5e5-b081-4af9-a94e-8792ef8fa192
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+id: node.company
+label: Spółka
+targetEntityType: node
+cache: true
