@@ -9,9 +9,14 @@
   img {
     height: 40px;
     width: auto;
+    transition: filter 0.5s ease;
   }
 
   a:not(.active) img {
-      filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+  a:hover img {
+    filter: unset;
   }
 }
