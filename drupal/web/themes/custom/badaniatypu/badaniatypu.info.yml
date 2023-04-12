@@ -5,6 +5,12 @@ description: Badaniatypu site theme.
 starterkit: true
 core_version_requirement: ^10
 generator: "starterkit_theme:10.0.7"
+regions:
+  header: "Header"
+  help: "Help"
+  content: "Content"
+  sidebar_second: "Sidebar second"
+  footer: "Footer"
 libraries:
   - badaniatypu/global-styling
 libraries-override:
