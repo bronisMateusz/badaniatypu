@@ -10,4 +10,8 @@
     height: 40px;
     width: auto;
   }
+
+  a:not(.active) img {
+      filter: grayscale(1);
+  }
 }

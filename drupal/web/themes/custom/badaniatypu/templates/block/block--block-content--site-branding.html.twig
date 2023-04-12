@@ -42,10 +42,20 @@
   {{ title_suffix }}
   {% block content %}
     <div {{ create_attribute({'class': 'block__content'}) }}>
-      <a href="{{ content.field_link.0['#url'] }}">
+      {% set url = url('<current>')|render|render %}
+      {% set active_class = 'active' %}
+      {% if 'wojciech-bogacki' in url %}
+        <a href="{{ content.field_link.0['#url'] }}" {{ create_attribute({'class': active_class}) }}>
+      {% else %}
+        <a href="{{ content.field_link.0['#url'] }}">
+      {% endif %}
         {{ content.field_image }}
       </a>
-      <a href="{{ content.field_link_2.0['#url'] }}">
+      {% if 'bogaccy' in url %}
+        <a href="{{ content.field_link_2.0['#url'] }}" {{ create_attribute({'class': active_class}) }}>
+      {% else %}
+        <a href="{{ content.field_link_2.0['#url'] }}">
+      {% endif %}
         {{ content.field_image_2 }}
       </a>
     </div>
