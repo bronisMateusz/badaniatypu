@@ -24,11 +24,11 @@ layout_builder_twocol_section:
     layout:
       assets/scss/layout/layout-builder-twocol-section.scss: {}
 
-node--front-page:
+node--welcome-page:
   vite: true
   css:
     theme:
-      assets/scss/content/node--front-page.scss: {}
+      assets/scss/content/node--welcome-page.scss: {}
 
 layout_twocol_always_section:
   vite: true
