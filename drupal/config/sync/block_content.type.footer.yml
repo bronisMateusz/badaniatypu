@@ -1,0 +1,8 @@
+uuid: ef1f68d2-0b17-461e-9eee-a4d123d14667
+langcode: pl
+status: true
+dependencies: {  }
+id: footer
+label: Stopka
+revision: 0
+description: 'Blok dodający stopkę do strony'

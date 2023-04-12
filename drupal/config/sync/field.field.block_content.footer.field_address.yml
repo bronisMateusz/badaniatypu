@@ -1,0 +1,56 @@
+uuid: b48161ec-0315-44e1-96ac-f853487861f2
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_address
+  module:
+    - address
+id: block_content.footer.field_address
+field_name: field_address
+entity_type: block_content
+bundle: footer
+label: Adres
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    langcode: null
+    country_code: PL
+    administrative_area: null
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: null
+    organization: null
+    given_name: null
+    additional_name: null
+    family_name: null
+default_value_callback: ''
+settings:
+  available_countries:
+    PL: PL
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine2:
+      override: hidden
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+    administrativeArea:
+      override: hidden
+  fields: {  }
+field_type: address

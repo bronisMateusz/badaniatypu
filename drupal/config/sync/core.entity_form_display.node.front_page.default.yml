@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.front_page.body
-    - field.field.node.front_page.layout_builder__layout
     - node.type.front_page
   module:
     - path
@@ -82,5 +81,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  layout_builder__layout: true
+hidden: {  }

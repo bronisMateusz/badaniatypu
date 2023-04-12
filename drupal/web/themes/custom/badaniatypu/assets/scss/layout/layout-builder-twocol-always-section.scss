@@ -1,0 +1,13 @@
+/*
+ * @file
+ * Provides the layout styles for two-column layout section.
+ */
+
+.layout--twocol-always-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout--twocol-always-section > .layout__region {
+  flex: 0 1 50%;
+}

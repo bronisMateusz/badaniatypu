@@ -1,8 +1,8 @@
-@use './variables.scss' as *;
+@use "./variables.scss" as *;
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -13,4 +13,12 @@ html {
 
 body {
   background-color: #f4f4f4;
+  color: $black;
+  line-height: 1.25rem;
+}
+
+a {
+  &:not(:hover) {
+    text-decoration: none;
+  }
 }

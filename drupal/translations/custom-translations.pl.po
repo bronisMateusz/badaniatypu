@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2023-04-03 20:51+0200\n"
-"PO-Revision-Date: 2023-04-03 20:51+0200\n"
+"POT-Creation-Date: 2023-04-08 17:35+0200\n"
+"PO-Revision-Date: 2023-04-08 17:35+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -15,6 +15,191 @@ msgstr ""
 msgid "- All -"
 msgstr "- Wszystko -"
 
+msgid ""
+"<p>Choose a language from the list, or choose \"Custom language...\" "
+"at the end of the list.</p><p>Click the \"Add language\" button when "
+"you are done choosing your language.</p><p>When adding a custom "
+"language, you will get an additional form where you can provide the "
+"name, code, and direction of the language.</p>"
+msgstr ""
+"<p>Wybierz język z listy lub dodaj \"Własny język...\" na końcu "
+"listy.</p><p>Kliknij przycisk \"Dodaj język\" by potwierdzić "
+"wybór.</p><p>Dodając własny język będziesz mieć możliwość "
+"wprowadzenia nazwy, kodu i kierunku w kolejnym formularzu.</p>"
+
+msgid ""
+"<p>Choose if the language is a \"Left to right\" or \"Right to left\" "
+"language.</p><p>Note that not all themes support \"Right to left\" "
+"layouts, so test your theme if you are using \"Right to left\".</p>"
+msgstr ""
+"<p>Wybierz czy kierunek języka to \"Z lewej do prawej\" czy \"Z "
+"prawej do lewej\".</p><p>Pamiętaj, że nie wszystkie skórki "
+"wspierają \"Z prawej do lewej\" więc sprawdź czy twoja skórka "
+"wspiera ten kierunek.</p>"
+
+msgid ""
+"<p>Now that you have an overview of the \"Add languages\" feature, you "
+"can continue by:<ul><li>Adding a language</li><li>Adding a custom "
+"language</li><li><a "
+"href=\"[site:url]admin/config/regional/language\">Viewing configured "
+"languages</a></li></ul></p>"
+msgstr ""
+"<p>Teraz gdy masz już ogólną wiedzę na temat funkcji \"Dodaj "
+"języki\" możesz:<ul><li>Dodać język</li><li>Dodać własny "
+"język</li><li><a "
+"href=\"[site:url]admin/config/regional/language\">Wyświetlić "
+"skonfigurowane języki</a></li></ul></p>"
+
+msgid ""
+"<p>Now that you have an overview of the \"Edit language\" feature, you "
+"can continue by:<ul><li>Editing a language</li><li><a "
+"href=\"[site:url]admin/config/regional/language\">Viewing configured "
+"languages</a></li></ul></p>"
+msgstr ""
+"<p>Teraz, gdy masz podgląd na funkcję \"Edycja języka\", możesz "
+"kontynuować:<ul><li>Edycję języka</li><li><a "
+"href=\"[site:url]admin/config/regional/language\">Przegląd listy "
+"skonfigurowanych języków</a></li></ul></p>"
+
+msgid ""
+"<p>Now that you have an overview of the \"Languages\" page, you can "
+"continue by:<ul><li><a "
+"href=\"[site:url]admin/config/regional/language/add\">Adding a "
+"language</a></li><li>Reordering languages</li><li>Editing a "
+"language</li><li>Deleting a language</li></ul></p>"
+msgstr ""
+"<p>Teraz, gdy masz ogląd na stronę \"Języki\", możesz:<ul><li><a "
+"href=\"[site:url]admin/config/regional/language/add\">Dodać "
+"język</a></li><li>Zmienić kolejność "
+"języków</li><li>Zmodyfikować język</li><li>Usunąć "
+"język</li></ul></p>"
+
+msgid ""
+"<p>Operations are provided for editing and deleting your "
+"languages.</p><p>You can edit the name and the direction of the "
+"language.</p><p>Deleted languages can be added back at a later time. "
+"Deleting a language will remove all interface translations associated "
+"with it, and content in this language will be set to be language "
+"neutral. Note that you cannot delete the default language of the "
+"site.</p>"
+msgstr ""
+"<p>Operacje umożliwiają modyfikacje i usunięcie "
+"języków.</p><p>Możesz zmodyfikować nazwę i kierunek "
+"języka.</p><p>Usunięte języki mogą zostać dodane ponownie w "
+"późniejszym czasie. Usunięcie języka spowoduje usunięcie "
+"wszystkich tłumaczeń dla tego języka, a treść utworzona w danym "
+"języku zostanie przyporządkowana do języka neutralnego. Pamiętaj "
+"że nie możesz usunąć domyślnego języka strony.</p>"
+
+msgid ""
+"<p>The \"Languages\" page allows you to add, edit, delete, and reorder "
+"languages for the site.</p>"
+msgstr ""
+"<p>Strona \"Języki\" umożliwia dodawanie, edycję, usuwanie i "
+"uporządkowanie języków witryny.</p>"
+
+msgid ""
+"<p>The language name is used throughout the site for all users and is "
+"written in English. Names of built-in languages can be translated "
+"using the Interface Translation module, and names of both built-in and "
+"custom languages can be translated using the Configuration Translation "
+"module.</p>"
+msgstr ""
+"<p>Nazwa języka używana jest na całej stronie, dla wszystkich "
+"użytkowników, i zapisana jest w języku Angielskim. Nazwy "
+"wbudowanych języków mogą zostać przetłumaczone korzystając z "
+"modułu Interface Translation, a nazwy zarówno wbudowanych jak i "
+"własnych języków mogą zostać przetłumaczone z pomocą modułu "
+"Configuration Translation.</p>"
+
+msgid ""
+"<p>This page provides the ability to add common languages to your "
+"site.</p><p>If the desired language is not available, you can add a "
+"custom language.</p>"
+msgstr ""
+"<p>Ta strona stwarza możliwość dodania powszechnych języków do "
+"twojej strony.</p><p>Jeśli pożądany język nie jest dostępny, "
+"dodaj własny język.</p>"
+
+msgid ""
+"<p>This page provides the ability to edit a language on your site, "
+"including custom languages.</p>"
+msgstr ""
+"<p>Ta strona umożliwia edycję języka witryny, włączając w to "
+"języki własne.</p>"
+
+msgid ""
+"<p>To add more languages to your site, click the \"Add language\" "
+"button.</p><p>Added languages will be displayed in the language list "
+"and can then be edited or deleted.</p>"
+msgstr ""
+"<p>Aby dodać więcej języków, skorzystaj z przycisku \"Dodaj "
+"język\".</p><p>Dodane języki zostaną wyświetlone na liście także "
+"będzie możliwość ich późniejszej zmiany lub usunięcia.</p>"
+
+msgid ""
+"<p>To reorder the languages on your site, use the drag icons next to "
+"each language.</p><p>The order shown here is the display order for "
+"language lists on the site such as in the language switcher blocks "
+"provided by the Interface Translation and Content Translation "
+"modules.</p><p>When you are done with reordering the languages, click "
+"the \"Save configuration\" button for the changes to take effect.</p>"
+msgstr ""
+"<p>Aby zmienić kolejność języków na stronie, użyj ikony "
+"przeciągania obok każdego z języków.</p><p>Poniższa kolejność "
+"będzie tą, w jakiej języki zostaną zaprezentowane w bloku zmiany "
+"języki dostarczonego przez moduły Interface Translation oraz Content "
+"Translation.</p><p>Kiedy skończysz zmieniać kolejność języków, "
+"kliknij przycisk \"Zapisz konfigurację\" aby zmiany zostały "
+"zapisane.</p>"
+
+msgid ""
+"<p>You can change the default language of the site by choosing one of "
+"your configured languages as default. The site will use the default "
+"language in situations where no choice is made but a language should "
+"be set, for example as the language of the displayed interface.</p>"
+msgstr ""
+"<p>Możesz zmienić domyślny język strony na jeden z zainstalowanych "
+"języków. Strona skorzysta z domyślnego języka gdy nie dokonano "
+"innego wyboru a język musi zostać wybrany, np. dla wyświetlonego "
+"języka interfejsu.</p>"
+
+msgid ""
+"<p>You cannot change the code of a language on the site, since it is "
+"used by the system to keep track of the language.</p>"
+msgstr ""
+"<p>Zmiana kodu języka nie jest możliwa, jako że system korzysta z "
+"niego aby kontrolować użycie języka.</p>"
+
+msgid "@interval ago"
+msgstr "@interval temu"
+
+msgid "@interval hence"
+msgstr "odtąd co @interval"
+
+msgid ""
+"@site is currently under maintenance. We should be back shortly. Thank "
+"you for your patience."
+msgstr ""
+"Na @site mamy w tej chwili przerwę techniczną. Powinna się ona "
+"wkrótce skończyć. Dziękujemy za cierpliwość."
+
+msgid ""
+"A display is a way of outputting the results, e.g., as a page or a "
+"block. A view can contain multiple displays, which are listed here. "
+"The active display is highlighted."
+msgstr ""
+"Format wyświetlania znaczy tyle co sposób w jaki wyświetlone będą "
+"wyniki, np. jako strona lub blok. Widok może posiadać więcej niż "
+"jeden format wyświetlania, które zostaną wyświetlone w tym "
+"miejscu. Aktywny format wyświetlania został wyróżniony."
+
+msgid "A list of new users"
+msgstr "Lista nowych użytkowników"
+
+msgid "A list of users that are currently logged in."
+msgstr "Lista użytkowników, którzy są aktualnie zalogowani."
+
 msgid "A locally hosted audio file."
 msgstr "Lokalnie hostowany plik audio."
 
@@ -24,38 +209,260 @@ msgstr "Lokalnie hostowany plik wideo."
 msgid "A remotely hosted video from YouTube or Vimeo."
 msgstr "Zdalnie hostowany film z serwisu YouTube lub Vimeo."
 
+msgid ""
+"A user is considered online for this long after they have last viewed "
+"a page."
+msgstr ""
+"Tak długo od ostatniego odświeżenia strony użytkownik jest "
+"uważany za będącego online."
+
+msgid "Account cancellation request for [user:display-name] at [site:name]"
+msgstr "Zgłoszenie anulowania konta [user:display-name] na [site:name]"
+
+msgid "Account details for [user:display-name] at [site:name]"
+msgstr "Szczegóły konta użytkownika [user:display-name] na [site:name]"
+
+msgid "Account details for [user:display-name] at [site:name] (approved)"
+msgstr ""
+"Informacje dotyczące konta  [user:display-name] na [site:name] (konto "
+"zatwierdzone)"
+
+msgid "Account details for [user:display-name] at [site:name] (blocked)"
+msgstr ""
+"Informacje dotyczące konta [user:display-name] na [site:name] "
+"(zablokowane)"
+
+msgid "Account details for [user:display-name] at [site:name] (canceled)"
+msgstr ""
+"Szczegóły konta użytkownika [user:display-name] na [site:name] "
+"(anulowane)"
+
+msgid ""
+"Account details for [user:display-name] at [site:name] (pending admin "
+"approval)"
+msgstr ""
+"Szczegóły konta dla [user:display-name] na [site:name] (w trakcie "
+"weryfikacji)"
+
 msgid "Action"
 msgstr "Akcja"
+
+msgid "Active"
+msgstr "Aktywne"
+
+msgid ""
+"Add filters to limit the results in the output. E.g., to only show "
+"content that is <em>published</em>, you would add a filter for "
+"<em>Published</em> and select <em>Yes</em>."
+msgstr ""
+"Dodaj filtry aby ograniczyć wyniki, np. by pokazać jedynie "
+"zawartość która jest <em>opublikowana</em> należy dodać filtr "
+"<em>Opublikowane</em> i wybrać <em>Tak</em>."
+
+msgid "Add, rearrange or remove filters."
+msgstr "Dodaj, uporządkuj lub usuń filtry."
+
+msgid "Add, rearrange or remove sorting rules."
+msgstr "Dodaj, uporządkuj lub usuń regułę sortowania."
+
+msgid "Adding languages"
+msgstr "Dodawanie języków"
+
+msgid "Administration"
+msgstr "Administracja"
+
+msgid "Administrative task links"
+msgstr "Odnośniki administracyjne"
 
 msgid "All"
 msgstr "Wszystko"
 
+msgid "All content promoted to the front page."
+msgstr "Wszystkie treści promowane na stronie głównej."
+
+msgid "All content, by letter."
+msgstr "Cała zawartość, alfabetycznie"
+
+msgid "All content, by month."
+msgstr "Cała zawartość wg miesiąca."
+
+msgid "Allows commenting on content"
+msgstr "Pozwala komentować zawartość"
+
+msgid "An administrator created an account for you at [site:name]"
+msgstr "Administrator utworzył dla ciebie konto na stronie [site:name]"
+
 msgid "An uploaded file or document, such as a PDF."
 msgstr "Przesłany plik lub dokument, taki jak PDF."
+
+msgid "Anonymous"
+msgstr "Anonim"
+
+msgid "Anonymous user"
+msgstr "Użytkownik anonimowy"
+
+msgid "Apply"
+msgstr "Zastosuj"
 
 msgid "Apply filters"
 msgstr "Zastosuj filtry"
 
+msgid "Apply your search criteria"
+msgstr "Zastosuj swoje kryteria wyszukiwania"
+
+msgid "Archive"
+msgstr "Archiwizuj"
+
 msgid "Asc"
 msgstr "Rosnąco"
+
+msgid "Attachment"
+msgstr "Załącznik"
 
 msgid "Audio file"
 msgstr "Plik dźwiękowy"
 
+msgid "Authenticated user"
+msgstr "Użytkownik uwierzytelniony"
+
 msgid "Author"
 msgstr "Autor"
+
+msgid "Author Name"
+msgstr "Nazwa Autora"
+
+msgid "Author name"
+msgstr "Nazwa autora"
+
+msgid "Basic HTML"
+msgstr "Podstawowy HTML"
+
+msgid "Block"
+msgstr "Blok"
+
+msgid "Block Layout"
+msgstr "Block Layout"
+
+msgid "Block Layout Page"
+msgstr "Block Layout Page"
+
+msgid "Block Region"
+msgstr "Block Region"
+
+msgid "Block description"
+msgstr "Opis bloku"
+
+msgid "Block the selected user(s)"
+msgstr "Zablokuj wybrane konto użytkownika(ów)"
+
+msgid "Block type"
+msgstr "Rodzaj bloku"
+
+msgid "Blocked"
+msgstr "Zablokowany"
 
 msgid "Breadcrumbs"
 msgstr "Breadcrumby"
 
+msgid "Bulk update"
+msgstr "Aktualizacja masowa"
+
+msgid "Cancel the selected user account(s)"
+msgstr "Anuluj wybrane konto użytkownika(ów)"
+
+msgid "Changed date"
+msgstr "Data modyfikacji"
+
+msgid ""
+"Choose how to output results. E.g., choose <em>Content</em> to output "
+"each item completely, using your configured display settings. Or "
+"choose <em>Fields</em>, which allows you to output only specific "
+"fields for each result. Additional formats can be added by installing "
+"modules to <em>extend</em> Drupal's base functionality."
+msgstr ""
+"Wybierz w jaki sposób mają zostać zaprezentowane wyniki. Np. "
+"wybierz <em>Zawartość</em> by wyświetlić każdą pozycję w "
+"całości, korzystając z własnych ustawień konfiguracji "
+"wyświetlania. Możesz również wybrać <em>Pola</em> które pozwolą "
+"Ci zaprezentować jedynie wybrane przez Ciebie pola. Poprzez "
+"zainstalowanie modułów można <em>rozszerzyć</em> podstawową "
+"funkcjonalność Drupala o dodatkowe formaty."
+
+msgid "Choose the language you want to translate."
+msgstr "Wybierz język który chcesz tłumaczyć."
+
+msgid "Comment"
+msgstr "Komentarz"
+
+msgid "Comments"
+msgstr "Komentarze"
+
+msgid "Comments published"
+msgstr "Komentarze, które zostały opublikowane"
+
+msgid "Comments unapproved"
+msgstr "Komentarze, które nie zostały zatwierdzone"
+
+msgid "Compact"
+msgstr "Kompaktowy"
+
+msgid "Configure Block"
+msgstr "Configure Block"
+
 msgid "Content"
 msgstr "Zawartość"
+
+msgid "Content belonging to a certain taxonomy term."
+msgstr "Zawartość należąca do konkretnego terminu taksonomii"
+
+msgid "Content editor"
+msgstr "Edytor treści"
+
+msgid "Content type"
+msgstr "Rodzaj zawartości"
+
+msgid "Continuing on"
+msgstr "Kontynuując"
+
+msgid ""
+"Control the order in which the results are output. Click on an active "
+"sort rule to configure it."
+msgstr ""
+"Zarządzaj kolejnością w jakiej wyświetlane są wyniki. Kliknij w "
+"aktywną regułę by ją skonfigurować."
+
+msgid "Custom Block Library"
+msgstr "Custom Block Library"
+
+msgid "Custom block library"
+msgstr "Biblioteka własnych bloków"
+
+msgid "Date"
+msgstr "Data"
 
 msgid "Default"
 msgstr "Domyślny"
 
+msgid "Default comments"
+msgstr "Domyśle komentarze"
+
+msgid "Default long date"
+msgstr "Domyślna data długa"
+
+msgid "Default medium date"
+msgstr "Domyślna data średnia"
+
+msgid "Default short date"
+msgstr "Domyślna data krótka"
+
 msgid "Delete"
 msgstr "Usuń"
+
+msgid "Delete comment"
+msgstr "Usuń komentarz"
+
+msgid "Delete content"
+msgstr "Usuń zawartość"
 
 msgid "Delete media"
 msgstr "Usuń media"
@@ -69,6 +476,9 @@ msgstr "Malejąco"
 msgid "Development"
 msgstr "Development"
 
+msgid "Displays in this view"
+msgstr "Formaty wyświetlania dla tego widoku."
+
 msgid "Document"
 msgstr "Dokument"
 
@@ -78,20 +488,136 @@ msgstr "Edytuj"
 msgid "Edit {{ name }}"
 msgstr "Edytuj {{ name }}"
 
+msgid "Editing languages"
+msgstr "Edycja języków"
+
+msgid ""
+"Enter the specific word or sentence you want to translate, you can "
+"also write just a part of a word."
+msgstr ""
+"Wpisz określone słowo lub zdanie, które chcesz przetłumaczyć; "
+"można także wpisać fragment słowa."
+
+msgid "Entity"
+msgstr "Encja"
+
+msgid "Entity type"
+msgstr "Typ encji"
+
+msgid "Fallback date format"
+msgstr "Awaryjny format zapisu daty"
+
+msgid "Feed"
+msgstr "Zasób"
+
+msgid "Fields"
+msgstr "Pola"
+
+msgid "File usage"
+msgstr "Wykorzystanie plików"
+
+msgid "File usage information for {{ arguments.fid }}"
+msgstr "Informacje o wykorzystaniu pliku dla {{ arguments.fid }}"
+
+msgid "Filename"
+msgstr "Nazwa pliku"
+
+msgid "Files"
+msgstr "Pliki"
+
+msgid "Files overview"
+msgstr "Przegląd plików"
+
 msgid "Filter"
 msgstr "Filtr"
+
+msgid "Filter actions"
+msgstr "Przefiltruj akcje"
+
+msgid "Filter the search"
+msgstr "Przefiltruj wyniki wyszukiwania"
+
+msgid "Filter your view"
+msgstr "Przefiltruj swój widok"
+
+msgid "Find and manage comments."
+msgstr "Znajdź komentarze i zarządzaj nimi."
+
+msgid "Find and manage content"
+msgstr "Znajdź i zarządzaj treścią"
+
+msgid "Find and manage content."
+msgstr "Wyszukiwanie i zarządzanie zawartością."
+
+msgid "Find and manage custom blocks."
+msgstr "Znajdź i zarządzaj własnymi blokami."
+
+msgid "Find and manage files."
+msgstr "Wyszukiwanie i zarządzanie plikami"
 
 msgid "Find and manage media."
 msgstr "Znajdź i zarządzaj mediami."
 
+msgid "Find and manage people interacting with your site."
+msgstr "Wyszukiwanie i zarządzanie ludźmi korzystającymi z serwisu."
+
+msgid "Footer"
+msgstr "Stopka"
+
+msgid "Frontpage"
+msgstr "Strona główna"
+
+msgid "Full"
+msgstr "Full"
+
+msgid "Full HTML"
+msgstr "Pełny HTML"
+
+msgid "Full comment"
+msgstr "Pełen komentarz"
+
 msgid "Full content"
 msgstr "Pełna zawartość"
+
+msgid "Glossary"
+msgstr "Słownik"
 
 msgid "Grid"
 msgstr "Siatka"
 
+msgid "HTML Date"
+msgstr "Data HTML"
+
+msgid "HTML Datetime"
+msgstr "Data i czas HTML"
+
+msgid "HTML Month"
+msgstr "Miesiąc HTML"
+
+msgid "HTML Time"
+msgstr "Czas HTML"
+
+msgid "HTML Week"
+msgstr "Tydzień HTML"
+
+msgid "HTML Year"
+msgstr "Rok HTML"
+
+msgid "HTML Yearless date"
+msgstr "Data bez roku HTML"
+
 msgid "Help"
 msgstr "Pomoc"
+
+msgid "Icon"
+msgstr "Ikona"
+
+msgid ""
+"If this view uses fields, they are listed here. You can click on a "
+"field to configure it."
+msgstr ""
+"Jeśli widok korzysta z pól, zostaną one zaprezentowane w tym "
+"miejscu. Możesz kliknąć w pole aby je skonfigurować."
 
 msgid "Image"
 msgstr "Obraz"
@@ -102,11 +628,59 @@ msgstr "Elementów na stronę"
 msgid "Language"
 msgstr "Język"
 
+msgid "Language code"
+msgstr "Kod języka"
+
+msgid "Language direction"
+msgstr "Kierunek pisowni języka"
+
+msgid "Language name"
+msgstr "Nazwa języka"
+
+msgid "Languages"
+msgstr "Języki"
+
+msgid "Large (480×480)"
+msgstr "Duży (480×480)"
+
+msgid "Last access"
+msgstr "Ostatni dostęp"
+
+msgid "Last update"
+msgstr "Ostatnia aktualizacja"
+
 msgid "Last »"
 msgstr "Ostatnia »"
 
+msgid "Links related to the active user account"
+msgstr "Links related to the active user account"
+
+msgid "List"
+msgstr "Lista"
+
+msgid "Lists (Views)"
+msgstr "Listy (Widoki)"
+
+msgid "MIME type"
+msgstr "typ MIME"
+
+msgid "Main navigation"
+msgstr "Główna nawigacja"
+
 msgid "Main page content"
 msgstr "Zawartość strony głównej"
+
+msgid "Make content sticky"
+msgstr "Przyklej wpis"
+
+msgid "Make content unsticky"
+msgstr "Odklej wpis"
+
+msgid "Manage user accounts, roles, and permissions."
+msgstr "Zarządzanie kontami użytkowników, rolami i uprawnieniami."
+
+msgid "Manage view settings"
+msgstr "Zarządzaj ustawieniami widoku."
 
 msgid "Media Library thumbnail (220×220)"
 msgstr "Miniaturka biblioteki mediów (220×220)"
@@ -120,6 +694,24 @@ msgstr "Nazwa"
 msgid "Media type"
 msgstr "Rodzaj"
 
+msgid "Medium (220×220)"
+msgstr "Średni (220×220)"
+
+msgid "Member for"
+msgstr "Posiada konto przez"
+
+msgid "Message"
+msgstr "Wiadomość"
+
+msgid "Modifying languages"
+msgstr "Modyfikacja języków"
+
+msgid "Monthly archive"
+msgstr "Archiwum miesięczne"
+
+msgid "More"
+msgstr "Więcej"
+
 msgid "Name"
 msgstr "Nazwa"
 
@@ -129,14 +721,49 @@ msgstr "Nazwa (A-Z)"
 msgid "Name (Z-A)"
 msgstr "Nazwa (Z-A)"
 
+msgid "Name or email contains"
+msgstr "Nazwa lub email zawiera"
+
 msgid "Newest first"
 msgstr "Najpierw najświeższe"
 
 msgid "Next ›"
 msgstr "Następna ›"
 
+msgid "No comments available."
+msgstr "Brak dostępnych komentarzy."
+
+msgid "No content available."
+msgstr "Brak zawartości."
+
+msgid "No files available."
+msgstr "Brak dostępnych plików."
+
+msgid ""
+"No front page content has been created yet.<br/>Follow the <a "
+"target=\"_blank\" "
+"href=\"https://www.drupal.org/docs/user_guide/en/index.html\">User "
+"Guide</a> to start building your site."
+msgstr ""
+"Nie utworzono jeszcze zawartości strony głównej. <br />Postępuj "
+"zgodnie z <a target=\"_blank\" "
+"href=\"https://www.drupal.org/docs/user_guide/en/index.html\">Podręcznikiem "
+"Użytkownika</a> aby rozpocząć budowę swojej witryny."
+
+msgid "No log messages available."
+msgstr "Brak wiadomości w dzienniku."
+
 msgid "No media available."
 msgstr "Brak dostępnych mediów."
+
+msgid "No people available."
+msgstr "Brak dostępnych osób."
+
+msgid "Not applicable"
+msgstr "Nie dotyczy"
+
+msgid "Not specified"
+msgstr "Nieokreślone"
 
 msgid "Offset"
 msgstr "Przesunięcie"
@@ -144,11 +771,53 @@ msgstr "Przesunięcie"
 msgid "Operations"
 msgstr "Operacje"
 
+msgid "Output format"
+msgstr "Format wyjściowy"
+
 msgid "Page"
 msgstr "Strona"
 
 msgid "Page title"
 msgstr "Tytuł strony"
+
+msgid "People"
+msgstr "Ludzie"
+
+msgid ""
+"Perform administrative tasks, including adding a description and "
+"creating a clone. Click the drop-down button to view the available "
+"options."
+msgstr ""
+"Wykonaj czynności administracyjne, wliczając w sklonowanie tudzież "
+"dodanie opisu. Kliknij w przycisk rozwijania listy by zobaczyć "
+"wszystkie dostępne opcje."
+
+msgid "Permanent"
+msgstr "Stały"
+
+msgid "Permission"
+msgstr "Uprawnienie"
+
+msgid "Personal contact form"
+msgstr "Osobisty formularz kontaktowy"
+
+msgid "Picture"
+msgstr "Obraz"
+
+msgid "Place Blocks"
+msgstr "Place Blocks"
+
+msgid "Plain text"
+msgstr "Czysty tekst"
+
+msgid "Posted in"
+msgstr "Odpowiedź do"
+
+msgid "Powered by Drupal"
+msgstr "Powered by Drupal"
+
+msgid "Preview"
+msgstr "Podgląd"
 
 msgid "Primary admin actions"
 msgstr "Podstawowe działania administratora"
@@ -156,26 +825,144 @@ msgstr "Podstawowe działania administratora"
 msgid "Primary tabs"
 msgstr "Podstawowe karty"
 
+msgid "Promote content to front page"
+msgstr "Opublikuj zawartości na stronie głównej"
+
+msgid "Publish comment"
+msgstr "Opublikuj komentarz"
+
+msgid "Publish content"
+msgstr "Publikuj zawartość"
+
 msgid "Publish media"
 msgstr "Opublikuj"
+
+msgid "Publish taxonomy term"
+msgstr "Publikuj termin taksonomii"
 
 msgid "Published"
 msgstr "Opublikowane"
 
+msgid "Published comments"
+msgstr "Opublikowane komentarze"
+
 msgid "Published status"
 msgstr "Status publikacji"
+
+msgid "RSS feed"
+msgstr "RSS feed"
+
+msgid "Recent comments"
+msgstr "Ostatnie komentarze"
+
+msgid "Recent comments."
+msgstr "Ostatnie komentarze."
+
+msgid "Recent content"
+msgstr "Ostatnio dodana zawartość"
+
+msgid "Recent content."
+msgstr "Ostatnio dodana zawartość."
+
+msgid "Recent log messages"
+msgstr "Ostatnie wpisy dziennika"
+
+msgid "Register"
+msgstr "Rejestracja"
+
+msgid "Registering module"
+msgstr "Rejestracja modułów"
 
 msgid "Remote video"
 msgstr "Zdalne wideo"
 
+msgid "Remove content from front page"
+msgstr "Usuń zawartość ze strony głównej"
+
+msgid "Reordering languages"
+msgstr "Uporządkowanie języków."
+
+msgid "Replacement login information for [user:display-name] at [site:name]"
+msgstr "Zastępcze dane do logowania dla [user:display-name] na [site:name]"
+
 msgid "Reset"
 msgstr "Resetuj"
+
+msgid "Restricted HTML"
+msgstr "Ograniczony HTML"
+
+msgid "Role"
+msgstr "Rola"
+
+msgid "Roles"
+msgstr "Role"
+
+msgid "Save comment"
+msgstr "Zapisz komentarz"
+
+msgid "Save content"
+msgstr "Zapisz zawartość"
 
 msgid "Save media"
 msgstr "Zapisz"
 
+msgid "Search"
+msgstr "Szukaj"
+
+msgid "Search form (narrow)"
+msgstr "Search form (narrow)"
+
+msgid "Search form (wide)"
+msgstr "Search form (wide)"
+
+msgid "Search index"
+msgstr "Indeks wyszukiwania"
+
+msgid "Search result highlighting input"
+msgstr "Podświetl frazę wyszukiwania"
+
 msgid "Secondary tabs"
 msgstr "Dodatkowe karty"
+
+msgid "Select language"
+msgstr "Wybór języka"
+
+msgid "Set a language as default"
+msgstr "Ustaw jako język domyślny"
+
+msgid "Severity"
+msgstr "Priorytet"
+
+msgid "Show a preview of the view output."
+msgstr "Pokaż podgląd widoku."
+
+msgid "Shows a list of the newest user accounts on the site."
+msgstr "Prezentuje listę najnowszych użytkowników na stronie."
+
+msgid ""
+"Shows the user names of the most recently active users, and the total "
+"number of active users."
+msgstr ""
+"Prezentuje nazwy użytkowników którzy byli ostatnio aktywni, jak "
+"również liczbę wszystkich aktywnych użytkowników."
+
+msgid "Site branding"
+msgstr "Site branding"
+
+msgid "Site information links"
+msgstr "Odnośniki dotyczące informacji o stronie"
+
+msgid "Site section links"
+msgstr "Odnośniki sekcji strony"
+
+msgid "Size"
+msgstr "Rozmiar"
+
+msgid "Sort Criteria"
+msgstr "Kryteria sortowania"
+
+msgid "Sort actions"
+msgstr "Akcje sortowania"
 
 msgid "Sort by"
 msgstr "Sortuj po"
@@ -183,11 +970,98 @@ msgstr "Sortuj po"
 msgid "Status messages"
 msgstr "Komunikaty o stanie"
 
+msgid "Subject"
+msgstr "Tytuł"
+
 msgid "Table"
 msgstr "Tabela"
 
+msgid "Tags"
+msgstr "Tagi"
+
+msgid "Taxonomy term"
+msgstr "Termin taksonomii"
+
+msgid "Taxonomy term page"
+msgstr "Strona terminów kategorii"
+
+msgid "Teaser"
+msgstr "Skrót"
+
+msgid "Temporary"
+msgstr "Tymczasowy"
+
+msgid "The approved comments listing."
+msgstr "Lista zatwierdzonych komentarzy."
+
+msgid ""
+"The translations you have made here will be used on your site's user "
+"interface. If you want to use them on another site or modify them on "
+"an external translation editor, you can <a "
+"href=\"[site:url]admin/config/regional/translate/export\">export "
+"them</a> to a .po file and <a "
+"href=\"[site:url]admin/config/regional/translate/import\">import "
+"them</a> later."
+msgstr ""
+"Wprowadzone przez ciebie tłumaczenia będą używane na twojej "
+"witrynie. Jeżeli chcesz je używać na innej witrynie lub użyć "
+"zewnętrznego programu do tłumaczenia, możesz <a "
+"href=\"[site:url]admin/config/regional/translate/export\">je "
+"eksportować</a> do pliku .po a następnie <a "
+"href=\"[site:url]admin/config/regional/translate/import\">zaimportować</a> "
+"później."
+
+msgid "The unapproved comments listing."
+msgstr "Lista niezatwierdzonych komentarzy."
+
+msgid "There are currently 0 users online."
+msgstr "Żaden z użytkowników nie jest w tym momencie zalogowany."
+
+msgid "There are currently @total users online."
+msgstr "@total użytkowników jest aktywnych w tej chwili."
+
+msgid "There are no custom blocks available."
+msgstr "Brak dostępnych bloków własnych."
+
+msgid ""
+"This page allows you to translate the user interface or modify "
+"existing translations. If you have installed your site initially in "
+"English, you must first add another language on the <a "
+"href=\"[site:url]admin/config/regional/language\">Languages page</a>, "
+"in order to use this page."
+msgstr ""
+"Ta strona pozwala przetłumaczyć interfejs użytkownika lub "
+"zmodyfikować istniejące tłumaczenie. Jeśli twoja strona została "
+"zainstalowana w języku Angielskim, musisz najpierw dodać brakujący "
+"język na stronie <a "
+"href=\"[site:url]admin/config/regional/language\">Języki</a> aby "
+"następnie móc z nich skorzystać na tej stronie."
+
 msgid "Thumbnail"
 msgstr "Miniaturka"
+
+msgid "Thumbnail (100×100)"
+msgstr "Mały (100×100)"
+
+msgid "Title"
+msgstr "Tytuł"
+
+msgid "To apply your search criteria, click on the <em>Filter</em> button."
+msgstr ""
+"Żeby zastosować swoje kryteria wyświetlania, kliknij przycisk "
+"<em>Filtruj</em>."
+
+msgid "Tools"
+msgstr "Narzędzia"
+
+msgid "Translate"
+msgstr "Tłumaczenia"
+
+msgid "Translation"
+msgstr "Tłumaczenie"
+
+msgid "Translation language"
+msgstr "Język tłumaczenia"
 
 msgid "True"
 msgstr "Prawda"
@@ -195,8 +1069,20 @@ msgstr "Prawda"
 msgid "Type"
 msgstr "Fałsz"
 
+msgid "Unblock the selected user(s)"
+msgstr "Odblokuj wybrane konto użytkownika(ów)"
+
+msgid "Unpublish comment"
+msgstr "Wstrzymaj publikację komentarzy"
+
+msgid "Unpublish content"
+msgstr "Zakończ publikację wpisów"
+
 msgid "Unpublish media"
 msgstr "Cofnij publikację"
+
+msgid "Unpublish taxonomy term"
+msgstr "Wstrzymaj publikację terminu taksonomii"
 
 msgid "Unpublished"
 msgstr "Nieopublikowany"
@@ -204,11 +1090,46 @@ msgstr "Nieopublikowany"
 msgid "Updated"
 msgstr "Uaktualniono"
 
+msgid "Upload date"
+msgstr "Data wysłania"
+
+msgid "Use count"
+msgstr "Ilość wystąpień"
+
 msgid "Use local images for reusable media."
 msgstr "Użyj lokalnych obrazów dla mediów wielokrotnego użytku."
 
+msgid "Use tags to group articles on similar topics into categories."
+msgstr ""
+"Używaj tagów do grupowania artykułów podobnych tematycznie w "
+"kategorie."
+
+msgid "Used in"
+msgstr "Użyte w"
+
+msgid "User"
+msgstr "Użytkownik"
+
+msgid "User account"
+msgstr "Konto użytkownika"
+
+msgid "User account menu"
+msgstr "User account menu"
+
+msgid "User interface translation"
+msgstr "Tłumaczenie interfejsu użytkownika"
+
+msgid "User tool links, often added by modules"
+msgstr "Odnośniki do narzędzi użytkownika, często dodanych przez moduły"
+
+msgid "Username"
+msgstr "Nazwa użytkownika"
+
 msgid "Users"
 msgstr "Użytkownicy"
+
+msgid "Validate the translation"
+msgstr "Potwierdź tłumaczenie"
 
 msgid "Video"
 msgstr "Wideo"
@@ -219,16 +1140,343 @@ msgstr "Adres wideo"
 msgid "Video file"
 msgstr "Plik wideo"
 
+msgid "View administration"
+msgstr "Administracja widoku"
+
+msgid "View edit page"
+msgstr "Strona edycji widoku."
+
+msgid "View or edit the configuration."
+msgstr "Pokaż lub edytuj konfigurację."
+
+msgid "Website feedback"
+msgstr "Informacja zwrotna na temat strony."
+
+msgid "Welcome!"
+msgstr "Witaj!"
+
+msgid ""
+"When you have finished your translations, click on the <em>Save "
+"translations</em> button. You must save your translations, each time "
+"before changing the page or making a new search."
+msgstr ""
+"Kiedy skończysz tłumaczyć, kliknij na przycisk <em>Zapisz "
+"tłumaczenia</em>. Musisz je zapisać, przed każdą zmianą strony "
+"lub nowym wyszukiwaniem."
+
+msgid "Who's new"
+msgstr "Nowi użytkownicy"
+
+msgid "Who's online"
+msgstr "Kto przegląda"
+
+msgid "Who's online block"
+msgstr "Blok <em>Kto jest online</em>"
+
+msgid "Wide (1090)"
+msgstr "Szeroki (1090)"
+
 msgid "Widget"
 msgstr "Widget"
 
 msgid "Widget (table)"
 msgstr "Widget (tabela)"
 
+msgid ""
+"You can search for untranslated strings if you want to translate "
+"something that isn't translated yet. If you want to modify an existing "
+"translation, you might want to search only for translated strings."
+msgstr ""
+"Możesz szukać nieprzetłumaczonych łańcuchów znaków jeśli "
+"chcesz dodać brakujące tłumaczenie. Jeśli chcesz zmodyfikować "
+"istniejące tłumaczenie możesz wyszukać jedynie te łańcuchy "
+"znaków, które posiadają tłumaczenie."
+
+msgid ""
+"You can write your own translation in the text fields of the right "
+"column. Try to figure out in which context the text will be used in "
+"order to translate it in the appropriate way."
+msgstr ""
+"Możesz wprowadzić własne tłumaczenia w pola tekstowe prawej "
+"kolumny. Musisz spróbować domyślić się w jakim kontekście "
+"wykorzystany będzie tekst, tak żeby przetłumaczyć go najlepiej jak "
+"to możliwe."
+
+msgid "Your message has been sent."
+msgstr "Wiadomość została wysłana."
+
+msgid "Your virtual face or picture."
+msgstr "Twoje zdjęcie lub obraz."
+
+msgid ""
+"[user:display-name] has applied for an account.\n"
+"\n"
+"[user:edit-url]"
+msgstr ""
+"[user:display-name] wypełnił formularz założenia "
+"konta.\r\n"
+"\r\n"
+"[user:edit-url]"
+
+msgid ""
+"[user:display-name],\n"
+"\n"
+"A request to reset the password for your "
+"account has been made at [site:name].\n"
+"\n"
+"You may now log in by "
+"clicking this link or copying and pasting it into your "
+"browser:\n"
+"\n"
+"[user:one-time-login-url]\n"
+"\n"
+"This link can only be "
+"used once to log in and will lead you to a page where you can set your "
+"password. It expires after one day and nothing will happen if it's not "
+"used.\n"
+"\n"
+"--  [site:name] team"
+msgstr ""
+"[user:display-name],\r\n"
+"\r\n"
+"W serwisie [site:name] została "
+"uruchomiona procedura resetowania twojego hasła.\r\n"
+"\r\n"
+"Możesz "
+"się zalogować klikając poniższy odnośnik bądź kopiując go w "
+"pole adresu "
+"przeglądarki:\r\n"
+"\r\n"
+"[user:one-time-login-url]\r\n"
+"\r\n"
+"Odnośnik "
+"może zostać użyty tylko raz a jego użycie umożliwi wpisanie "
+"własnego hasła. Odnośnik straci ważność po jednym "
+"dniu.\r\n"
+"\r\n"
+"--  redakcja strony [site:name]"
+
+msgid ""
+"[user:display-name],\n"
+"\n"
+"A site administrator at [site:name] has "
+"created an account for you. You may now log in by clicking this link "
+"or copying and pasting it into your "
+"browser:\n"
+"\n"
+"[user:one-time-login-url]\n"
+"\n"
+"This link can only be "
+"used once to log in and will lead you to a page where you can set your "
+"password.\n"
+"\n"
+"After setting your password, you will be able to log in "
+"at [site:login-url] in the future using:\n"
+"\n"
+"username: "
+"[user:name]\n"
+"password: Your password\n"
+"\n"
+"--  [site:name] team"
+msgstr ""
+"[user:display-name],\r\n"
+"\r\n"
+"Administrator strony [site:name] "
+"stworzył dla Ciebie konto. Możesz się teraz zalogować klikając w "
+"poniższy odnośnik lub kopiując i wklejając go do "
+"przeglądarki:\r\n"
+"\r\n"
+"[user:one-time-login-url]\r\n"
+"\r\n"
+"Ten "
+"odnośnik możesz zostać użyty tylko raz i kieruję na stronę, "
+"gdzie będzie można ustawić własne hasło.\r\n"
+"\r\n"
+"Po ustawieniu "
+"własnego hasło, będzie można logować się w przyszłości poprzez "
+"odnośnik [site:login-url] używając:\r\n"
+"\r\n"
+"nazwa użytkownika: "
+"[user:account-name]\r\n"
+"hasło: Twoje hasło\r\n"
+"\r\n"
+"--  Zespół "
+"[site:name]"
+
+msgid ""
+"[user:display-name],\n"
+"\n"
+"Thank you for registering at [site:name]. "
+"You may now log in by clicking this link or copying and pasting it "
+"into your browser:\n"
+"\n"
+"[user:one-time-login-url]\n"
+"\n"
+"This link can "
+"only be used once to log in and will lead you to a page where you can "
+"set your password.\n"
+"\n"
+"After setting your password, you will be able "
+"to log in at [site:login-url] in the future using:\n"
+"\n"
+"username: "
+"[user:name]\n"
+"password: Your password\n"
+"\n"
+"--  [site:name] team"
+msgstr ""
+"[user:display-name],\r\n"
+"\r\n"
+"Dziękujemy za rejestrację na stronie "
+"[site:name]. \r\n"
+"Możesz się teraz zalogować klikając w poniższy "
+"odnośnik lub kopiując i wklejając go do "
+"przeglądarki:\r\n"
+"\r\n"
+"[user:one-time-login-url]\r\n"
+"\r\n"
+"Ten "
+"odnośnik możesz zostać użyty tylko raz i kieruję na stronę, "
+"gdzie będzie można ustawić własne hasło.\r\n"
+"\r\n"
+"Po ustawieniu "
+"własnego hasło, będzie można logować się w przyszłości poprzez "
+"odnośnik [site:login-url] używając:\r\n"
+"\r\n"
+"nazwa użytkownika: "
+"[user:account-name]\r\n"
+"hasło: Twoje hasło\r\n"
+"\r\n"
+"--  "
+"\r\n"
+"Zespół [site:name]"
+
+msgid ""
+"[user:display-name],\n"
+"\n"
+"Thank you for registering at [site:name]. "
+"Your application for an account is currently pending approval. Once it "
+"has been approved, you will receive another email containing "
+"information about how to log in, set your password, and other "
+"details.\n"
+"\n"
+"--  [site:name] team"
+msgstr ""
+"[user:display-name],\r\n"
+"\r\n"
+"Dziękujemy za rejestrację na stronie "
+"[site:name]. Twoja prośba o utworzenie konta oczekuje na "
+"zatwierdzenie. Po zatwierdzeniu otrzymasz kolejny e-mail zawierający "
+"informacje o tym, jak się zalogować, ustawić hasło i inne "
+"szczegóły.\r\n"
+"\r\n"
+"--  Zespół [site:name]"
+
+msgid ""
+"[user:display-name],\n"
+"\n"
+"Your account at [site:name] has been "
+"activated.\n"
+"\n"
+"You may now log in by clicking this link or copying "
+"and pasting it into your "
+"browser:\n"
+"\n"
+"[user:one-time-login-url]\n"
+"\n"
+"This link can only be "
+"used once to log in and will lead you to a page where you can set your "
+"password.\n"
+"\n"
+"After setting your password, you will be able to log in "
+"at [site:login-url] in the future using:\n"
+"\n"
+"username: "
+"[user:account-name]\n"
+"password: Your password\n"
+"\n"
+"--  [site:name] "
+"team"
+msgstr ""
+"[user:display-name],\r\n"
+"\r\n"
+"Twoje konto na stronie [site:name] "
+"zostało aktywowane.\r\n"
+"\r\n"
+"Możesz się teraz zalogować klikając "
+"w poniższy odnośnik lub kopiując i wklejając go do "
+"przeglądarki:\r\n"
+"\r\n"
+"[user:one-time-login-url]\r\n"
+"\r\n"
+"Ten "
+"odnośnik możesz zostać użyty tylko raz i kieruję na stronę, "
+"gdzie będzie można ustawić własne hasło.\r\n"
+"\r\n"
+"Po ustawieniu "
+"własnego hasło, będzie można logować się w przyszłości poprzez "
+"odnośnik [site:login-url] używając:\r\n"
+"\r\n"
+"nazwa użytkownika: "
+"[user:account-name]\r\n"
+"hasło: Twoje hasło\r\n"
+"\r\n"
+"--  Zespół "
+"[site:name]"
+
+msgid ""
+"[user:display-name],\n"
+"\n"
+"Your account on [site:name] has been "
+"blocked.\n"
+"\n"
+"--  [site:name] team"
+msgstr ""
+"[user:display-name],\r\n"
+"\r\n"
+"Twoje konto na [site:name] zostało "
+"zablokowane.\r\n"
+"\r\n"
+"--  Zespół [site:name]"
+
+msgid ""
+"[user:display-name],\n"
+"\n"
+"Your account on [site:name] has been "
+"canceled.\n"
+"\n"
+"--  [site:name] team"
+msgstr ""
+"[user:display-name],\r\n"
+"\r\n"
+"Twoje konto na stronie [site:name] "
+"zostało anulowane.\r\n"
+"\r\n"
+"-- Zespół [site:name]"
+
+msgid "last »"
+msgstr "ostatnia »"
+
+msgid "more"
+msgstr "więcej"
+
+msgid "next ›"
+msgstr "następna ›"
+
 msgid "« First"
 msgstr "« Pierwsza"
 
+msgid "« first"
+msgstr "« pierwsza"
+
 msgid "‹ Previous"
 msgstr "‹ Poprzednia"
+
+msgid "‹ previous"
+msgstr "‹ poprzednia"
+
+msgctxt "PHP date format"
+msgid "j  F,  Y"
+msgstr "j  F,  Y"
 
 

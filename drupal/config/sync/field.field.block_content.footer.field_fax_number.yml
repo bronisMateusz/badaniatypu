@@ -1,0 +1,19 @@
+uuid: bbcad185-8b98-46f2-b821-58e307d287f8
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_fax_number
+id: block_content.footer.field_fax_number
+field_name: field_fax_number
+entity_type: block_content
+bundle: footer
+label: Faks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

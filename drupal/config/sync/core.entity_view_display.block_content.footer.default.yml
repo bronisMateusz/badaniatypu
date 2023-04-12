@@ -1,0 +1,161 @@
+uuid: 004a765b-eb73-46dd-b9fc-e4d447d262eb
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.field.block_content.footer.field_address
+    - field.field.block_content.footer.field_fax_number
+    - field.field.block_content.footer.field_image
+    - field.field.block_content.footer.field_phone_number
+    - field.field.block_content.footer.field_text_formatted_long
+  module:
+    - address
+    - layout_builder
+    - telephone
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          ac439d72-11a2-4f6c-98e6-88defe05d713:
+            uuid: ac439d72-11a2-4f6c-98e6-88defe05d713
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2bb03ede-faf1-4aa0-870b-3a6fdb651415:
+            uuid: 2bb03ede-faf1-4aa0-870b-3a6fdb651415
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_address'
+              label: Adres
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: address_default
+                label: hidden
+                settings:
+                  skip_domestic_country: 1
+                  domestic_country: site_default
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b436ea58-d38e-432e-8116-4f86f3fd55f0:
+            uuid: b436ea58-d38e-432e-8116-4f86f3fd55f0
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_phone_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          03c5df05-64c2-40bd-b73e-91fbb1a4e38d:
+            uuid: 03c5df05-64c2-40bd-b73e-91fbb1a4e38d
+            region: second
+            configuration:
+              id: 'field_block:block_content:footer:field_text_formatted_long'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          28eb910b-4ab5-4151-bd0a-703e2dfe9083:
+            uuid: 28eb910b-4ab5-4151-bd0a-703e2dfe9083
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_fax_number'
+              label: Faks
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.footer.default
+targetEntityType: block_content
+bundle: footer
+mode: default
+content:
+  field_address:
+    type: address_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fax_number:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_phone_number:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text_formatted_long:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,139 @@
+uuid: 018cd59a-a256-4d81-84d6-03a0285d94b4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - core.entity_view_mode.block_content.without_logo
+    - field.field.block_content.footer.field_address
+    - field.field.block_content.footer.field_fax_number
+    - field.field.block_content.footer.field_image
+    - field.field.block_content.footer.field_phone_number
+    - field.field.block_content.footer.field_text_formatted_long
+  module:
+    - address
+    - layout_builder
+    - telephone
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          3f3107f8-8758-4f85-87b6-31a4a0be562d:
+            uuid: 3f3107f8-8758-4f85-87b6-31a4a0be562d
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_address'
+              label: Adres
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: address_default
+                label: hidden
+                settings:
+                  skip_domestic_country: 1
+                  domestic_country: site_default
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7a654946-dddc-4829-bcac-3d3cc1f7cc36:
+            uuid: 7a654946-dddc-4829-bcac-3d3cc1f7cc36
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_phone_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4aefef25-b450-4953-83f0-e22f9ebce42f:
+            uuid: 4aefef25-b450-4953-83f0-e22f9ebce42f
+            region: second
+            configuration:
+              id: 'field_block:block_content:footer:field_text_formatted_long'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0b620580-c647-4641-9ecc-6ca2a281dd89:
+            uuid: 0b620580-c647-4641-9ecc-6ca2a281dd89
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_fax_number'
+              label: Faks
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.footer.without_logo
+targetEntityType: block_content
+bundle: footer
+mode: without_logo
+content:
+  field_address:
+    type: address_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_fax_number:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_phone_number:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text_formatted_long:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_image: true
+  langcode: true

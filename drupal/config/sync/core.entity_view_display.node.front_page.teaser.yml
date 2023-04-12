@@ -1,11 +1,10 @@
 uuid: a4df7839-4eaf-465b-92ea-363d9ad91e35
 langcode: pl
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.front_page.body
-    - field.field.node.front_page.layout_builder__layout
     - node.type.front_page
   module:
     - text
@@ -30,4 +29,3 @@ content:
     region: content
 hidden:
   langcode: true
-  layout_builder__layout: true

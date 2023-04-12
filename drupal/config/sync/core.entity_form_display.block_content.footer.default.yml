@@ -1,0 +1,73 @@
+uuid: 67b6c5b0-5e24-4169-b5c4-52bd9aa0fdd2
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.field.block_content.footer.field_address
+    - field.field.block_content.footer.field_fax_number
+    - field.field.block_content.footer.field_image
+    - field.field.block_content.footer.field_phone_number
+    - field.field.block_content.footer.field_text_formatted_long
+  module:
+    - address
+    - media_library
+    - telephone
+    - text
+id: block_content.footer.default
+targetEntityType: block_content
+bundle: footer
+mode: default
+content:
+  field_address:
+    type: address_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fax_number:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_phone_number:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_formatted_long:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

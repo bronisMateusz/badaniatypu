@@ -5,26 +5,29 @@ dependencies:
   config:
     - block_content.type.redirect_to_page
     - field.field.node.front_page.body
-    - field.field.node.front_page.layout_builder__layout
     - node.type.front_page
+  content:
+    - 'block_content:footer:4fdaf692-5b8b-4a45-8ee1-9a4dd82d6abb'
   module:
+    - block_content
     - layout_builder
+    - layout_discovery
     - text
     - user
 third_party_settings:
   layout_builder:
     enabled: true
-    allow_custom: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_twocol_section
         layout_settings:
-          label: 'Wybór strony'
+          label: ''
           context_mapping: {  }
           column_widths: 50-50
         components:
-          b852f273-cc70-4223-bb8a-c5217b7f1ce2:
-            uuid: b852f273-cc70-4223-bb8a-c5217b7f1ce2
+          73bb14c0-718b-4517-b819-16787477078a:
+            uuid: 73bb14c0-718b-4517-b819-16787477078a
             region: first
             configuration:
               id: 'inline_block:redirect_to_page'
@@ -33,12 +36,12 @@ third_party_settings:
               provider: layout_builder
               view_mode: default
               context_mapping: {  }
-              block_revision_id: 4
+              block_revision_id: 1
               block_serialized: null
             weight: 0
             additional: {  }
-          0f9dcc28-d8ea-4a5d-af27-e7c57b984e7c:
-            uuid: 0f9dcc28-d8ea-4a5d-af27-e7c57b984e7c
+          3c9a89ec-0ded-45d2-bc6f-3a4e54968c1e:
+            uuid: 3c9a89ec-0ded-45d2-bc6f-3a4e54968c1e
             region: second
             configuration:
               id: 'inline_block:redirect_to_page'
@@ -47,8 +50,29 @@ third_party_settings:
               provider: layout_builder
               view_mode: reverse
               context_mapping: {  }
-              block_revision_id: 5
+              block_revision_id: 2
               block_serialized: null
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          e69a5995-b35e-47b9-911d-78baeeb7630f:
+            uuid: e69a5995-b35e-47b9-911d-78baeeb7630f
+            region: content
+            configuration:
+              id: 'block_content:4fdaf692-5b8b-4a45-8ee1-9a4dd82d6abb'
+              label: 'Stopka strona główna'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: without_logo
+              context_mapping: {  }
             weight: 0
             additional: {  }
         third_party_settings: {  }

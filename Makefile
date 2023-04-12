@@ -23,9 +23,11 @@ logs:
 
 check:
 	docker compose exec -it drupal composer check
+	docker compose exec -it drupal yarn lint
 
 check-fix:
 	docker compose exec -it drupal composer check --fix
+	docker compose exec -it drupal yarn format
 
 export-translations:
 	docker compose exec -it drupal composer export-translations

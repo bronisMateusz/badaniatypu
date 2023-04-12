@@ -1,0 +1,21 @@
+uuid: 4101333d-44da-4178-98f4-9369d480d759
+langcode: pl
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_fax_number
+field_name: field_fax_number
+entity_type: block_content
+type: string
+settings:
+  max_length: 12
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
