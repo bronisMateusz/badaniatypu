@@ -1,0 +1,21 @@
+uuid: cc83b685-6182-4f51-8f1f-5c3995972d82
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.view_mode_selection
+    - node.type.front_page
+id: node.front_page.view_mode_selection
+field_name: view_mode_selection
+entity_type: node
+bundle: front_page
+label: 'View Mode'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: field_view_mode
+  handler_settings: {  }
+field_type: entity_reference

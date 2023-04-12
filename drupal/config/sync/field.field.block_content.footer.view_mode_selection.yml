@@ -1,0 +1,21 @@
+uuid: 69a64c0c-ab3a-4ecf-a881-3d14b3c28186
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.view_mode_selection
+id: block_content.footer.view_mode_selection
+field_name: view_mode_selection
+entity_type: block_content
+bundle: footer
+label: 'View Mode'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: field_view_mode
+  handler_settings: {  }
+field_type: entity_reference

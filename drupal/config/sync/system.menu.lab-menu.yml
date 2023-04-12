@@ -1,0 +1,8 @@
+uuid: 318f3620-59ec-4ae9-8993-50dc07dfbde7
+langcode: pl
+status: true
+dependencies: {  }
+id: lab-menu
+label: 'Menu laboratorium'
+description: ''
+locked: false

@@ -1,0 +1,88 @@
+uuid: a3ec8406-efb8-49bf-928c-caa67ada82c4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.redirect_to_page
+    - node.type.welcome_page
+  content:
+    - 'block_content:footer:4fdaf692-5b8b-4a45-8ee1-9a4dd82d6abb'
+  module:
+    - block_content
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          73bf23f2-c2f9-452d-936e-0e9ef2a8f4eb:
+            uuid: 73bf23f2-c2f9-452d-936e-0e9ef2a8f4eb
+            region: first
+            configuration:
+              id: 'inline_block:redirect_to_page'
+              label: 'Odnośnik do laboratorium'
+              label_display: '0'
+              provider: layout_builder
+              view_mode: default
+              context_mapping: {  }
+              block_revision_id: 4
+              block_serialized: null
+            weight: 0
+            additional: {  }
+          eac4f067-e39a-4962-90b7-7872a6b0384c:
+            uuid: eac4f067-e39a-4962-90b7-7872a6b0384c
+            region: second
+            configuration:
+              id: 'inline_block:redirect_to_page'
+              label: 'Odnośnik do spółki'
+              label_display: '0'
+              provider: layout_builder
+              view_mode: reverse
+              context_mapping: {  }
+              block_revision_id: 5
+              block_serialized: null
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          50e3e821-5ba3-465d-b06a-df2276c07643:
+            uuid: 50e3e821-5ba3-465d-b06a-df2276c07643
+            region: content
+            configuration:
+              id: 'block_content:4fdaf692-5b8b-4a45-8ee1-9a4dd82d6abb'
+              label: 'Stopka strona powitalna'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: without_logo
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.welcome_page.default
+targetEntityType: node
+bundle: welcome_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

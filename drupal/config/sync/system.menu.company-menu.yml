@@ -1,0 +1,8 @@
+uuid: 1d6ee1d6-42c5-4f7a-86ed-c407ca45aa21
+langcode: pl
+status: true
+dependencies: {  }
+id: company-menu
+label: 'Menu spółki'
+description: ''
+locked: false

@@ -10,6 +10,7 @@ dependencies:
     - field.field.block_content.footer.field_image
     - field.field.block_content.footer.field_phone_number
     - field.field.block_content.footer.field_text_formatted_long
+    - field.field.block_content.footer.view_mode_selection
   module:
     - address
     - layout_builder
@@ -137,3 +138,4 @@ content:
 hidden:
   field_image: true
   langcode: true
+  view_mode_selection: true
