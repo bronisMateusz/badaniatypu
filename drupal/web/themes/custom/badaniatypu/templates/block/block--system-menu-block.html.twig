@@ -40,6 +40,7 @@
     'menu--' ~ derivative_plugin_id|clean_class,
   ]
 %}
+{{ attach_library('badaniatypu/block--system-menu-block') }}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
@@ -51,6 +52,11 @@
   {{ title_suffix }}
 
   {# Menu. #}
+  <button {{ create_attribute({'class': 'menu__toggle'}) }}>
+    <span {{ create_attribute({'class': 'menu__toggle-bar'}) }}></span>
+    <span {{ create_attribute({'class': 'menu__toggle-bar'}) }}></span>
+    <span {{ create_attribute({'class': 'menu__toggle-bar'}) }}></span>
+  </button>
   {% block content %}
     {{ content }}
   {% endblock %}

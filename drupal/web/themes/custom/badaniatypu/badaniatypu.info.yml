@@ -13,5 +13,6 @@ regions:
   footer: "Footer"
 libraries:
   - badaniatypu/global-styling
+  - badaniatypu/menu
 libraries-override:
   layout_builder/twocol_section: badaniatypu/layout_builder_twocol_section
