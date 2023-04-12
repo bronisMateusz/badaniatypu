@@ -1,0 +1,30 @@
+uuid: 25c88245-6acf-46cf-ae33-0d8c98ee34d8
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:footer:e4de41f3-e541-40a5-b602-4531bf468491'
+  module:
+    - block_content
+    - system
+  theme:
+    - badaniatypu
+id: footer_lab
+theme: badaniatypu
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:e4de41f3-e541-40a5-b602-4531bf468491'
+settings:
+  id: 'block_content:e4de41f3-e541-40a5-b602-4531bf468491'
+  label: 'Stopka laboratorium'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/wojciech-bogacki\r\n/wojciech-bogacki/*"

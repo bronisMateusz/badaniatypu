@@ -1,0 +1,30 @@
+uuid: 9b924fb5-4bfb-4d7b-9b7a-1a4c715b9b76
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:footer:6a91df10-6186-40e7-a4e4-564ba1c1d737'
+  module:
+    - block_content
+    - system
+  theme:
+    - badaniatypu
+id: footer_company
+theme: badaniatypu
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:6a91df10-6186-40e7-a4e4-564ba1c1d737'
+settings:
+  id: 'block_content:6a91df10-6186-40e7-a4e4-564ba1c1d737'
+  label: 'Stopka spółka'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bogaccy\r\n/bogaccy/*"

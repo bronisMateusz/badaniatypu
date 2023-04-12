@@ -5,11 +5,8 @@ dependencies:
   config:
     - field.field.node.front_page.view_mode_selection
     - node.type.front_page
-    - system.menu.lab-menu
   module:
     - layout_builder
-    - layout_discovery
-    - system
     - user
 third_party_settings:
   layout_builder:
@@ -17,25 +14,10 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_builder_blank
         layout_settings:
           label: ''
-          context_mapping: {  }
-        components:
-          589ef9d9-a4b4-4df4-a95e-7366509d5eca:
-            uuid: 589ef9d9-a4b4-4df4-a95e-7366509d5eca
-            region: content
-            configuration:
-              id: 'system_menu_block:lab-menu'
-              label: 'Menu laboratorium'
-              label_display: '0'
-              provider: system
-              context_mapping: {  }
-              level: 1
-              depth: 0
-              expand_all_items: false
-            weight: 0
-            additional: {  }
+        components: {  }
         third_party_settings: {  }
 id: node.front_page.default
 targetEntityType: node

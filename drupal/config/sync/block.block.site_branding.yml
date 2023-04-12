@@ -1,0 +1,30 @@
+uuid: 3baeb8dd-333a-4928-93de-54a2ae0e11b2
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:site_branding:c64f5b82-9add-4237-86f3-d30f52204427'
+  module:
+    - block_content
+    - system
+  theme:
+    - badaniatypu
+id: site_branding
+theme: badaniatypu
+region: header
+weight: -4
+provider: null
+plugin: 'block_content:c64f5b82-9add-4237-86f3-d30f52204427'
+settings:
+  id: 'block_content:c64f5b82-9add-4237-86f3-d30f52204427'
+  label: 'Branding strony'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

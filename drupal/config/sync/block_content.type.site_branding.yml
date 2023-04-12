@@ -1,0 +1,8 @@
+uuid: 6304902a-6933-4e92-a144-24e3bb4656e1
+langcode: pl
+status: true
+dependencies: {  }
+id: site_branding
+label: 'Branding strony'
+revision: 0
+description: 'Dodaje blok służący do przełączania się pomiędzy firmami.'

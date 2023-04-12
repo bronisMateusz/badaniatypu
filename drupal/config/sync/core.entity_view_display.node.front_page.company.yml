@@ -6,11 +6,8 @@ dependencies:
     - core.entity_view_mode.node.company
     - field.field.node.front_page.view_mode_selection
     - node.type.front_page
-    - system.menu.company-menu
   module:
     - layout_builder
-    - layout_discovery
-    - system
     - user
 third_party_settings:
   layout_builder:
@@ -18,25 +15,10 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_builder_blank
         layout_settings:
           label: ''
-          context_mapping: {  }
-        components:
-          57b6cde1-943b-43ce-9a6e-4a5ab2e8286a:
-            uuid: 57b6cde1-943b-43ce-9a6e-4a5ab2e8286a
-            region: content
-            configuration:
-              id: 'system_menu_block:company-menu'
-              label: 'Menu spółki'
-              label_display: '0'
-              provider: system
-              context_mapping: {  }
-              level: 1
-              depth: 0
-              expand_all_items: false
-            weight: 0
-            additional: {  }
+        components: {  }
         third_party_settings: {  }
 id: node.front_page.company
 targetEntityType: node

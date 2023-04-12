@@ -32,14 +32,20 @@ third_party_settings:
             region: first
             configuration:
               id: 'field_block:block_content:footer:field_image'
+              label: Logo
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
-                type: entity_reference_label
+                type: media_thumbnail
                 label: hidden
                 settings:
-                  link: true
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
                 third_party_settings: {  }
             weight: 0
             additional: {  }

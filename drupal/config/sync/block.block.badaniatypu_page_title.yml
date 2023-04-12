@@ -11,8 +11,8 @@ _core:
   default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
 id: badaniatypu_page_title
 theme: badaniatypu
-region: header
-weight: -30
+region: content
+weight: -4
 provider: null
 plugin: page_title_block
 settings:
