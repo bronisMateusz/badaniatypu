@@ -15,6 +15,16 @@ body {
   background-color: #f4f4f4;
   color: $black;
   line-height: 1.25rem;
+
+  .dialog-off-canvas-main-canvas > .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    footer {
+      margin-top: auto;
+    }
+  }
 }
 
 a {

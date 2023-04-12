@@ -1,0 +1,65 @@
+@use "../base/variables.scss" as *;
+
+[id*="block-footer-"] {
+  border-top: 1px solid $border-color;
+  font-size: 0.875rem;
+  margin: 75px auto 0;
+  max-width: 1400px;
+  padding: 50px 15px;
+
+  a {
+    color: $first-brand-color;
+  }
+
+  .layout__region--second {
+    margin-top: 20px;
+  }
+
+  .field--name-field-text-formatted-long {
+    text-align: right;
+  }
+
+  &.default {
+    .layout__region--first {
+      grid-template-columns: auto auto 1fr;
+
+      & > div:last-child {
+        grid-column: 3;
+      }
+    }
+
+    .field--name-field-image img {
+      height: 38px;
+      opacity: 0.4;
+    }
+  }
+
+  &.without_logo {
+    a {
+      color: $second-brand-color;
+    }
+
+    @media (min-width: $md) {
+      .layout__region--first {
+        grid-template-columns: auto 1fr;
+
+        & > div:nth-child(3) {
+          grid-column: 2;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $md) {
+    .layout__region {
+      &--first {
+        column-gap: 30px;
+        display: grid;
+      }
+
+      &--second {
+        margin-top: 0;
+      }
+    }
+  }
+}
