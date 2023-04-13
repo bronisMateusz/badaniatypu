@@ -20,3 +20,11 @@
   src: local("Raleway"),
     url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Raleway"),
+    url("../fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+}
