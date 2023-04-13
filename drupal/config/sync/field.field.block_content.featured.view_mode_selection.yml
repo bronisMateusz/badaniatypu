@@ -1,14 +1,14 @@
-uuid: cc83b685-6182-4f51-8f1f-5c3995972d82
+uuid: 8535afe9-40db-44ce-9182-543db932a841
 langcode: pl
 status: true
 dependencies:
   config:
-    - field.storage.node.view_mode_selection
-    - node.type.front_page
-id: node.front_page.view_mode_selection
+    - block_content.type.featured
+    - field.storage.block_content.view_mode_selection
+id: block_content.featured.view_mode_selection
 field_name: view_mode_selection
-entity_type: node
-bundle: front_page
+entity_type: block_content
+bundle: featured
 label: 'View Mode'
 description: ''
 required: false

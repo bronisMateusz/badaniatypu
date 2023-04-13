@@ -4,7 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.front_page.field_background
-    - field.field.node.front_page.view_mode_selection
+    - field.field.node.front_page.field_image
+    - field.field.node.front_page.layout_builder__layout
     - node.type.front_page
   module:
     - layout_builder
@@ -41,7 +42,24 @@ third_party_settings:
                   image_loading:
                     attribute: lazy
                 third_party_settings: {  }
-            weight: 0
+            weight: 1
+            additional: {  }
+          5ef0d208-f834-4a19-9f4a-586f98ec80d2:
+            uuid: 5ef0d208-f834-4a19-9f4a-586f98ec80d2
+            region: content
+            configuration:
+              id: 'field_block:node:front_page:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 id: node.front_page.default
@@ -56,6 +74,15 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -63,6 +90,7 @@ content:
     region: content
 hidden:
   field_background: true
+  field_color: true
   langcode: true
   layout_builder__layout: true
   view_mode_selection: true

@@ -1,10 +1,10 @@
-uuid: f319e6df-a6b9-4873-a169-3aea5a696e1f
+uuid: 42b1cbdf-7818-4698-9897-c6660a5f02c9
 langcode: pl
 status: true
 dependencies:
   module:
     - block_content
-id: block_content.token
-label: Token
+id: block_content.with_decorations
+label: 'Z ozdobnikami'
 targetEntityType: block_content
 cache: true

@@ -1,0 +1,10 @@
+uuid: 7a69b2ad-8672-4512-bd5a-0e8ca8304197
+langcode: pl
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.photo_from_left
+label: 'Zdjęcie z lewej'
+targetEntityType: block_content
+cache: true

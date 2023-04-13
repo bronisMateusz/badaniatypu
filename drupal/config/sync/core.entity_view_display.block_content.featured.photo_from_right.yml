@@ -1,9 +1,10 @@
-uuid: 02a149a5-9982-4388-9241-f2c1b9219900
+uuid: 28d1fb6d-833d-4152-a974-d4e7cee7718f
 langcode: pl
-status: true
+status: false
 dependencies:
   config:
     - block_content.type.featured
+    - core.entity_view_mode.block_content.photo_from_right
     - field.field.block_content.featured.body
     - field.field.block_content.featured.field_background
     - field.field.block_content.featured.field_color
@@ -26,8 +27,29 @@ third_party_settings:
           context_mapping: {  }
           column_widths: 50-50
         components:
-          7e2f9c3d-c993-48b9-b5f0-ebd74fcb6e69:
-            uuid: 7e2f9c3d-c993-48b9-b5f0-ebd74fcb6e69
+          b515088c-8d45-474c-8fb0-505d784a464f:
+            uuid: b515088c-8d45-474c-8fb0-505d784a464f
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_color'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: color_field_formatter_css
+                label: hidden
+                settings:
+                  selector: '.block-featured .layout__region--first'
+                  property: background-color
+                  important: '1'
+                  opacity: true
+                  advanced: false
+                  css: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ba531e65-084d-4837-acef-5f2b7187bf2a:
+            uuid: ba531e65-084d-4837-acef-5f2b7187bf2a
             region: second
             configuration:
               id: 'field_block:block_content:featured:body'
@@ -41,8 +63,28 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          9159d6cb-66eb-4a77-ae49-ceee01eba5c3:
-            uuid: 9159d6cb-66eb-4a77-ae49-ceee01eba5c3
+          23f0f8b1-e1d1-4ae1-81b3-91418fc1dd7c:
+            uuid: 23f0f8b1-e1d1-4ae1-81b3-91418fc1dd7c
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          e558c3e9-e935-4ab5-a3ce-0f8f9c71a438:
+            uuid: e558c3e9-e935-4ab5-a3ce-0f8f9c71a438
             region: first
             configuration:
               id: 'field_block:block_content:featured:field_background'
@@ -61,57 +103,13 @@ third_party_settings:
                   image_loading:
                     attribute: lazy
                 third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          d3504221-b74e-4c9e-9409-c9e4efc26b71:
-            uuid: d3504221-b74e-4c9e-9409-c9e4efc26b71
-            region: first
-            configuration:
-              id: 'field_block:block_content:featured:field_link'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: link
-                label: hidden
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: ''
-                  target: ''
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          e1a27793-9399-4a2a-8c74-88898010248d:
-            uuid: e1a27793-9399-4a2a-8c74-88898010248d
-            region: first
-            configuration:
-              id: 'field_block:block_content:featured:field_color'
-              label: Kolor
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: color_field_formatter_css
-                label: hidden
-                settings:
-                  selector: .block-featured.default
-                  property: background-color
-                  important: '0'
-                  opacity: true
-                  advanced: false
-                  css: ''
-                third_party_settings: {  }
             weight: 1
             additional: {  }
         third_party_settings: {  }
-id: block_content.featured.default
+id: block_content.featured.photo_from_right
 targetEntityType: block_content
 bundle: featured
-mode: default
+mode: photo_from_right
 content:
   body:
     type: text_default
