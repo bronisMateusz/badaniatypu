@@ -15,6 +15,7 @@ body {
   background-color: $canvas-color;
   color: $black;
   line-height: 1.25rem;
+  overflow-x: hidden;
 
   .dialog-off-canvas-main-canvas > .layout-container {
     display: flex;
