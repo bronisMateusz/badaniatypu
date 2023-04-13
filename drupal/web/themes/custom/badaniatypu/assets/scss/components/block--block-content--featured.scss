@@ -1,1 +1,78 @@
-.block-featured {}
+@use "../base/variables.scss" as *;
+
+.block-featured {
+  .layout__region {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .field--name {
+    &-field-background {
+      inset: 0;
+      opacity: 0.25;
+      position: absolute;
+      z-index: 0;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    &-field-link {
+      font: 700 22px/1.5rem $raleway;
+      text-align: right;
+
+      a,
+      span {
+        align-items: flex-end;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+        padding: 50px 20px;
+        position: relative;
+        row-gap: 15px;
+        transition: padding-right 1s ease-out, backdrop-filter 0.3s ease-out,
+          -webkit-backdrop-filter 0.3s ease-out;
+
+        &:hover {
+          -webkit-backdrop-filter: brightness(0.75);
+          backdrop-filter: brightness(0.75);
+          padding-right: 50px;
+        }
+
+        &::after {
+          background-color: white;
+          content: "";
+          display: block;
+          height: 2px;
+          width: 5%;
+        }
+      }
+
+      a {
+        text-decoration: none;
+
+        &::after {
+          transition: width 0.3s ease-out, background-color 0.3s ease-out;
+        }
+
+        &:hover {
+          &::after {
+            background-color: #3ab0e0;
+            width: 10%;
+          }
+        }
+      }
+    }
+
+    &-body {
+      background-color: white;
+      min-height: 250px;
+      padding: 50px 30px;
+      line-height: 1.5rem;
+    }
+  }
+}
