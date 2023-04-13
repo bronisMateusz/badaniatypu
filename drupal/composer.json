@@ -92,6 +92,9 @@
             "drupal/address": {
                 "https://www.drupal.org/node/2753899": "https://www.drupal.org/files/issues/2023-03-28/hide_domestic_country_2753899-33.patch"
             },
+            "drupal/color_field": {
+                "https://www.drupal.org/project/color_field/issues/3344907": "https://www.drupal.org/files/issues/2023-03-14/3344907-color-hex-d9-deprecated.patch"
+            },
             "drupal/core": {
                 "https://www.drupal.org/project/drupal/issues/2845878": "https://www.drupal.org/files/issues/2019-07-12/drupal-locale-sort-exported-strings-2845878-6.patch",
                 "https://www.drupal.org/project/drupal/issues/3062376": "https://www.drupal.org/files/issues/2020-07-02/3062376-34.patch"
