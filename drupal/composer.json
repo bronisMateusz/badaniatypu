@@ -99,6 +99,10 @@
             "drupal/core": {
                 "https://www.drupal.org/project/drupal/issues/2845878": "https://www.drupal.org/files/issues/2019-07-12/drupal-locale-sort-exported-strings-2845878-6.patch",
                 "https://www.drupal.org/project/drupal/issues/3062376": "https://www.drupal.org/files/issues/2020-07-02/3062376-34.patch"
+            },
+            "drupal/gin_lb": {
+                "https://www.drupal.org/project/gin_lb/issues/3349745": "https://www.drupal.org/files/issues/2023-03-23/3349745-8-claro-preprocess-file-fields.patch",
+                "https://www.drupal.org/project/gin_lb/issues/3351493": "https://www.drupal.org/files/issues/2023-04-05/gin_lb-3351493-8.patch"
             }
         },
         "drupal-scaffold": {

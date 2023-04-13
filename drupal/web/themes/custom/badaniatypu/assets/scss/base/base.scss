@@ -17,12 +17,12 @@ body {
   line-height: 1.25rem;
   overflow-x: hidden;
 
-  .dialog-off-canvas-main-canvas > .layout-container {
+  .dialog-off-canvas-main-canvas>.layout-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 
-    & > header {
+    &>header {
       .region-header {
         margin: 0 auto;
         max-width: 1400px;
@@ -47,4 +47,8 @@ a {
   &:not(:hover) {
     text-decoration: none;
   }
+}
+
+.ui-dialog {
+  z-index: 501; //Fix dialog display in layout builder
 }
