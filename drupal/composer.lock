@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f3777eb51d34206c7f0edf89d754a9e",
+    "content-hash": "edc0493077b3438220e516358b61e460",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1331,6 +1331,40 @@
             "time": "2022-02-28T11:07:21+00:00"
         },
         {
+            "name": "drupal-ckeditor-libraries-group/font",
+            "version": "4.20.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal-ckeditor-libraries-group/font.git",
+                "reference": "3a5572e78e64e2bfe60410203e6e03bf7f0d9f80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal-ckeditor-libraries-group/font/zipball/3a5572e78e64e2bfe60410203e6e03bf7f0d9f80",
+                "reference": "3a5572e78e64e2bfe60410203e6e03bf7f0d9f80",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later",
+                "LGPL-2.1-or-later",
+                "MPL-1.1"
+            ],
+            "description": "CKEditor 4 font plugin",
+            "homepage": "https://ckeditor.com/cke4/addon/font",
+            "keywords": [
+                "CKEditor",
+                "font",
+                "plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/ckeditor/ckeditor4/issues",
+                "source": "https://github.com/ckeditor/ckeditor4/tree/master/plugins/font"
+            },
+            "time": "2022-01-25T09:28:39+00:00"
+        },
+        {
             "name": "drupal/address",
             "version": "1.11.0",
             "source": {
@@ -1537,6 +1571,71 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ckeditor5_font",
                 "issues": "http://drupal.org/project/issues/ckeditor5_font"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_font",
+            "version": "2.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_font.git",
+                "reference": "2.0.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_font-2.0.0-beta3.zip",
+                "reference": "2.0.0-beta3",
+                "shasum": "84626c0e4cb9a349d1f57d0fb8423b993dc792f2"
+            },
+            "require": {
+                "drupal-ckeditor-libraries-group/font": "^4.13.1",
+                "drupal/core": "^9.4 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta3",
+                    "datestamp": "1679406508",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "cobenash",
+                    "homepage": "https://www.drupal.org/user/2138470"
+                },
+                {
+                    "name": "darol100",
+                    "homepage": "https://www.drupal.org/user/2667123"
+                },
+                {
+                    "name": "dinarcon",
+                    "homepage": "https://www.drupal.org/user/909522"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                },
+                {
+                    "name": "Webbeh",
+                    "homepage": "https://www.drupal.org/user/1160608"
+                }
+            ],
+            "description": "This plugin adds Font Size and Font Family dropdowns that applies as inline element style.",
+            "homepage": "https://www.drupal.org/project/ckeditor_font",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_font",
+                "issues": "http://drupal.org/project/issues/ckeditor_font"
             }
         },
         {
@@ -12844,6 +12943,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/ckeditor5_font": 10,
+        "drupal/ckeditor_font": 10,
         "drupal/config_split": 5,
         "drupal/gin_lb": 5,
         "drupal/whoops": 10
