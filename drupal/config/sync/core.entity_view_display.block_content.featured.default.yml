@@ -11,7 +11,6 @@ dependencies:
   module:
     - color_field
     - layout_builder
-    - layout_discovery
     - link
     - text
 third_party_settings:
@@ -20,20 +19,14 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components: {  }
-        third_party_settings: {  }
-      -
         layout_id: layout_twocol_section
         layout_settings:
           label: ''
           context_mapping: {  }
           column_widths: 50-50
         components:
-          63017607-9f9e-472a-ae3c-2d3d6cf4a7e7:
-            uuid: 63017607-9f9e-472a-ae3c-2d3d6cf4a7e7
+          fb46bd69-bc35-473b-8783-4635ad267090:
+            uuid: fb46bd69-bc35-473b-8783-4635ad267090
             region: first
             configuration:
               id: 'field_block:block_content:featured:field_color'
@@ -41,16 +34,57 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
               formatter:
-                type: color_field_formatter_text
+                type: color_field_formatter_css
                 label: hidden
                 settings:
-                  format: hex
+                  selector: '.block-featured .layout__region--first'
+                  property: background-color
+                  important: '1'
                   opacity: true
+                  advanced: false
+                  css: ''
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          23940a61-8905-4dce-b169-bd86310b93bf:
-            uuid: 23940a61-8905-4dce-b169-bd86310b93bf
+          7e2f9c3d-c993-48b9-b5f0-ebd74fcb6e69:
+            uuid: 7e2f9c3d-c993-48b9-b5f0-ebd74fcb6e69
+            region: second
+            configuration:
+              id: 'field_block:block_content:featured:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9159d6cb-66eb-4a77-ae49-ceee01eba5c3:
+            uuid: 9159d6cb-66eb-4a77-ae49-ceee01eba5c3
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_background'
+              label: Tło
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          d3504221-b74e-4c9e-9409-c9e4efc26b71:
+            uuid: d3504221-b74e-4c9e-9409-c9e4efc26b71
             region: first
             configuration:
               id: 'field_block:block_content:featured:field_link'
@@ -67,38 +101,7 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          cc325da2-579b-4758-a1c3-1463a14eac8f:
-            uuid: cc325da2-579b-4758-a1c3-1463a14eac8f
-            region: first
-            configuration:
-              id: 'field_block:block_content:featured:field_background'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: hidden
-                settings:
-                  link: true
-                third_party_settings: {  }
             weight: 2
-            additional: {  }
-          c3a42d8e-1e1f-4539-a9dd-906a37d2d00d:
-            uuid: c3a42d8e-1e1f-4539-a9dd-906a37d2d00d
-            region: second
-            configuration:
-              id: 'field_block:block_content:featured:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 0
             additional: {  }
         third_party_settings: {  }
 id: block_content.featured.default
@@ -122,11 +125,15 @@ content:
     weight: 3
     region: content
   field_color:
-    type: color_field_formatter_text
+    type: color_field_formatter_css
     label: hidden
     settings:
-      format: hex
+      selector: '.block-featured .layout__region--first'
+      property: background-color
+      important: '1'
       opacity: true
+      advanced: false
+      css: ''
     third_party_settings: {  }
     weight: 0
     region: content
