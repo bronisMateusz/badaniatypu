@@ -27,7 +27,7 @@
       a,
       span {
         align-items: flex-end;
-        color: white;
+        color: #fff;
         display: flex;
         flex-direction: column;
         min-height: 250px;
@@ -44,11 +44,11 @@
         }
 
         &::after {
-          background-color: white;
+          background-color: #fff;
           content: "";
           display: block;
           height: 2px;
-          width: 5%;
+          width: 30px;
         }
       }
 
@@ -61,15 +61,15 @@
 
         &:hover {
           &::after {
-            background-color: #3ab0e0;
-            width: 10%;
+            background-color: $border-hover-color;
+            width: 60px;
           }
         }
       }
     }
 
     &-body {
-      background-color: white;
+      background-color: #fff;
       min-height: 250px;
       padding: 50px 30px;
       line-height: 1.5rem;

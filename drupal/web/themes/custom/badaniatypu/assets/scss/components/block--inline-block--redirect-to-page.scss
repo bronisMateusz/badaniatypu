@@ -40,7 +40,7 @@
     }
 
     &-image {
-      background-color: white;
+      background-color: #fff;
       bottom: 0;
       display: flex;
       flex-wrap: wrap;
@@ -60,7 +60,7 @@
     }
 
     &-link a {
-      color: white;
+      color: #fff;
       display: grid;
       inset: 0;
       grid-template-columns: repeat(2, 1fr);
@@ -79,7 +79,7 @@
         transition: background-color 0.5s;
 
         p {
-          border-bottom: 1px solid white;
+          border-bottom: 1px solid #fff;
           font-size: 0.875rem;
           padding-bottom: 8px;
           position: relative;
@@ -87,7 +87,7 @@
           transition: transform 1s ease-out;
 
           &::after {
-            background-color: white;
+            background-color: #fff;
             bottom: -1px;
             content: "";
             display: block;
@@ -104,7 +104,7 @@
           transform: translateY(-10px);
 
           &::after {
-            background-color: #3ab0e0;
+            background-color: $border-hover-color;
             width: 100%;
           }
         }
