@@ -24,9 +24,8 @@ node__article: 0
 node__article__view_modes:
   rss: 0
   teaser: 0
-node__front_page: 1
-node__front_page__view_modes:
-  company: company
+node__front_page: 0
+node__front_page__view_modes: 0
 node__page: 0
 node__page__view_modes:
   teaser: 0
@@ -36,3 +35,8 @@ user__user__view_modes:
 node__welcome_page: 0
 node__welcome_page__view_modes:
   teaser: 0
+block_content__featured: 1
+block_content__featured__view_modes:
+  photo_from_left: 0
+  photo_from_top: 0
+  with_decorations: 0

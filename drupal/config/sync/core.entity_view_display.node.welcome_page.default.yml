@@ -5,12 +5,8 @@ dependencies:
   config:
     - block_content.type.redirect_to_page
     - node.type.welcome_page
-  content:
-    - 'block_content:footer:4fdaf692-5b8b-4a45-8ee1-9a4dd82d6abb'
   module:
-    - block_content
     - layout_builder
-    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
@@ -50,27 +46,6 @@ third_party_settings:
               context_mapping: {  }
               block_revision_id: 5
               block_serialized: null
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-          context_mapping: {  }
-        components:
-          50e3e821-5ba3-465d-b06a-df2276c07643:
-            uuid: 50e3e821-5ba3-465d-b06a-df2276c07643
-            region: content
-            configuration:
-              id: 'block_content:4fdaf692-5b8b-4a45-8ee1-9a4dd82d6abb'
-              label: 'Stopka strona powitalna'
-              label_display: '0'
-              provider: block_content
-              status: true
-              info: ''
-              view_mode: without_logo
-              context_mapping: {  }
             weight: 0
             additional: {  }
         third_party_settings: {  }

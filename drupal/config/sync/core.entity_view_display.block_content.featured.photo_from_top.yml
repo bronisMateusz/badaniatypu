@@ -1,0 +1,159 @@
+uuid: 2c2d234e-025f-47ff-9b0c-498ad3cf01e5
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.featured
+    - core.entity_view_mode.block_content.photo_from_top
+    - field.field.block_content.featured.body
+    - field.field.block_content.featured.field_background
+    - field.field.block_content.featured.field_color
+    - field.field.block_content.featured.field_link
+    - field.field.block_content.featured.view_mode_selection
+  module:
+    - color_field
+    - layout_builder
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          8ec2a402-172d-4305-9f87-d6551621d595:
+            uuid: 8ec2a402-172d-4305-9f87-d6551621d595
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_color'
+              label: Kolor
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: color_field_formatter_css
+                label: hidden
+                settings:
+                  selector: .block-featured.photo_from_top
+                  property: background-color
+                  important: '0'
+                  opacity: true
+                  advanced: false
+                  css: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          67ab03ba-12cf-430e-85c2-8177b7ff747b:
+            uuid: 67ab03ba-12cf-430e-85c2-8177b7ff747b
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_background'
+              label: Tło
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          612339ab-5347-45f9-b072-fc41a5125790:
+            uuid: 612339ab-5347-45f9-b072-fc41a5125790
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          3243feef-1174-4764-8516-47cc850e8056:
+            uuid: 3243feef-1174-4764-8516-47cc850e8056
+            region: second
+            configuration:
+              id: 'field_block:block_content:featured:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.featured.photo_from_top
+targetEntityType: block_content
+bundle: featured
+mode: photo_from_top
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_background:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_color:
+    type: color_field_formatter_css
+    label: hidden
+    settings:
+      selector: '.block-featured .layout__region--first'
+      property: background-color
+      important: '1'
+      opacity: true
+      advanced: false
+      css: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  view_mode_selection: true

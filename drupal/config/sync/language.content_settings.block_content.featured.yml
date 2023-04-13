@@ -1,0 +1,11 @@
+uuid: cd3ec2b2-8117-4215-b7dc-55012f13cb87
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.featured
+id: block_content.featured
+target_entity_type_id: block_content
+target_bundle: featured
+default_langcode: site_default
+language_alterable: false

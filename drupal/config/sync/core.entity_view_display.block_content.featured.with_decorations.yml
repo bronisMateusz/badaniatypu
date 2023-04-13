@@ -1,0 +1,153 @@
+uuid: 1acdf8e0-f939-44c9-80cf-c04575ab45e8
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.featured
+    - core.entity_view_mode.block_content.with_decorations
+    - field.field.block_content.featured.body
+    - field.field.block_content.featured.field_background
+    - field.field.block_content.featured.field_color
+    - field.field.block_content.featured.field_link
+    - field.field.block_content.featured.view_mode_selection
+  module:
+    - color_field
+    - layout_builder
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          11adea0c-d6de-47b4-ab67-972461ca6d81:
+            uuid: 11adea0c-d6de-47b4-ab67-972461ca6d81
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_color'
+              label: Kolor
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: color_field_formatter_css
+                label: hidden
+                settings:
+                  selector: '.block-featured.with_decorations, .block-featured.with_decorations::after'
+                  property: background-color
+                  important: '0'
+                  opacity: true
+                  advanced: false
+                  css: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          5b2e081f-5670-410e-8d5f-f7cb9c9ac483:
+            uuid: 5b2e081f-5670-410e-8d5f-f7cb9c9ac483
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_background'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          650062eb-8246-46c2-81ea-17d8f3736428:
+            uuid: 650062eb-8246-46c2-81ea-17d8f3736428
+            region: first
+            configuration:
+              id: 'field_block:block_content:featured:field_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          74c36351-a2cd-48bf-9fdd-7ec4ef463916:
+            uuid: 74c36351-a2cd-48bf-9fdd-7ec4ef463916
+            region: second
+            configuration:
+              id: 'field_block:block_content:featured:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.featured.with_decorations
+targetEntityType: block_content
+bundle: featured
+mode: with_decorations
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_background:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_color:
+    type: color_field_formatter_css
+    label: hidden
+    settings:
+      selector: '.block-featured .layout__region--first'
+      property: background-color
+      important: '1'
+      opacity: true
+      advanced: false
+      css: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  view_mode_selection: true

@@ -1,0 +1,29 @@
+uuid: 5e78acb0-accb-4da3-b238-c22204966a25
+langcode: pl
+status: true
+dependencies:
+  config:
+    - system.menu.company-menu
+  module:
+    - system
+  theme:
+    - badaniatypu
+id: company_menu
+theme: badaniatypu
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:company-menu'
+settings:
+  id: 'system_menu_block:company-menu'
+  label: 'Menu spółki'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bogaccy\r\n/bogaccy/*"

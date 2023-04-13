@@ -1,17 +1,18 @@
-uuid: 36622918-8e19-48c7-ae69-aeef0abb88d0
+uuid: 73550af5-2bce-4e04-9fcd-a4f48c2b5abe
 langcode: pl
 status: true
 dependencies:
   module:
+    - media
     - node
-id: node.view_mode_selection
-field_name: view_mode_selection
+id: node.field_background
+field_name: field_background
 entity_type: node
 type: entity_reference
 settings:
-  target_type: entity_view_mode
+  target_type: media
 module: core
-locked: true
+locked: false
 cardinality: 1
 translatable: true
 indexes: {  }

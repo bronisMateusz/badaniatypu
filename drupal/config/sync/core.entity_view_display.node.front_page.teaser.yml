@@ -4,7 +4,9 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.front_page.view_mode_selection
+    - field.field.node.front_page.field_background
+    - field.field.node.front_page.field_image
+    - field.field.node.front_page.layout_builder__layout
     - node.type.front_page
   module:
     - user
@@ -19,5 +21,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_background: true
+  field_image: true
   langcode: true
-  view_mode_selection: true
+  layout_builder__layout: true

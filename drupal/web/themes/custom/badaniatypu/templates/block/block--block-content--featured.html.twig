@@ -30,11 +30,11 @@
   set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
+    'block-' ~ derivative_plugin_id|clean_class,
     content['#view_mode']
   ]
 %}
-{{ attach_library('badaniatypu/block--block-content--footer--without-logo') }}
+{{ attach_library('badaniatypu/block--block-content--featured') }}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}

@@ -1,0 +1,29 @@
+uuid: 00b772e7-043a-411f-af35-50d1e961ac95
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background
+    - media.type.image
+    - node.type.front_page
+id: node.front_page.field_background
+field_name: field_background
+entity_type: node
+bundle: front_page
+label: Tło
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

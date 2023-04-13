@@ -12,13 +12,43 @@ html {
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: $canvas-color;
   color: $black;
   line-height: 1.25rem;
+  overflow-x: hidden;
+
+  .dialog-off-canvas-main-canvas>.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &>header {
+      .region-header {
+        margin: 0 auto;
+        max-width: 1400px;
+        padding: 15px;
+        position: relative;
+
+        @media (min-width: $lg) {
+          align-items: center;
+          column-gap: 30px;
+          display: flex;
+        }
+      }
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  }
 }
 
 a {
   &:not(:hover) {
     text-decoration: none;
   }
+}
+
+.ui-dialog {
+  z-index: 501; //Fix dialog display in layout builder
 }

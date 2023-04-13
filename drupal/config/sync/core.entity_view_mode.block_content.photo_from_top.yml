@@ -1,0 +1,10 @@
+uuid: 3caa0469-6670-4c3b-ba12-ee8eab494cca
+langcode: pl
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.photo_from_top
+label: 'Zdjęcie z góry'
+targetEntityType: block_content
+cache: true

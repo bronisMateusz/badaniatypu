@@ -1,0 +1,25 @@
+uuid: 603fbde7-929f-404c-b66f-1b30ad1269a6
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.featured
+    - field.storage.block_content.field_color
+  module:
+    - color_field
+id: block_content.featured.field_color
+field_name: field_color
+entity_type: block_content
+bundle: featured
+label: Kolor
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#004987'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

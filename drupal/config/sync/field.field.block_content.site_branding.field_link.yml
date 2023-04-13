@@ -1,0 +1,23 @@
+uuid: c25fe36b-853d-434c-8fe1-d700eb036af0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.site_branding
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.site_branding.field_link
+field_name: field_link
+entity_type: block_content
+bundle: site_branding
+label: 'Odnośnik do pierwszej strony'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

@@ -6,11 +6,23 @@ global-styling:
     theme:
       assets/scss/style.scss: {}
 
-block--block-content--footer--without-logo:
+block--block-content--featured:
   vite: true
   css:
     theme:
-      assets/scss/components/block--block-content--footer--without-logo.scss: {}
+      assets/scss/components/block--block-content--featured.scss: {}
+
+block--block-content--footer:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--block-content--footer.scss: {}
+
+block--block-content--site-branding:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--block-content--site-branding.scss: {}
 
 block--inline-block--redirect-to-page:
   vite: true
@@ -18,11 +30,25 @@ block--inline-block--redirect-to-page:
     theme:
       assets/scss/components/block--inline-block--redirect-to-page.scss: {}
 
+block--system-menu-block:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--system-menu-block.scss: {}
+  js:
+    assets/js/block--system-menu-block.js: {}
+
 layout_builder_twocol_section:
   vite: true
   css:
     layout:
       assets/scss/layout/layout-builder-twocol-section.scss: {}
+
+node--front-page:
+  vite: true
+  css:
+    theme:
+      assets/scss/content/node--front-page.scss: {}
 
 node--welcome-page:
   vite: true

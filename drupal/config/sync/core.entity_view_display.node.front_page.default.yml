@@ -3,18 +3,18 @@ langcode: pl
 status: true
 dependencies:
   config:
-    - field.field.node.front_page.view_mode_selection
+    - field.field.node.front_page.field_background
+    - field.field.node.front_page.field_image
+    - field.field.node.front_page.layout_builder__layout
     - node.type.front_page
-    - system.menu.lab-menu
   module:
     - layout_builder
     - layout_discovery
-    - system
     - user
 third_party_settings:
   layout_builder:
     enabled: true
-    allow_custom: false
+    allow_custom: true
     sections:
       -
         layout_id: layout_onecol
@@ -22,19 +22,44 @@ third_party_settings:
           label: ''
           context_mapping: {  }
         components:
-          589ef9d9-a4b4-4df4-a95e-7366509d5eca:
-            uuid: 589ef9d9-a4b4-4df4-a95e-7366509d5eca
+          e4c96bf7-0024-414c-951d-793a5e2c35f3:
+            uuid: e4c96bf7-0024-414c-951d-793a5e2c35f3
             region: content
             configuration:
-              id: 'system_menu_block:lab-menu'
-              label: 'Menu laboratorium'
+              id: 'field_block:node:front_page:field_background'
+              label: Tło
               label_display: '0'
-              provider: system
-              context_mapping: {  }
-              level: 1
-              depth: 0
-              expand_all_items: false
-            weight: 0
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          5ef0d208-f834-4a19-9f4a-586f98ec80d2:
+            uuid: 5ef0d208-f834-4a19-9f4a-586f98ec80d2
+            region: content
+            configuration:
+              id: 'field_block:node:front_page:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 id: node.front_page.default
@@ -49,12 +74,23 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
+  field_background: true
+  field_color: true
   langcode: true
   layout_builder__layout: true
   view_mode_selection: true

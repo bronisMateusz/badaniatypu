@@ -1,0 +1,29 @@
+uuid: 7475ba1e-7c12-40d4-af29-65a42c544292
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.site_branding
+    - field.storage.block_content.field_image
+    - media.type.image
+id: block_content.site_branding.field_image
+field_name: field_image
+entity_type: block_content
+bundle: site_branding
+label: 'Logo pierwszej strony'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -13,6 +13,7 @@ module:
   breakpoint: 0
   ckeditor5: 0
   ckeditor5_font: 0
+  ckeditor_font: 0
   color_field: 0
   comment: 0
   config: 0
@@ -64,6 +65,7 @@ module:
   user: 0
   views_ui: 0
   vite: 0
+  whoops: 0
   pathauto: 1
   views: 10
   standard: 1000

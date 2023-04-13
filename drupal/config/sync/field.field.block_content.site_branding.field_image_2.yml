@@ -1,0 +1,29 @@
+uuid: 69e5a3b3-c8fb-4b31-aff9-5976745a895c
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.site_branding
+    - field.storage.block_content.field_image_2
+    - media.type.image
+id: block_content.site_branding.field_image_2
+field_name: field_image_2
+entity_type: block_content
+bundle: site_branding
+label: 'Logo drugiej strony'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,97 @@
+@use "../base/variables.scss" as *;
+
+.block-menu {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  @media (min-width: $lg) {
+    position: initial;
+    transform: none;
+  }
+
+  .menu {
+    left: 135%;
+    list-style: none;
+    margin-left: -100vw;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: calc(100% + 15px);
+    width: 100vw;
+
+    &:not(.active) {
+      display: none;
+    }
+
+    @media (min-width: $lg) {
+      display: flex !important;
+      flex-wrap: wrap;
+      margin: 0;
+      position: initial;
+      width: initial;
+    }
+
+    &-item {
+      border-top: 1px solid $border-color;
+
+      &:last-child {
+        border-bottom: 1px solid $border-color;
+      }
+
+      @media (min-width: $lg) {
+        border: none !important;
+      }
+
+      a {
+        background-color: #fff;
+        color: $black;
+        display: block;
+        font: 600 0.875rem $raleway;
+        padding: 10px 15px;
+
+        @media (min-width: $lg) {
+          background-color: unset;
+        }
+      }
+
+      &--active-trail {
+        background-color: rgba($color: $first-brand-color, $alpha: 10%);
+
+        @media (min-width: $lg) {
+          background-color: unset;
+        }
+
+        a {
+          color: $first-brand-color;
+        }
+      }
+    }
+
+    &__toggle {
+      background-color: $first-brand-color;
+      border: unset;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      flex-wrap: wrap;
+      height: 34px;
+      padding: unset;
+      place-content: center;
+      row-gap: 4px;
+      width: 44px;
+
+      &-bar {
+        background-color: $canvas-color;
+        height: 2px;
+        width: 52.5%;
+      }
+
+      @media (min-width: $lg) {
+        display: none;
+      }
+    }
+  }
+}
