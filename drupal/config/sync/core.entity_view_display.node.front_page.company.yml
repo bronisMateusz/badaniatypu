@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.company
+    - field.field.node.front_page.field_background
+    - field.field.node.front_page.layout_builder__layout
     - field.field.node.front_page.view_mode_selection
     - node.type.front_page
   module:
@@ -26,6 +28,7 @@ bundle: front_page
 mode: company
 content: {  }
 hidden:
+  field_background: true
   langcode: true
   layout_builder__layout: true
   links: true

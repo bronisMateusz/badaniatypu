@@ -1,0 +1,8 @@
+uuid: aab6dad6-a8ca-4d6b-8122-4d3613c1dc63
+langcode: pl
+status: true
+dependencies: {  }
+id: featured
+label: Polecane
+revision: 0
+description: 'Dodaje blok z polecaną treścią'
