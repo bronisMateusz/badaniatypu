@@ -10,9 +10,16 @@
     "no-descending-specificity": null,
     "property-no-vendor-prefix": null,
     "declaration-property-unit-allowed-list": {
-      "font": ["rem"],
-      "font-size": ["rem"],
-      "line-height": ["rem"]
+      "font": [
+        "rem",
+        "em"
+      ],
+      "font-size": [
+        "rem","em"
+      ],
+      "line-height": [
+        "rem","em"
+      ]
     }
   }
 }
