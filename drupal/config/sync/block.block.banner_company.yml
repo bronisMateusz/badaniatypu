@@ -1,0 +1,30 @@
+uuid: 1cd1b690-0cb0-42bd-a722-0657156c9974
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:17f4e3a5-44ed-4222-b0a5-56bd09cada74'
+  module:
+    - block_content
+    - system
+  theme:
+    - badaniatypu
+id: banner_company
+theme: badaniatypu
+region: highlighted
+weight: -6
+provider: null
+plugin: 'block_content:17f4e3a5-44ed-4222-b0a5-56bd09cada74'
+settings:
+  id: 'block_content:17f4e3a5-44ed-4222-b0a5-56bd09cada74'
+  label: 'Baner spółka'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/bogaccy/*\r\n/bogaccy/*/*"

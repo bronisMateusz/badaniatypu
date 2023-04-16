@@ -1,7 +1,15 @@
 uuid: b0029cd8-1609-4299-8008-3bc71fef7a6d
 langcode: pl
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - lab-menu
+      - company-menu
+    parent: 'lab-menu:'
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: 'Prosta strona'

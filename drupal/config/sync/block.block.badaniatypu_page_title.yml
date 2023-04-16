@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - node
-    - system
   theme:
     - badaniatypu
 _core:
@@ -21,15 +20,10 @@ settings:
   label_display: '0'
   provider: core
 visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: ''
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      article: article
       page: page

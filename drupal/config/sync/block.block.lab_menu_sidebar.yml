@@ -1,4 +1,4 @@
-uuid: 39d8ea35-e274-4350-b5db-be901568d08f
+uuid: 0fae3dbd-0dd8-4922-abd0-82e25f548c03
 langcode: pl
 status: true
 dependencies:
@@ -8,10 +8,10 @@ dependencies:
     - system
   theme:
     - badaniatypu
-id: lab_menu
+id: lab_menu_sidebar
 theme: badaniatypu
-region: header
-weight: -7
+region: sidebar_second
+weight: 0
 provider: null
 plugin: 'system_menu_block:lab-menu'
 settings:
@@ -20,10 +20,10 @@ settings:
   label_display: '0'
   provider: system
   level: 2
-  depth: 1
+  depth: 2
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/wojciech-bogacki\r\n/wojciech-bogacki/*"
+    pages: "/wojciech-bogacki/*\r\n/wojciech-bogacki/*/*"

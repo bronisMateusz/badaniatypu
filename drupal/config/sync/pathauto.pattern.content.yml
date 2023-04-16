@@ -1,0 +1,14 @@
+uuid: 1a6d3193-d4e5-4d15-b5dc-5b61375f7ed7
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Zawartość
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parent:url]/[node:menu-link:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

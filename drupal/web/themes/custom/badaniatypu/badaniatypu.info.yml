@@ -8,6 +8,7 @@ generator: "starterkit_theme:10.0.7"
 regions:
   header: "Header"
   help: "Help"
+  highlighted: "Highlighted"
   content: "Content"
   sidebar_second: "Sidebar second"
   footer: "Footer"

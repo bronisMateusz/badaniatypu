@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - media
 _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
 name: 'Pełny HTML'
@@ -43,3 +44,18 @@ filters:
       allowed_html: '<p class="vertical-centered">'
       filter_html_help: true
       filter_html_nofollow: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

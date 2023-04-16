@@ -1,0 +1,30 @@
+uuid: 9ad18f18-26d5-4b97-b71a-a603720ca6a9
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:2e061af3-8996-4928-81e8-6cd49e98b1de'
+  module:
+    - block_content
+    - system
+  theme:
+    - badaniatypu
+id: banner_lab
+theme: badaniatypu
+region: highlighted
+weight: -7
+provider: null
+plugin: 'block_content:2e061af3-8996-4928-81e8-6cd49e98b1de'
+settings:
+  id: 'block_content:2e061af3-8996-4928-81e8-6cd49e98b1de'
+  label: 'Baner laboratorium'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/wojciech-bogacki/*\r\n/wojciech-bogacki/*/*"
