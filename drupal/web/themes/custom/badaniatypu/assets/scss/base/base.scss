@@ -116,7 +116,8 @@ main {
 
     .layout-content,
     .layout-sidebar-second {
-      width: fill-available;
+      /* stylelint-disable-next-line */
+      width: -webkit-fill-available;
     }
 
     .layout-sidebar-second {
