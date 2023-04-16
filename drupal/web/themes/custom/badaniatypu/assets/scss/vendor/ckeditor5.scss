@@ -59,6 +59,10 @@
   .media {
     margin: 0.9em auto;
 
+    &:not(.align-center, .align-left, .align-right) {
+      max-width: 300px;
+    }
+
     &.align-left,
     &.align-right {
       max-width: 300px;
@@ -66,12 +70,12 @@
       @media (min-width: $md) {
         max-width: 225px;
       }
+    }
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
