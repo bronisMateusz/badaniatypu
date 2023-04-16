@@ -11,6 +11,18 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "feimosi/baguettebox.js",
+                "version": "master",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/feimosi/baguetteBox.js/releases/download/v1.11.1/baguetteBox.js.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -18,7 +30,9 @@
         "cweagans/composer-patches": "^1.7.3",
         "drupal/address": "^1.11",
         "drupal/admin_toolbar": "^3.3.0",
+        "drupal/baguettebox": "^2.0",
         "drupal/ckeditor5_font": "^1.1@beta",
+        "drupal/ckeditor_accordion": "^2.0",
         "drupal/ckeditor_font": "^2.0@beta",
         "drupal/color_field": "^3.0",
         "drupal/config_split": "^2.0@RC",
@@ -31,9 +45,12 @@
         "drupal/gin_toolbar": "^1.0",
         "drupal/layout_options": "^1.2",
         "drupal/pathauto": "^1.11",
+        "drupal/redirect": "^1.8",
         "drupal/svg_image": "^3.0.1",
+        "drupal/twig_tweak": "^3.2",
         "drupal/vite": "^1.0",
-        "drush/drush": "^11.5.1"
+        "drush/drush": "^11.5.1",
+        "feimosi/baguettebox.js": "master"
     },
     "require-dev": {
         "acquia/coding-standards": "^1.1.0",
@@ -93,8 +110,14 @@
             "drupal/address": {
                 "https://www.drupal.org/node/2753899": "https://www.drupal.org/files/issues/2023-03-28/hide_domestic_country_2753899-33.patch"
             },
+            "drupal/ckeditor_accordion": {
+                "Admin styles fix": "patches/admin_styles.patch"
+            },
             "drupal/color_field": {
                 "https://www.drupal.org/project/color_field/issues/3344907": "https://www.drupal.org/files/issues/2023-04-13/color_field-opacity_wrong_type-3344907-9.patch"
+            },
+            "drupal/colorbox": {
+                "https://www.drupal.org/project/colorbox/issues/2957030": "https://www.drupal.org/files/issues/2023-03-31/2957030-42-colorbox-entity_reference_formatter.patch"
             },
             "drupal/core": {
                 "https://www.drupal.org/project/drupal/issues/2845878": "https://www.drupal.org/files/issues/2019-07-12/drupal-locale-sort-exported-strings-2845878-6.patch",
