@@ -24,7 +24,7 @@
     .layout__region--first {
       grid-template-columns: auto auto 1fr;
 
-      &>div:last-child {
+      & > div:last-child {
         grid-column: 3;
       }
     }
@@ -44,7 +44,7 @@
       .layout__region--first {
         grid-template-columns: auto 1fr;
 
-        &>div:nth-child(3) {
+        & > div:nth-child(3) {
           grid-column: 2;
         }
       }
