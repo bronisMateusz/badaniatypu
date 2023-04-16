@@ -5,3 +5,7 @@
 
 // Layout
 @use "./layout/layout-builder-twocol-section.scss";
+
+// Vendor
+@use "./vendor/ckeditor5.scss";
+@use "./vendor/gin_lb.scss";
