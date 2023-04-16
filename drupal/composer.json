@@ -49,6 +49,7 @@
         "drupal/svg_image": "^3.0.1",
         "drupal/twig_tweak": "^3.2",
         "drupal/vite": "^1.0",
+        "drupal/webform": "^6.2@beta",
         "drush/drush": "^11.5.1",
         "feimosi/baguettebox.js": "master"
     },
