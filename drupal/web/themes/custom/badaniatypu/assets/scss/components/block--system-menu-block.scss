@@ -50,10 +50,32 @@
         color: $black;
         display: block;
         font: 600 0.875rem $raleway;
-        padding: 10px 15px;
+        padding: 10px 15px 0;
+        text-decoration: none;
+        transition: color 0.3s ease-out;
+
+        &.is-active,
+        &:hover {
+          color: $first-brand-color;
+        }
 
         @media (min-width: $lg) {
           background-color: unset;
+
+          &::after {
+            background-color: $first-brand-color;
+            content: "";
+            display: block;
+            height: 1px;
+            margin-top: 10px;
+            transition: width 0.3s ease-out;
+            width: 0;
+          }
+
+          &:hover::after,
+          &.is-active::after {
+            width: 100%;
+          }
         }
       }
 
@@ -62,6 +84,10 @@
 
         @media (min-width: $lg) {
           background-color: unset;
+
+          a::after {
+            width: 100%;
+          }
         }
 
         a {
