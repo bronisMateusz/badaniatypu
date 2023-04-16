@@ -1,0 +1,14 @@
+uuid: 0f95d039-bdc6-4a17-9543-9ae5e0d5f256
+langcode: pl
+status: true
+dependencies: {  }
+id: gallery
+label: Galeria
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image_1
+field_map:
+  name: name

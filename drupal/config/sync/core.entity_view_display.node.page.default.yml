@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_gallery
+    - field.field.node.page.field_test
     - node.type.page
   module:
     - text
@@ -20,12 +22,18 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-  links:
-    settings: {  }
+  field_test:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
 hidden:
+  field_gallery: true
   langcode: true
+  links: true

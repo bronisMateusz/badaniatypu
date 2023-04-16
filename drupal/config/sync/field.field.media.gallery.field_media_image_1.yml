@@ -1,0 +1,38 @@
+uuid: 5ab2d8c7-8b15-4699-8594-4f3bbce8fbed
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image_1
+    - media.type.gallery
+  module:
+    - image
+id: media.gallery.field_media_image_1
+field_name: field_media_image_1
+entity_type: media
+bundle: gallery
+label: Obraz
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

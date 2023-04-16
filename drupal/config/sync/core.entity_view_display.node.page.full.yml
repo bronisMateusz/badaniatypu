@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.page.body
+    - field.field.node.page.field_gallery
+    - field.field.node.page.field_test
     - node.type.page
   module:
     - layout_builder
@@ -34,4 +36,6 @@ content:
     weight: 101
     region: content
 hidden:
+  field_gallery: true
+  field_test: true
   langcode: true

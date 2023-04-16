@@ -33,7 +33,6 @@ settings:
       - '|'
       - link
       - blockQuote
-      - drupalInsertImage
       - drupalMedia
       - insertTable
       - Accordion
@@ -65,8 +64,6 @@ settings:
         - center
         - right
         - justify
-    ckeditor5_imageResize:
-      allow_resize: true
     media_media:
       allow_view_mode_override: false
     ckeditor5_font_colors:

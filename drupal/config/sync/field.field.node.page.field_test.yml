@@ -1,0 +1,29 @@
+uuid: 55f4adfe-b535-43c4-9031-908f93e488f3
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - media.type.gallery
+    - node.type.page
+id: node.page.field_test
+field_name: field_test
+entity_type: node
+bundle: page
+label: Test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

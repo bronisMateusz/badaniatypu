@@ -6,6 +6,12 @@ global-styling:
     theme:
       assets/scss/style.scss: {}
 
+block--block-content--banner:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--block-content--banner.scss: {}
+
 block--block-content--featured:
   vite: true
   css:
@@ -30,6 +36,20 @@ block--inline-block--redirect-to-page:
     theme:
       assets/scss/components/block--inline-block--redirect-to-page.scss: {}
 
+block--company-menu-sidebar:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--menu-sidebar.scss: {}
+      assets/scss/components/block--company-menu-sidebar.scss: {}
+
+block--lab-menu-sidebar:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--menu-sidebar.scss: {}
+      assets/scss/components/block--lab-menu-sidebar.scss: {}
+
 block--system-menu-block:
   vite: true
   css:
@@ -49,6 +69,12 @@ node--front-page:
   css:
     theme:
       assets/scss/content/node--front-page.scss: {}
+
+node--page:
+  vite: true
+  css:
+    theme:
+      assets/scss/content/node--page.scss: {}
 
 node--welcome-page:
   vite: true

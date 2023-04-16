@@ -3,8 +3,8 @@ langcode: pl
 status: true
 dependencies:
   module:
-    - editor
-    - media
+    1: editor
+    2: media
 _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
 name: 'Pełny HTML'
