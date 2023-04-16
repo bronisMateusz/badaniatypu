@@ -4,6 +4,7 @@
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
 
   @media (min-width: $md) {
     grid-template-columns: repeat(3, 1fr);
@@ -11,5 +12,14 @@
 
   article {
     height: 100%;
+
+    a {
+      display: block;
+    }
+
+    p {
+      margin-top: 20px;
+      text-align: center;
+    }
   }
 }
