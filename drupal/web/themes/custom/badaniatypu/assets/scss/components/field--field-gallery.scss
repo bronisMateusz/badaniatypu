@@ -1,0 +1,15 @@
+@use "../base/variables.scss" as *;
+
+.field--name-field-gallery {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  article {
+    height: 100%;
+  }
+}

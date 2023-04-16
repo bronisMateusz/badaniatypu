@@ -1,0 +1,13 @@
+.field--name-field-media-gallery {
+  height: 100%;
+
+  .field__item {
+    height: 100%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
