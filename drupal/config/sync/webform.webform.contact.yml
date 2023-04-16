@@ -21,38 +21,55 @@ elements: |-
   name:
     '#type': textfield
     '#title': 'Imię i nazwisko'
+    '#title_display': invisible
+    '#placeholder': 'Imię i nazwisko *'
     '#required': true
     '#default_value': '[current-user:display-name]'
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
-  nazwa_firmy:
+  company_name:
     '#type': textfield
     '#title': 'Nazwa firmy'
+    '#title_display': invisible
+    '#placeholder': 'Nazwa firmy'
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
-  subject:
-    '#type': textfield
-    '#title': 'Temat wiadomości'
-    '#required': true
-    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
-    '#test': 'Testing contact webform from [site:name]'
-  numer_telefonu:
+  phone_number:
     '#type': tel
     '#title': 'Numer telefonu'
+    '#title_display': invisible
+    '#placeholder': 'Numer telefonu'
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
   email:
     '#type': email
     '#title': Email
+    '#title_display': invisible
+    '#placeholder': 'Email *'
     '#required': true
     '#default_value': '[current-user:mail]'
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
+  subject:
+    '#type': textfield
+    '#title': 'Temat wiadomości'
+    '#title_display': invisible
+    '#placeholder': 'Temat wiadomości *'
+    '#required': true
+    '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
+    '#test': 'Testing contact webform from [site:name]'
   message:
     '#type': textarea
     '#title': 'Treść wiadomości'
+    '#title_display': invisible
+    '#rows': 10
+    '#placeholder': 'Treść wiadomości *'
     '#required': true
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
     '#test': 'Please ignore this email.'
-  wyrazam_zgode_na_przetwarzanie_moich_danych_kontaktowych_w_celu_:
+  agreement:
     '#type': checkbox
-    '#title': agreements
+    '#title': Zgoda
+    '#description': '<p>Wyrażam zgodę na przetwarzanie moich danych kontaktowych w celu kontaktu ze mną. *</p>'
+    '#title_display': none
+    '#help_display': title_before
+    '#required': true
   processed_text:
     '#type': processed_text
     '#text': '<p>* Pola oznaczone gwiazdką są wymagane</p>'

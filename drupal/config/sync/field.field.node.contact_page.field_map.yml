@@ -20,7 +20,7 @@ default_value:
     preview: ''
     actions: {  }
     lat: '51.664940'
-    name: 'Laboratorium Drogowe Wojciech Bogacki'
+    name: ''
     lon: '19.482540'
     zoom: '9'
     type: roadmap
