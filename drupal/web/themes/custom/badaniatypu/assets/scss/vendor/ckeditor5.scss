@@ -3,31 +3,31 @@
 .ckeditor-accordion-container {
   margin: 30px 0;
 
-  >dl {
+  > dl {
     border: unset;
 
-    dt>a,
-    dt>a:not(.button) {
+    dt > a,
+    dt > a:not(.button) {
       font-family: $raleway;
       font-weight: 600;
       padding: 15px 60px 15px 30px;
     }
 
-    dt>a>.ckeditor-accordion-toggle {
+    dt > a > .ckeditor-accordion-toggle {
       left: calc(100% - 45px);
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         height: 3px;
       }
     }
 
     dd {
-      >:first-child {
+      > :first-child {
         padding-top: 15px;
       }
 
-      >:last-child {
+      > :last-child {
         padding-bottom: 30px;
       }
     }
@@ -41,6 +41,11 @@
 
   .align-center {
     text-align: center;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .align-left {
@@ -77,7 +82,7 @@
     width: fit-content;
 
     &::before {
-      content: url('../icons/pdf.png');
+      content: url("../icons/pdf.png");
     }
   }
 }
