@@ -1,7 +1,0 @@
-name: CKEditor 5 Image styles
-type: module
-description: Provides additional functionality for the site.
-package: CKEditor
-core_version_requirement: ^9 || ^10
-dependencies:
-  - drupal:ckeditor5
