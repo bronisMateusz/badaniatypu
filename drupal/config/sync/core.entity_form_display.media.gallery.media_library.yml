@@ -1,10 +1,10 @@
-uuid: 7f4aa8ae-384c-47fe-8ca7-152716be8f3e
+uuid: 4a1e36d7-e9fd-41c0-b5c1-53d769ffeb2d
 langcode: pl
 status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
-    - field.field.media.gallery.field_media_image_1
+    - field.field.media.gallery.field_media_image
     - image.style.thumbnail
     - media.type.gallery
   module:
@@ -14,7 +14,7 @@ targetEntityType: media
 bundle: gallery
 mode: media_library
 content:
-  field_media_image_1:
+  field_media_image:
     type: image_image
     weight: -50
     region: content

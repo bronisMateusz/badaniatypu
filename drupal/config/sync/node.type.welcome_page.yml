@@ -6,8 +6,10 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - lab-menu
+      - company-menu
+    parent: 'lab-menu:'
 name: 'Strona powitalna'
 type: welcome_page
 description: 'Użyj tego typu treści żeby utworzyć <em>Stronę powitalną</em>, która ma możliwość wyboru, do której firmy przejść.'

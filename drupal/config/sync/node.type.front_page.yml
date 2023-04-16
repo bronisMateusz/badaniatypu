@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - lab-menu
       - company-menu
-    parent: 'company-menu:'
+    parent: 'lab-menu:'
 name: 'Strona główna'
 type: front_page
 description: 'Użyj tego typu treści żeby utworzyć <em>Stronę główną</em> dla danej firmy'

@@ -20,6 +20,7 @@ settings:
       - fontSize
       - bold
       - italic
+      - underline
       - superscript
       - subscript
       - fontColor

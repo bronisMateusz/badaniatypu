@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
     - field.field.node.page.field_gallery
-    - field.field.node.page.field_test
     - node.type.page
   module:
     - text
@@ -31,5 +30,4 @@ content:
     region: content
 hidden:
   field_gallery: true
-  field_test: true
   langcode: true

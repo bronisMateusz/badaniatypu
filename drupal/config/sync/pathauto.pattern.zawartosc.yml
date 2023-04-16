@@ -1,13 +1,13 @@
-uuid: 1a6d3193-d4e5-4d15-b5dc-5b61375f7ed7
+uuid: e6548b03-8c24-410d-9a66-a01735b47a92
 langcode: pl
 status: true
 dependencies:
   module:
     - node
-id: content
+id: zawartosc
 label: Zawartość
 type: 'canonical_entities:node'
-pattern: '[node:menu-link:parent:url]/[node:menu-link:title]'
+pattern: '[node:menu-link:parent:url:relative]/[node:menu-link]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0

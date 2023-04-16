@@ -11,7 +11,7 @@ dependencies:
 id: company_menu
 theme: badaniatypu
 region: header
-weight: -6
+weight: -5
 provider: null
 plugin: 'system_menu_block:company-menu'
 settings:

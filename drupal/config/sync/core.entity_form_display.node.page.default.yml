@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_gallery
-    - field.field.node.page.field_test
     - node.type.page
   module:
     - media_library
@@ -35,13 +34,6 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_gallery:
-    type: media_library_widget
-    weight: 8
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-  field_test:
     type: media_library_widget
     weight: 26
     region: content

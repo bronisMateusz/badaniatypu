@@ -1,14 +1,14 @@
-uuid: 5ab2d8c7-8b15-4699-8594-4f3bbce8fbed
+uuid: ae247168-c93f-48c9-b8eb-37c44faebc81
 langcode: pl
 status: true
 dependencies:
   config:
-    - field.storage.media.field_media_image_1
+    - field.storage.media.field_media_image
     - media.type.gallery
   module:
     - image
-id: media.gallery.field_media_image_1
-field_name: field_media_image_1
+id: media.gallery.field_media_image
+field_name: field_media_image
 entity_type: media
 bundle: gallery
 label: Obraz

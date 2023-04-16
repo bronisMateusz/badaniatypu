@@ -1,9 +1,9 @@
-uuid: d6823f57-bd4d-492f-a3d9-b357c3beaedb
+uuid: e687c7bc-4ef9-41b7-86f0-8ab5dd3cc6a1
 langcode: pl
 status: true
 dependencies:
   config:
-    - field.field.media.gallery.field_media_image_1
+    - field.field.media.gallery.field_media_image
     - image.style.thumbnail
     - media.type.gallery
   module:
@@ -20,7 +20,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_media_image_1:
+  field_media_image:
     type: image_image
     weight: 0
     region: content
