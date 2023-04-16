@@ -5,7 +5,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin: 75px auto 0;
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 50px 15px;
 
   a {
@@ -24,7 +24,7 @@
     .layout__region--first {
       grid-template-columns: auto auto 1fr;
 
-      & > div:last-child {
+      &>div:last-child {
         grid-column: 3;
       }
     }
@@ -44,7 +44,7 @@
       .layout__region--first {
         grid-template-columns: auto 1fr;
 
-        & > div:nth-child(3) {
+        &>div:nth-child(3) {
           grid-column: 2;
         }
       }

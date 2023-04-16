@@ -3,20 +3,33 @@
 .ckeditor-accordion-container {
   margin: 30px 0;
 
-  > dl {
+  >dl {
     border: unset;
 
-    dt > a,
-    dt > a:not(.button) {
-      padding-left: 15px;
+    dt>a,
+    dt>a:not(.button) {
+      font-family: $raleway;
+      font-weight: 600;
+      padding: 15px 60px 15px 30px;
     }
 
-    dt > a > .ckeditor-accordion-toggle {
-      left: calc(100% - 35px);
+    dt>a>.ckeditor-accordion-toggle {
+      left: calc(100% - 45px);
+
+      &:before,
+      &:after {
+        height: 3px;
+      }
     }
 
     dd {
-      padding: 15px 0;
+      >:first-child {
+        padding-top: 15px;
+      }
+
+      >:last-child {
+        padding-bottom: 30px;
+      }
     }
   }
 }
@@ -54,6 +67,17 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+  }
+
+  .file--application-pdf a {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    width: fit-content;
+
+    &::before {
+      content: url('../icons/pdf.png');
     }
   }
 }

@@ -17,15 +17,20 @@ body {
   line-height: 1.5rem;
   overflow-x: hidden;
 
-  .dialog-off-canvas-main-canvas > .layout-container {
+  .dialog-off-canvas-main-canvas>.layout-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding: 0 15px;
 
-    > header {
+    @media (min-width: $lg) {
+      padding: 0 30px;
+    }
+
+    >header {
       .region-header {
         margin: 0 auto;
-        max-width: 1400px;
+        max-width: 1200px;
         padding: 15px;
         position: relative;
 
@@ -37,10 +42,14 @@ body {
       }
     }
 
-    > footer {
+    >footer {
       margin-top: auto;
     }
   }
+}
+
+hr {
+  margin: 15px 0;
 }
 
 a {
@@ -53,6 +62,7 @@ h1.page-title {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  font-family: $raleway;
   padding: 70px 50px 0;
   position: relative;
   row-gap: 20px;
@@ -62,15 +72,64 @@ h1.page-title {
     content: "";
     display: block;
     height: 4px;
-    width: 30px;
+    width: 40px;
   }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $raleway;
+  margin: 16px 0 12px;
+}
+
+h2 {
+  font-size: 1.802rem;
+}
+
+h3 {
+  font-size: 1.602rem;
+}
+
+h4 {
+  font-size: 1.424rem;
+}
+
+h5 {
+  font-size: 1.266rem;
+}
+
+h6 {
+  font-size: 1.125rem;
 }
 
 main {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
+  width: -webkit-fill-available;
 
-  .layout {
+  >.layout {
     display: flex;
+    flex-wrap: wrap;
+
+    .layout-content,
+    .layout-sidebar-second {
+      width: -webkit-fill-available;
+    }
+
+    .layout-sidebar-second {
+      order: -1;
+    }
+
+    @media (min-width: $lg) {
+      flex-wrap: nowrap;
+
+      .layout-sidebar-second {
+        order: 2;
+        width: 300px;
+      }
+    }
   }
 }

@@ -2,18 +2,16 @@
 
 [id*="block-banner"] {
   margin: 0 auto;
-  max-height: 450px;
-  max-width: 1400px;
+  max-height: 500px;
+  max-width: 1200px;
   overflow: hidden;
   position: relative;
 
   &::before {
-    background-image: linear-gradient(
-      to bottom,
-      rgba($black, 0.75) 0%,
-      rgba($black, 0.4) 45%,
-      rgba($black, 0) 100%
-    );
+    background-image: linear-gradient(to bottom,
+        rgba($black, 0.75) 0%,
+        rgba($black, 0.4) 45%,
+        rgba($black, 0) 100%);
     content: "";
     height: 90px;
     inset: 0;

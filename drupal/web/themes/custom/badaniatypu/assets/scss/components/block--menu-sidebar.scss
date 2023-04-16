@@ -1,10 +1,14 @@
 @use "../base/variables.scss" as *;
 
 [id*="-sidebar"] {
-  margin-top: -80px;
-  width: 300px;
+  margin-top: -100px;
+  width: 100%;
 
-  > .menu {
+  @media (min-width: $lg) {
+    width: 300px;
+  }
+
+  >.menu {
     list-style: none;
     padding: 25px 0 35px;
 
