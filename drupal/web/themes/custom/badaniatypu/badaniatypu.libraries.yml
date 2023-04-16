@@ -56,6 +56,12 @@ block--system-menu-block:
   js:
     assets/js/block--system-menu-block.js: {}
 
+field--field-form:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/field--field-form.scss: {}
+
 field--field-gallery:
   vite: true
   css:

@@ -108,6 +108,8 @@ h6 {
 main {
   margin: 0 auto;
   max-width: 1200px;
+  /* stylelint-disable-next-line */
+  width: -webkit-fill-available;
   width: fill-available;
 
   > .layout {
@@ -118,6 +120,7 @@ main {
     .layout-sidebar-second {
       /* stylelint-disable-next-line */
       width: -webkit-fill-available;
+      width: fill-available;
     }
 
     .layout-sidebar-second {
