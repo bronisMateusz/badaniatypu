@@ -195,7 +195,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -244,8 +244,8 @@ display:
           tags:
             next: 'Następna ›'
             previous: '‹ Poprzednia'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
+            first: '« First'
+            last: 'Last »'
       exposed_form:
         type: basic
         options:
@@ -422,7 +422,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Język
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op

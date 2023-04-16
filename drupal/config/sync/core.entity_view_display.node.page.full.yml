@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.page.body
     - field.field.node.page.field_gallery
+    - field.field.node.page.field_show_in_news
     - node.type.page
   module:
     - layout_builder
@@ -36,4 +37,5 @@ content:
     region: content
 hidden:
   field_gallery: true
+  field_show_in_news: true
   langcode: true

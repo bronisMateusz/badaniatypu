@@ -1,0 +1,19 @@
+uuid: 50f0bb14-540a-43c8-ba9b-334c11be45bf
+langcode: pl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - lab-menu
+      - company-menu
+    parent: 'lab-menu:'
+name: 'Strona kontakt'
+type: contact_page
+description: 'Użyj tego typu treści żeby utworzyć <em>Stronę kontaktową</em>.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

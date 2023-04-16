@@ -1,0 +1,23 @@
+uuid: 79a39806-bd45-4fe8-aa52-ea400e68edc1
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_news
+    - node.type.page
+id: node.page.field_show_in_news
+field_name: field_show_in_news
+entity_type: node
+bundle: page
+label: 'Pokaż w aktualnościach'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

@@ -218,7 +218,7 @@ display:
           admin_label: ''
           entity_type: block_content
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -281,7 +281,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Zastosuj
+          submit_button: Apply
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'

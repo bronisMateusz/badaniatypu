@@ -73,7 +73,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Akcja
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -413,7 +413,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -730,7 +730,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Język
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -951,7 +951,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Akcja
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -1291,7 +1291,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -1540,7 +1540,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Język
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op

@@ -131,7 +131,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Zastosuj
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -290,7 +290,7 @@ display:
           required: true
       use_more: false
       use_more_always: false
-      use_more_text: Więcej
+      use_more_text: More
       link_display: '0'
       link_url: ''
       header: {  }

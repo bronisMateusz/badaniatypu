@@ -352,7 +352,7 @@ display:
           admin_label: ''
           entity_type: user
           plugin_id: entity_operations
-          label: Operacje
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -468,8 +468,8 @@ display:
           tags:
             next: 'Następna ›'
             previous: '‹ Poprzednia'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'

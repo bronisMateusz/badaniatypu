@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_gallery
+    - field.field.node.page.field_show_in_news
     - node.type.page
   module:
     - media_library
@@ -19,7 +20,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 8
     region: content
     settings:
       rows: 9
@@ -35,10 +36,17 @@ content:
     third_party_settings: {  }
   field_gallery:
     type: media_library_widget
-    weight: 26
+    weight: 9
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_show_in_news:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -62,7 +70,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 11
     region: content
     settings:
       display_label: true
@@ -93,7 +101,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }

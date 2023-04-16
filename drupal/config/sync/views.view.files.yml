@@ -181,7 +181,7 @@ display:
           entity_type: file
           entity_field: filesize
           plugin_id: field
-          label: Rozmiar
+          label: Size
           exclude: false
           alter:
             alter_text: false
@@ -1017,7 +1017,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Wszystko
+            title: All
           title_enable: true
           title: 'Informacje o wykorzystaniu pliku dla {{ arguments.fid }}'
           default_argument_type: fixed

@@ -34,6 +34,7 @@ module:
   gin_lb: 0
   gin_login: 0
   gin_toolbar: 0
+  google_map_field: 0
   help: 0
   history: 0
   image: 0
@@ -69,6 +70,8 @@ module:
   user: 0
   views_ui: 0
   vite: 0
+  webform: 0
+  webform_ui: 0
   whoops: 0
   pathauto: 1
   views: 10

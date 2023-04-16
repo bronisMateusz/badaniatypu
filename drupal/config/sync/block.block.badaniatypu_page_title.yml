@@ -26,4 +26,5 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
+      contact_page: contact_page
       page: page
