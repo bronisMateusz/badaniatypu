@@ -146,6 +146,20 @@ main {
     padding: 50px 50px 150px;
   }
 
+  &--type-contact-page .layout {
+    row-gap: 100px;
+
+    @media (min-width: $md) {
+      &.layout--twocol-section--50-50 {
+        column-gap: 30px;
+
+        > .layout__region {
+          flex: 0 1 calc(50% - 15px);
+        }
+      }
+    }
+  }
+
   &--type-welcome-page {
     margin-top: 40px;
   }
