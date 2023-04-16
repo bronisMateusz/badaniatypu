@@ -84,18 +84,6 @@ node--front-page:
     theme:
       assets/scss/content/node--front-page.scss: {}
 
-node--page:
-  vite: true
-  css:
-    theme:
-      assets/scss/content/node--page.scss: {}
-
-node--welcome-page:
-  vite: true
-  css:
-    theme:
-      assets/scss/content/node--welcome-page.scss: {}
-
 layout_twocol_always_section:
   vite: true
   css:
