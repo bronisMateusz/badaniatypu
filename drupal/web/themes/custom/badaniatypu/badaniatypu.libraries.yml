@@ -1,8 +1,6 @@
 global-styling:
   vite: true
   css:
-    component:
-      assets/scss/components/node.scss: {}
     theme:
       assets/scss/style.scss: {}
 
