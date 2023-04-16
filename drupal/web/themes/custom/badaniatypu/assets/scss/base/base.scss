@@ -147,7 +147,7 @@ main {
   }
 
   &--type-contact-page .layout {
-    row-gap: 100px;
+    row-gap: 50px;
 
     @media (min-width: $md) {
       &.layout--twocol-section--50-50 {
