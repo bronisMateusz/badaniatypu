@@ -8,8 +8,10 @@ dependencies:
     - field.field.block_content.business_card.field_image
     - field.field.block_content.business_card.field_phone_number
     - field.field.block_content.business_card.field_text
+    - field.field.block_content.business_card.field_text_2
   module:
     - layout_builder
+    - telephone
 third_party_settings:
   layout_builder:
     enabled: true
@@ -22,8 +24,8 @@ third_party_settings:
           context_mapping: {  }
           column_widths: 25-75
         components:
-          2b9566b9-e474-4112-96a4-f2bcdbb68751:
-            uuid: 2b9566b9-e474-4112-96a4-f2bcdbb68751
+          1cf606b1-3149-4bb0-8db5-b5f43c9ee570:
+            uuid: 1cf606b1-3149-4bb0-8db5-b5f43c9ee570
             region: first
             configuration:
               id: 'field_block:block_content:business_card:field_image'
@@ -44,17 +46,14 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          1a15c273-9413-44df-9aa6-05289caac2db:
-            uuid: 1a15c273-9413-44df-9aa6-05289caac2db
+          b816ef25-0777-4e8d-b7c0-c01433c941f6:
+            uuid: b816ef25-0777-4e8d-b7c0-c01433c941f6
             region: second
             configuration:
               id: 'field_block:block_content:business_card:field_text'
-              label: Tekst
               label_display: '0'
-              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
-                view_mode: view_mode
               formatter:
                 type: string
                 label: hidden
@@ -63,8 +62,24 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          68adeb8d-04e6-4e95-9496-07704203b1f0:
-            uuid: 68adeb8d-04e6-4e95-9496-07704203b1f0
+          e3ccee42-f9a8-43e6-8eba-3ab7c6534509:
+            uuid: e3ccee42-f9a8-43e6-8eba-3ab7c6534509
+            region: second
+            configuration:
+              id: 'field_block:block_content:business_card:field_text_2'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          467fc451-2eb8-40a8-a552-d6b499b5cf60:
+            uuid: 467fc451-2eb8-40a8-a552-d6b499b5cf60
             region: second
             configuration:
               id: 'field_block:block_content:business_card:field_email'
@@ -75,30 +90,27 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: basic_string
+                type: email_mailto
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 2
+            weight: 3
             additional: {  }
-          06dd332d-09a6-4cfb-9e7e-6caae527df96:
-            uuid: 06dd332d-09a6-4cfb-9e7e-6caae527df96
+          9cf5fc4e-ed55-476e-bd14-130873feebb4:
+            uuid: 9cf5fc4e-ed55-476e-bd14-130873feebb4
             region: second
             configuration:
               id: 'field_block:block_content:business_card:field_phone_number'
-              label: 'Numery telefonu'
               label_display: '0'
-              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
-                view_mode: view_mode
               formatter:
                 type: telephone_link
                 label: hidden
                 settings:
                   title: ''
                 third_party_settings: {  }
-            weight: 1
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 id: block_content.business_card.default
@@ -108,33 +120,42 @@ mode: default
 content:
   field_email:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
   field_image:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     weight: 1
     region: content
   field_phone_number:
-    type: basic_string
-    label: above
-    settings: {  }
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
     third_party_settings: {  }
     weight: 2
     region: content
   field_text:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_text_2:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden:
   langcode: true

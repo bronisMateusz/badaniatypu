@@ -8,6 +8,7 @@ dependencies:
     - field.field.block_content.business_card.field_image
     - field.field.block_content.business_card.field_phone_number
     - field.field.block_content.business_card.field_text
+    - field.field.block_content.business_card.field_text_2
   module:
     - media_library
     - telephone
@@ -18,7 +19,7 @@ mode: default
 content:
   field_email:
     type: email_default
-    weight: 5
+    weight: 6
     region: content
     settings:
       placeholder: ''
@@ -33,7 +34,7 @@ content:
     third_party_settings: {  }
   field_phone_number:
     type: telephone_default
-    weight: 4
+    weight: 5
     region: content
     settings:
       placeholder: ''
@@ -41,6 +42,14 @@ content:
   field_text:
     type: string_textfield
     weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_2:
+    type: string_textfield
+    weight: 4
     region: content
     settings:
       size: 60
