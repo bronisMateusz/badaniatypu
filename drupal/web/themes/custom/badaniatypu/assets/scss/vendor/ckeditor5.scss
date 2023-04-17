@@ -3,17 +3,17 @@
 .ckeditor-accordion-container {
   margin: 30px 0;
 
-  > dl {
+  >dl {
     border: unset;
 
-    dt > a,
-    dt > a:not(.button) {
+    dt>a,
+    dt>a:not(.button) {
       font-family: $raleway;
       font-weight: 600;
       padding: 15px 60px 15px 30px;
     }
 
-    dt > a > .ckeditor-accordion-toggle {
+    dt>a>.ckeditor-accordion-toggle {
       left: calc(100% - 45px);
 
       &::before,
@@ -59,7 +59,7 @@
   .media {
     margin: 0.9em auto;
 
-    &:not(.align-center, .align-left, .align-right) {
+    &:not(.align-center, .align-left, .align-right, .media--type-document) {
       max-width: 300px;
     }
 
