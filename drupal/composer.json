@@ -15,11 +15,23 @@
         {
             "type": "package",
             "package": {
-                "name": "feimosi/baguettebox.js",
+                "name": "kenwheeler/slick",
+                "version": "1.8.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/tags/1.8.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "mreq/slick-lightbox",
                 "version": "master",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/feimosi/baguetteBox.js/releases/download/v1.11.1/baguetteBox.js.zip",
+                    "url": "https://github.com/mreq/slick-lightbox/archive/refs/heads/master.zip",
                     "type": "zip"
                 }
             }
@@ -30,7 +42,6 @@
         "cweagans/composer-patches": "^1.7.3",
         "drupal/address": "^1.11",
         "drupal/admin_toolbar": "^3.3.0",
-        "drupal/baguettebox": "^2.0",
         "drupal/ckeditor5_font": "^1.1@beta",
         "drupal/ckeditor_accordion": "^2.0",
         "drupal/ckeditor_font": "^2.0@beta",
@@ -47,12 +58,14 @@
         "drupal/layout_options": "^1.2",
         "drupal/pathauto": "^1.11",
         "drupal/redirect": "^1.8",
+        "drupal/slick_lightbox": "^1.5",
         "drupal/svg_image": "^3.0.1",
         "drupal/twig_tweak": "^3.2",
         "drupal/vite": "^1.0",
         "drupal/webform": "^6.2@beta",
         "drush/drush": "^11.5.1",
-        "feimosi/baguettebox.js": "master"
+        "kenwheeler/slick": "^1.8",
+        "mreq/slick-lightbox": "master"
     },
     "require-dev": {
         "acquia/coding-standards": "^1.1.0",

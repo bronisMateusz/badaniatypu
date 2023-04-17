@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de5272f73519651e10641d5456c0d4b5",
+    "content-hash": "d909d8558996fcad9b69816768b7d647",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1519,53 +1519,70 @@
             }
         },
         {
-            "name": "drupal/baguettebox",
-            "version": "dev-2.0.x",
+            "name": "drupal/blazy",
+            "version": "2.14.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/baguettebox.git",
-                "reference": "da6390992e84a49587f521293e0dc4b994c04d48"
+                "url": "https://git.drupalcode.org/project/blazy.git",
+                "reference": "8.x-2.14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.14.zip",
+                "reference": "8.x-2.14",
+                "shasum": "135d3f06efbe05e6bbfa5e9733b65757a0c85c43"
             },
             "require": {
-                "drupal/core": "^9.0 || ^10",
-                "php": ">=7.1.0"
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "conflict": {
+                "drupal/csp": "<1.12"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.0.x": "2.0.x-dev"
-                },
                 "drupal": {
-                    "version": "2.0.x-dev",
-                    "datestamp": "1681389309",
+                    "version": "8.x-2.14",
+                    "datestamp": "1671083284",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Chi",
-                    "homepage": "https://www.drupal.org/user/556138"
+                    "name": "Gaus Surahman",
+                    "homepage": "https://www.drupal.org/u/gausarts",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "elber",
-                    "homepage": "https://www.drupal.org/user/3684818"
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2663268/committers",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
                 }
             ],
-            "description": "A BaguetteBox image formatter.",
-            "homepage": "https://www.drupal.org/project/baguettebox",
+            "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
+            "homepage": "https://drupal.org/project/blazy",
             "keywords": [
-                "Drupal"
+                "Drupal",
+                "bLazy",
+                "lazyload"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/baguettebox",
-                "issues": "https://www.drupal.org/project/issues/baguettebox"
+                "source": "https://git.drupalcode.org/project/blazy",
+                "issues": "https://drupal.org/project/issues/blazy"
             }
         },
         {
@@ -2827,6 +2844,118 @@
             }
         },
         {
+            "name": "drupal/slick",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slick.git",
+                "reference": "8.x-2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "bdc5e23e32fa83c085cbc0ce2d3b4f9a1dcd9433"
+            },
+            "require": {
+                "drupal/blazy": "~2.0",
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.7",
+                    "datestamp": "1671083547",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2232779/committers",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "shadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                }
+            ],
+            "description": "Slick carousel, the last carousel you'll ever need.",
+            "homepage": "https://drupal.org/project/slick",
+            "keywords": [
+                "Drupal",
+                "carousel",
+                "slideshow"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/slick",
+                "issues": "https://drupal.org/project/issues/slick"
+            }
+        },
+        {
+            "name": "drupal/slick_lightbox",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slick_lightbox.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick_lightbox-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "966614395a3fffb885e891b4b36f3b38bfc015ba"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/slick": "~2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1640350997",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                }
+            ],
+            "description": "Slick Lightbox, Slick within lightbox.",
+            "homepage": "https://drupal.org/project/slick_lightbox",
+            "keywords": [
+                "Drupal",
+                "carousel",
+                "lightbox",
+                "slideshow"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/slick_lightbox",
+                "issues": "https://drupal.org/project/issues/slick_lightbox"
+            }
+        },
+        {
             "name": "drupal/svg_image",
             "version": "3.0.1",
             "source": {
@@ -3559,15 +3688,6 @@
             "time": "2022-09-18T07:06:19+00:00"
         },
         {
-            "name": "feimosi/baguettebox.js",
-            "version": "master",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/feimosi/baguetteBox.js/releases/download/v1.11.1/baguetteBox.js.zip"
-            },
-            "type": "drupal-library"
-        },
-        {
             "name": "grasmash/expander",
             "version": "3.0.0",
             "source": {
@@ -3951,6 +4071,15 @@
             "time": "2023-03-09T13:19:02+00:00"
         },
         {
+            "name": "kenwheeler/slick",
+            "version": "1.8.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/kenwheeler/slick/archive/refs/tags/1.8.0.zip"
+            },
+            "type": "drupal-library"
+        },
+        {
             "name": "league/container",
             "version": "4.2.0",
             "source": {
@@ -4100,6 +4229,15 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.7.6"
             },
             "time": "2022-08-18T16:18:26+00:00"
+        },
+        {
+            "name": "mreq/slick-lightbox",
+            "version": "master",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/mreq/slick-lightbox/archive/refs/heads/master.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "nikic/php-parser",
