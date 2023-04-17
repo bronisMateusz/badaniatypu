@@ -1,0 +1,40 @@
+@use '../base/variables.scss' as *;
+
+.block-business-card {
+  margin: 50px 0;
+
+  .field--name-field {
+    &-image {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-text,
+    &-text-2 {
+      font-family: $raleway;
+      font-weight: 600;
+    }
+
+    &-text {
+      font-size: 1.424rem;
+    }
+
+    &-text-2 {
+      opacity: .7;
+    }
+
+    &-phone-number {
+      margin-top: 20px;
+    }
+  }
+
+  .layout__region--second {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+}

@@ -10,6 +10,12 @@ block--block-content--banner:
     theme:
       assets/scss/components/block--block-content--banner.scss: {}
 
+block--block-content--business-card:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--block-content--business-card.scss: {}
+
 block--block-content--featured:
   vite: true
   css:
