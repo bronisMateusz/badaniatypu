@@ -73,24 +73,18 @@ field--field-gallery:
   css:
     theme:
       assets/scss/components/field--field-gallery.scss: {}
-  js:
-    assets/js/block--system-menu-block.js: {}
 
 field--field-map:
   vite: true
   css:
     theme:
       assets/scss/components/field--field-map.scss: {}
-  js:
-    assets/js/block--system-menu-block.js: {}
 
 field--media--gallery:
   vite: true
   css:
     theme:
       assets/scss/components/field--media--gallery.scss: {}
-  js:
-    assets/js/block--system-menu-block.js: {}
 
 layout_builder_twocol_section:
   vite: true
