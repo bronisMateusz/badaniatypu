@@ -3,7 +3,7 @@ langcode: pl
 status: true
 dependencies:
   module:
-    - node
+    - system
   theme:
     - badaniatypu
 _core:
@@ -20,11 +20,7 @@ settings:
   label_display: '0'
   provider: core
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
+  request_path:
+    id: request_path
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-    bundles:
-      contact_page: contact_page
-      page: page
+    pages: "/wojciech-bogacki/*\r\n/wojciech-bogacki/*/*\r\n/bogaccy/*\r\n/bogaccy/*/*"
