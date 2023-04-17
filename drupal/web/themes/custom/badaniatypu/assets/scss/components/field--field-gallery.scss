@@ -1,25 +1,46 @@
 @use "../base/variables.scss" as *;
 
-.field--name-field-gallery {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 50px;
+// .field--name-field-gallery {
+//   display: grid;
+//   gap: 30px;
+//   grid-template-columns: repeat(2, 1fr);
+//   margin-top: 50px;
 
-  @media (min-width: $md) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+//   // img {
+//   //   height: 100%;
+//   //   width: 100%;
+//   //   object-fit: cover;
+//   // }
 
-  article {
-    height: 100%;
+//   @media (min-width: $md) {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
 
-    a {
-      display: block;
-    }
+//   article {
+//     height: 100%;
 
-    p {
-      margin-top: 20px;
-      text-align: center;
-    }
-  }
-}
+//     a {
+//       display: block;
+//     }
+
+//     p {
+//       margin-top: 20px;
+//       text-align: center;
+//     }
+
+//     .field--name-field-media-image {
+//       // height: 100%;
+
+//       .field__item {
+//         // height: 100%;
+
+//         // img {
+//         //   aspect-ratio: 3/2;
+//         //   height: 100%;
+//         //   object-fit: cover;
+//         //   width: 100%;
+//         // }
+//       }
+//     }
+//   }
+// }

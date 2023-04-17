@@ -80,12 +80,6 @@ field--field-map:
     theme:
       assets/scss/components/field--field-map.scss: {}
 
-field--media--gallery:
-  vite: true
-  css:
-    theme:
-      assets/scss/components/field--media--gallery.scss: {}
-
 layout_builder_twocol_section:
   vite: true
   css:
