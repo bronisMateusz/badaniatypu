@@ -1,7 +1,7 @@
 @use "../base/variables.scss" as *;
 
 .view-news {
-  h2>a {
+  h2 > a {
     color: $black;
     display: flex;
     flex-direction: column;

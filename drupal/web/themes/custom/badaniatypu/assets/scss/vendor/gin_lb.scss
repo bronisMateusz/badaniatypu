@@ -29,7 +29,9 @@
   --ck-color-panel-border: transparent;
   --ck-color-button-default-background: transparent;
   --ck-color-button-default-hover-background: var(--gin-color-primary-light);
-  --ck-color-button-default-active-background: var(--gin-color-primary-light-active);
+  --ck-color-button-default-active-background: var(
+    --gin-color-primary-light-active
+  );
   --ck-color-button-default-disabled-background: transparent;
   --ck-color-button-on-color: var(--gin-color-primary);
   --ck-color-button-on-background: var(--gin-color-primary-light);
@@ -60,6 +62,7 @@
   --ck-border-radius: var(--gin-border-m);
 }
 
-.ck-blurred.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline * {
+.ck-blurred.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline
+  * {
   color: var(--gin-color-text) !important;
 }
