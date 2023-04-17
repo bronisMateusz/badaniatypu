@@ -3,17 +3,17 @@
 .ckeditor-accordion-container {
   margin: 30px 0;
 
-  >dl {
+  > dl {
     border: unset;
 
-    dt>a,
-    dt>a:not(.button) {
+    dt > a,
+    dt > a:not(.button) {
       font-family: $raleway;
       font-weight: 600;
       padding: 15px 60px 15px 30px;
     }
 
-    dt>a>.ckeditor-accordion-toggle {
+    dt > a > .ckeditor-accordion-toggle {
       left: calc(100% - 45px);
 
       &::before,
@@ -35,6 +35,8 @@
 }
 
 .field--name-body {
+  margin-bottom: 50px;
+
   > :first-child {
     margin-top: 0 !important;
   }
@@ -87,6 +89,18 @@
 
     &::before {
       content: url("../icons/pdf.png");
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      &::before {
+        content: "\2022";
+        margin-right: 0.375rem;
+      }
     }
   }
 }
