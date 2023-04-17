@@ -68,7 +68,7 @@ h1.page-title {
   row-gap: 20px;
 
   &::after {
-    background-color: black;
+    background-color: $black;
     content: "";
     display: block;
     height: 4px;

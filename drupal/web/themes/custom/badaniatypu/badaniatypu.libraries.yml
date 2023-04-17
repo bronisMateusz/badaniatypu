@@ -103,3 +103,9 @@ layout_twocol_always_section:
   css:
     layout:
       assets/scss/layout/layout-builder-twocol-always-section.scss: {}
+
+views-view--news:
+  vite: true
+  css:
+    layout:
+      assets/scss/layout/views-view--news.scss: {}
