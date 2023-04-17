@@ -8,9 +8,14 @@
 
     dt > a,
     dt > a:not(.button) {
+      background-color: rgba($color: $brand-color, $alpha: 75%);
       font-family: $raleway;
       font-weight: 600;
       padding: 15px 60px 15px 30px;
+
+      &:hover {
+        background-color: $brand-color;
+      }
     }
 
     dt > a > .ckeditor-accordion-toggle {

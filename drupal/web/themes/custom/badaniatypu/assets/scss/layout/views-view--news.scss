@@ -4,8 +4,9 @@
   h2 > a {
     color: $black;
     display: flex;
+    font-size: 1.424rem;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     pointer-events: none;
     position: relative;
     row-gap: 20px;
@@ -15,7 +16,7 @@
       background-color: $black;
       content: "";
       display: block;
-      height: 4px;
+      height: 2px;
       width: 40px;
     }
   }

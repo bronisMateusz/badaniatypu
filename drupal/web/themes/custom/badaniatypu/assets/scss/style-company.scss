@@ -30,3 +30,12 @@ h1.page-title {
     background-color: $company-color;
   }
 }
+
+.ckeditor-accordion-container > dl dt > a,
+.ckeditor-accordion-container > dl dt > a:not(.button) {
+  background-color: rgba($color: $company-color, $alpha: 75%);
+
+  &:hover {
+    background-color: $company-color;
+  }
+}
