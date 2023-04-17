@@ -58,6 +58,7 @@
         "drupal/layout_options": "^1.2",
         "drupal/pathauto": "^1.11",
         "drupal/redirect": "^1.8",
+        "drupal/responsive_favicons": "^2.0",
         "drupal/slick_lightbox": "^1.5",
         "drupal/svg_image": "^3.0.1",
         "drupal/twig_tweak": "^3.2",
