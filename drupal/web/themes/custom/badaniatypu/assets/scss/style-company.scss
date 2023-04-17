@@ -1,0 +1,32 @@
+@use "./base/variables.scss" as *;
+
+a {
+  color: $company-color;
+}
+
+h1.page-title {
+  color: $company-color;
+
+  &::after {
+    background-color: $company-color;
+  }
+}
+
+.block-menu .menu-item a {
+  &.is-active,
+  &:hover {
+    color: $company-color;
+  }
+
+  &::after {
+    background-color: $company-color;
+  }
+}
+
+.field--name-field-form form .form-actions input[type="submit"] {
+  background-color: rgba($color: $company-color, $alpha: 75%);
+
+  &:hover {
+    background-color: $company-color;
+  }
+}

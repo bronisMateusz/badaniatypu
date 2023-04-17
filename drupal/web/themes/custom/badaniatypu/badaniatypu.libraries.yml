@@ -103,3 +103,9 @@ views-view--news:
   css:
     layout:
       assets/scss/layout/views-view--news.scss: {}
+
+company-styling:
+  vite: true
+  css:
+    theme:
+      assets/scss/style-company.scss: {}
