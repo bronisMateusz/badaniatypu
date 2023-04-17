@@ -56,14 +56,14 @@
 
         &.is-active,
         &:hover {
-          color: $first-brand-color;
+          color: $brand-color;
         }
 
         @media (min-width: $lg) {
           background-color: unset;
 
           &::after {
-            background-color: $first-brand-color;
+            background-color: $brand-color;
             content: "";
             display: block;
             height: 1px;
@@ -80,7 +80,7 @@
       }
 
       &--active-trail {
-        background-color: rgba($color: $first-brand-color, $alpha: 10%);
+        background-color: rgba($color: $brand-color, $alpha: 10%);
 
         @media (min-width: $lg) {
           background-color: unset;
@@ -91,13 +91,13 @@
         }
 
         a {
-          color: $first-brand-color;
+          color: $brand-color;
         }
       }
     }
 
     &__toggle {
-      background-color: $first-brand-color;
+      background-color: $brand-color;
       border: unset;
       border-radius: 4px;
       cursor: pointer;

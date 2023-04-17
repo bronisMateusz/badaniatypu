@@ -8,7 +8,7 @@
     .field--name-field-link a:hover,
     .tile:nth-of-type(3),
     .tile:hover {
-      background-color: rgba($color: $first-brand-color, $alpha: 75%);
+      background-color: rgba($color: $brand-color, $alpha: 75%);
     }
   }
 
@@ -16,7 +16,7 @@
     .field--name-field-link a:hover,
     .tile:nth-of-type(3),
     .tile:hover {
-      background-color: rgba($color: $second-brand-color, $alpha: 75%);
+      background-color: rgba($color: $company-color, $alpha: 75%);
     }
 
     .field--name-field-image {

@@ -8,10 +8,6 @@
   max-width: 1200px;
   padding: 50px 15px;
 
-  a {
-    color: $first-brand-color;
-  }
-
   .layout__region--second {
     margin-top: 20px;
   }
@@ -37,7 +33,7 @@
 
   &.without_logo {
     a {
-      color: $second-brand-color;
+      color: $company-color;
     }
 
     @media (min-width: $md) {

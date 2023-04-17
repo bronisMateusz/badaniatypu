@@ -53,6 +53,8 @@ hr {
 }
 
 a {
+  color: $brand-color;
+
   &:not(:hover) {
     text-decoration: none;
   }
@@ -60,15 +62,16 @@ a {
 
 h1.page-title {
   background-color: #fff;
+  color: $brand-color;
   display: flex;
   flex-direction: column;
-  font-family: $raleway;
+  margin: 0;
   padding: 70px 50px 0;
   position: relative;
   row-gap: 20px;
 
   &::after {
-    background-color: $black;
+    background-color: $brand-color;
     content: "";
     display: block;
     height: 4px;
@@ -76,11 +79,13 @@ h1.page-title {
   }
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  color: $brand-color;
   font-family: $raleway;
   margin: 16px 0 12px;
 }
