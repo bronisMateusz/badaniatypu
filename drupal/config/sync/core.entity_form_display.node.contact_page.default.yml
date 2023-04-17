@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.contact_page.body
     - field.field.node.contact_page.field_form
     - field.field.node.contact_page.field_map
+    - field.field.node.contact_page.layout_builder__layout
     - node.type.contact_page
   module:
     - google_map_field
@@ -104,4 +105,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true

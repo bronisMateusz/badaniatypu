@@ -1,0 +1,19 @@
+uuid: 9622445c-fbec-4654-8c6e-84318187ff67
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.business_card
+    - field.storage.block_content.field_text
+id: block_content.business_card.field_text
+field_name: field_text
+entity_type: block_content
+bundle: business_card
+label: 'Imię i nazwisko'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: d3b5f18c-aa37-4e93-b0cb-d0e313e40173
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_lab_news
+    - node.type.page
+id: node.page.field_show_in_lab_news
+field_name: field_show_in_lab_news
+entity_type: node
+bundle: page
+label: 'Pokaż w aktualnościach laboratorium'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

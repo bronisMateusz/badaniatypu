@@ -1,0 +1,21 @@
+uuid: b91a691f-cf90-4c75-a39a-cdfd5c461e30
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.business_card
+    - field.storage.block_content.field_phone_number
+  module:
+    - telephone
+id: block_content.business_card.field_phone_number
+field_name: field_phone_number
+entity_type: block_content
+bundle: business_card
+label: 'Numery telefonu'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,8 @@
+uuid: 5b762f37-f5bf-414a-80ae-5aa312a8821c
+langcode: pl
+status: true
+dependencies: {  }
+id: business_card
+label: Wizytówka
+revision: 0
+description: 'Blok z wizytówką'

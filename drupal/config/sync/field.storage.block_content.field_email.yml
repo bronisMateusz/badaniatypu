@@ -1,13 +1,13 @@
-uuid: 5f7d533a-a110-4ad7-84e1-567fe6094f80
+uuid: 8e4c36fb-d157-4e46-b141-cf0ea17d1c1d
 langcode: pl
 status: true
 dependencies:
   module:
-    - node
-id: node.field_show_in_news
-field_name: field_show_in_news
-entity_type: node
-type: boolean
+    - block_content
+id: block_content.field_email
+field_name: field_email
+entity_type: block_content
+type: email
 settings: {  }
 module: core
 locked: false

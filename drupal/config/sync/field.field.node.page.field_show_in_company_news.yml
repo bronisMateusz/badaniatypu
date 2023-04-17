@@ -1,15 +1,15 @@
-uuid: 79a39806-bd45-4fe8-aa52-ea400e68edc1
+uuid: cd44b7a4-38f9-45d8-aaa1-32118ea59979
 langcode: pl
 status: true
 dependencies:
   config:
-    - field.storage.node.field_show_in_news
+    - field.storage.node.field_show_in_company_news
     - node.type.page
-id: node.page.field_show_in_news
-field_name: field_show_in_news
+id: node.page.field_show_in_company_news
+field_name: field_show_in_company_news
 entity_type: node
 bundle: page
-label: 'Pokaż w aktualnościach'
+label: 'Pokaż w aktualnościach spółki'
 description: ''
 required: false
 translatable: false

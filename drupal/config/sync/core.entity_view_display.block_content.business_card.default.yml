@@ -1,0 +1,140 @@
+uuid: 20befc8d-f9d6-4359-823d-55235a031bb0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.business_card
+    - field.field.block_content.business_card.field_email
+    - field.field.block_content.business_card.field_image
+    - field.field.block_content.business_card.field_phone_number
+    - field.field.block_content.business_card.field_text
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          2b9566b9-e474-4112-96a4-f2bcdbb68751:
+            uuid: 2b9566b9-e474-4112-96a4-f2bcdbb68751
+            region: first
+            configuration:
+              id: 'field_block:block_content:business_card:field_image'
+              label: Obraz
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          1a15c273-9413-44df-9aa6-05289caac2db:
+            uuid: 1a15c273-9413-44df-9aa6-05289caac2db
+            region: second
+            configuration:
+              id: 'field_block:block_content:business_card:field_text'
+              label: Tekst
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          68adeb8d-04e6-4e95-9496-07704203b1f0:
+            uuid: 68adeb8d-04e6-4e95-9496-07704203b1f0
+            region: second
+            configuration:
+              id: 'field_block:block_content:business_card:field_email'
+              label: Email
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          06dd332d-09a6-4cfb-9e7e-6caae527df96:
+            uuid: 06dd332d-09a6-4cfb-9e7e-6caae527df96
+            region: second
+            configuration:
+              id: 'field_block:block_content:business_card:field_phone_number'
+              label: 'Numery telefonu'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.business_card.default
+targetEntityType: block_content
+bundle: business_card
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phone_number:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
