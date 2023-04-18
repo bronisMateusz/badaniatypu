@@ -35,5 +35,10 @@
   {{ title_suffix }}
   {% block content %}
     {{ content }}
+    <div {{ create_attribute({'class': 'decoration-tiles'}) }}>
+      {% for i in 1..8 %}
+        <div {{ create_attribute({'class': 'tile'}) }}></div>
+      {% endfor %}
+    </div>
   {% endblock %}
 </div>

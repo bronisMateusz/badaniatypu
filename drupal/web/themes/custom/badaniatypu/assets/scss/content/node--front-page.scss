@@ -14,6 +14,10 @@
     }
 
     > div {
+      &:last-child {
+        // display: none;
+      }
+
       @media (min-width: $lg) {
         &:first-child {
           grid-column: 1/4;
@@ -78,14 +82,19 @@
         }
 
         &-background {
-          height: 650px;
+          height: 100%;
         }
 
         &-image {
           height: 250px;
 
+          img {
+            aspect-ratio: 1/1;
+            margin-bottom: -6px;
+          }
+
           @media (min-width: $lg) {
-            height: 325px;
+            height: 100%;
           }
         }
       }
