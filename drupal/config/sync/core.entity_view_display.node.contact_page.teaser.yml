@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.contact_page.body
     - field.field.node.contact_page.field_form
     - field.field.node.contact_page.field_map
+    - field.field.node.contact_page.field_metatags
     - field.field.node.contact_page.layout_builder__layout
     - node.type.contact_page
   module:
@@ -33,5 +34,6 @@ content:
 hidden:
   field_form: true
   field_map: true
+  field_metatags: true
   langcode: true
   layout_builder__layout: true

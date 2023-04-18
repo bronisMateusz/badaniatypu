@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_gallery
+    - field.field.node.page.field_metatags
     - field.field.node.page.field_show_in_company_news
     - field.field.node.page.field_show_in_lab_news
     - node.type.page
   module:
     - media_library
+    - metatag
     - path
     - text
 _core:
@@ -41,6 +43,14 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_show_in_company_news:
     type: boolean_checkbox

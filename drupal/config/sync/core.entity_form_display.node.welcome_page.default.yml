@@ -3,8 +3,10 @@ langcode: pl
 status: true
 dependencies:
   config:
+    - field.field.node.welcome_page.field_metatags
     - node.type.welcome_page
   module:
+    - metatag
     - path
 id: node.welcome_page.default
 targetEntityType: node
@@ -16,6 +18,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 121
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -68,5 +78,10 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

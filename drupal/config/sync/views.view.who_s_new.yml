@@ -187,7 +187,7 @@ display:
       display_description: 'Lista nowych użytkowników'
       display_extenders: {  }
       block_description: 'Nowi użytkownicy'
-      block_category: Użytkownik
+      block_category: User
     cache_metadata:
       max-age: -1
       contexts:

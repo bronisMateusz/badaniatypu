@@ -332,7 +332,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Użytkownik
+          label: User
           exclude: false
           alter:
             alter_text: false
