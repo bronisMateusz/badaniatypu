@@ -133,9 +133,6 @@
             "drupal/color_field": {
                 "https://www.drupal.org/project/color_field/issues/3344907": "https://www.drupal.org/files/issues/2023-04-13/color_field-opacity_wrong_type-3344907-9.patch"
             },
-            "drupal/colorbox": {
-                "https://www.drupal.org/project/colorbox/issues/2957030": "https://www.drupal.org/files/issues/2023-03-31/2957030-42-colorbox-entity_reference_formatter.patch"
-            },
             "drupal/core": {
                 "https://www.drupal.org/project/drupal/issues/2845878": "https://www.drupal.org/files/issues/2019-07-12/drupal-locale-sort-exported-strings-2845878-6.patch",
                 "https://www.drupal.org/project/drupal/issues/3062376": "https://www.drupal.org/files/issues/2020-07-02/3062376-34.patch"
