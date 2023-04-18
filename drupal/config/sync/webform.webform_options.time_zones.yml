@@ -9,6 +9,6 @@ _core:
   default_config_hash: 8rVcRXLnTAEoWs7zl8du-7RIUnayqUcGYnvb3JT21-o
 id: time_zones
 label: 'Strefy czasowe'
-category: 'Date and time'
+category: 'Data i czas'
 likert: false
 options: ''

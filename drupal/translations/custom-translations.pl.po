@@ -435,10 +435,10 @@ msgstr ""
 "aktywną regułę by ją skonfigurować."
 
 msgid "Created"
-msgstr "Created"
+msgstr "Utworzono"
 
 msgid "Custom Block Library"
-msgstr "Custom Block Library"
+msgstr "Biblioteka Własnych Bloków"
 
 msgid "Custom block library"
 msgstr "Biblioteka własnych bloków"
@@ -447,7 +447,7 @@ msgid "Date"
 msgstr "Data"
 
 msgid "Date and time"
-msgstr "Date and time"
+msgstr "Data i czas"
 
 msgid "Default"
 msgstr "Domyślny"
@@ -486,7 +486,7 @@ msgid "Development"
 msgstr "Development"
 
 msgid "Displaying @start - @end of @total"
-msgstr "Displaying @start - @end of @total"
+msgstr "Wyświetlanie @start - @end z @total"
 
 msgid "Displays in this view"
 msgstr "Formaty wyświetlania dla tego widoku."
@@ -764,7 +764,7 @@ msgid "Newest first"
 msgstr "Najpierw najświeższe"
 
 msgid "Next"
-msgstr "Next"
+msgstr "Następna"
 
 msgid "Next »"
 msgstr "Następna »"
@@ -850,7 +850,7 @@ msgid "Picture"
 msgstr "Obraz"
 
 msgid "Place Blocks"
-msgstr "Place Blocks"
+msgstr "Umieść bloki"
 
 msgid "Plain text"
 msgstr "Czysty tekst"
@@ -895,7 +895,7 @@ msgid "Published status"
 msgstr "Status publikacji"
 
 msgid "RSS feed"
-msgstr "RSS feed"
+msgstr "Kanał RSS"
 
 msgid "Recent comments"
 msgstr "Ostatnie komentarze"
@@ -958,10 +958,10 @@ msgid "Search"
 msgstr "Szukaj"
 
 msgid "Search form (narrow)"
-msgstr "Search form (narrow)"
+msgstr "Formularz wyszukiwania (wąski)"
 
 msgid "Search form (wide)"
-msgstr "Search form (wide)"
+msgstr "Formularz wyszukiwania (szeroki)"
 
 msgid "Search index"
 msgstr "Indeks wyszukiwania"
@@ -1174,7 +1174,7 @@ msgid "User account"
 msgstr "Konto użytkownika"
 
 msgid "User account menu"
-msgstr "User account menu"
+msgstr "Menu konta użytkownika"
 
 msgid "User interface translation"
 msgstr "Tłumaczenie interfejsu użytkownika"

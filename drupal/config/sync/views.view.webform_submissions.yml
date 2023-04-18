@@ -169,7 +169,7 @@ display:
           entity_type: webform_submission
           entity_field: created
           plugin_id: field
-          label: Created
+          label: Utworzono
           exclude: false
           alter:
             alter_text: false
@@ -583,7 +583,7 @@ display:
           admin_label: ''
           plugin_id: result
           empty: false
-          content: 'Displaying @start - @end of @total'
+          content: 'Wyświetlanie @start - @end z @total'
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -932,7 +932,7 @@ display:
           entity_type: webform_submission
           entity_field: created
           plugin_id: field
-          label: Created
+          label: Utworzono
           exclude: false
           alter:
             alter_text: false
@@ -1854,7 +1854,7 @@ display:
           entity_type: webform_submission
           entity_field: created
           plugin_id: field
-          label: Created
+          label: Utworzono
           exclude: false
           alter:
             alter_text: false
@@ -2688,7 +2688,7 @@ display:
           entity_type: webform_submission
           entity_field: created
           plugin_id: field
-          label: Created
+          label: Utworzono
           exclude: false
           alter:
             alter_text: false

@@ -172,7 +172,7 @@ display:
           entity_type: redirect
           entity_field: created
           plugin_id: date
-          label: Created
+          label: Utworzono
           exclude: false
           alter:
             alter_text: false
