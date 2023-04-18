@@ -10,7 +10,7 @@ _core:
 id: default
 name: default
 weight: -10
-label: Default
+label: Domyślny
 group: ''
 skin: default
 breakpoints: 0

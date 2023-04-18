@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: vBKWYGGDoAX-tFd1JErB8tZLSxx3lJ0foouVsgpcbB4
 id: content
-label: Content
+label: Zawartość
 module: node
 description: 'Wyszukiwanie i zarządzanie zawartością.'
 tag: default
@@ -17,11 +17,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Domyślny
     display_plugin: default
     position: 0
     display_options:
-      title: Content
+      title: Zawartość
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -195,7 +195,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: Operations
+          label: Operacje
           exclude: false
           alter:
             alter_text: false
@@ -244,18 +244,18 @@ display:
           tags:
             next: 'Następna ›'
             previous: '‹ Poprzednia'
-            first: '« First'
-            last: 'Last »'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtr
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
       access:
         type: perm
         options:
@@ -422,7 +422,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Język
             description: ''
             use_operator: false
             operator: langcode_op
@@ -585,7 +585,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Strona
     display_plugin: page
     position: 1
     display_options:
@@ -593,14 +593,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Zawartość
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Content
+        title: Zawartość
         description: 'Znajdź i zarządzaj treścią'
         weight: -10
         menu_name: admin

@@ -9,9 +9,9 @@ settings:
   default_ajax_progress_type: throbber
   default_ajax_effect: fade
   default_ajax_speed: 500
-  default_submit_button_label: Submit
-  default_reset_button_label: Reset
-  default_delete_button_label: Delete
+  default_submit_button_label: Wyślij
+  default_reset_button_label: Resetuj
+  default_delete_button_label: Usuń
   default_form_submit_once: false
   default_form_open_message: 'This form has not yet been opened to submissions.'
   default_form_close_message: 'Sorry… This form is closed to new submissions.'
@@ -34,9 +34,9 @@ settings:
   default_wizard_confirmation_label: Complete
   default_wizard_toggle_show_label: 'Show all'
   default_wizard_toggle_hide_label: 'Hide all'
-  default_preview_next_button_label: Preview
+  default_preview_next_button_label: Podgląd
   default_preview_prev_button_label: '< Previous'
-  default_preview_label: Preview
+  default_preview_label: Podgląd
   default_preview_title: '[webform:title]: Preview'
   default_preview_message: 'Please review your submission. Your submission is not complete until you press the "Submit" button!'
   default_draft_button_label: 'Save Draft'
@@ -107,13 +107,13 @@ settings:
   dialog: false
   dialog_options:
     narrow:
-      title: Narrow
+      title: Wąskie
       width: 600
     normal:
       title: Normal
       width: 800
     wide:
-      title: Wide
+      title: Szeroki
       width: 1000
 assets:
   css: ''
@@ -149,7 +149,7 @@ element:
     webform-horizontal-rule--flaired
     webform-horizontal-rule--glyph
   default_description_display: ''
-  default_more_title: More
+  default_more_title: Więcej
   default_section_title_tag: h2
   default_empty_option: true
   default_empty_option_required: ''

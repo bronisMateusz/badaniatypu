@@ -185,7 +185,7 @@ settings:
   confirmation_type: url_message
   confirmation_url: '<front>'
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: 'Wiadomość została wysłana.'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

@@ -10,5 +10,5 @@ recipients:
   - biuro@badaniatypu.pl
 reply: ''
 weight: 0
-message: 'Your message has been sent.'
+message: 'Wiadomość została wysłana.'
 redirect: ''

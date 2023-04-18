@@ -81,7 +81,7 @@ tips:
   views-ui-preview:
     id: views-ui-preview
     plugin: text
-    label: Preview
+    label: Podgląd
     weight: 10
     position: right
     selector: '#preview-submit'
