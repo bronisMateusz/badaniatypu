@@ -1,0 +1,21 @@
+uuid: 9bfc429b-154b-4d89-af48-2b4ac7955822
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.front_page
+  module:
+    - metatag
+id: node.front_page.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: front_page
+label: 'Tagi meta'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

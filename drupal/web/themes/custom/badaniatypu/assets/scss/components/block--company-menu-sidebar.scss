@@ -1,0 +1,5 @@
+@use "../base/variables.scss" as *;
+
+#block-company-menu-sidebar {
+  background-color: rgba($color: $company-color, $alpha: 75%);
+}

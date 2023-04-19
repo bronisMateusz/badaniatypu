@@ -1,0 +1,29 @@
+uuid: 19655651-de34-48fe-b664-2505892fa9c1
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.field_background
+    - media.type.image
+id: block_content.banner.field_background
+field_name: field_background
+entity_type: block_content
+bundle: banner
+label: Tło
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

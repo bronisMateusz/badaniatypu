@@ -1,0 +1,21 @@
+uuid: 391a0090-9209-4e9b-a925-be0640eabac2
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.contact_page
+  module:
+    - layout_builder
+id: node.contact_page.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: contact_page
+label: Układ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

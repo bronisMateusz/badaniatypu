@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_gallery
+    - field.field.node.page.field_metatags
+    - field.field.node.page.field_show_in_company_news
+    - field.field.node.page.field_show_in_lab_news
     - node.type.page
   module:
+    - slick
     - text
     - user
 _core:
@@ -20,10 +25,71 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-  links:
-    weight: 101
+  field_gallery:
+    type: slick_media
+    label: hidden
+    settings:
+      caption:
+        alt: alt
+        title: '0'
+      optionset: slick_lightbox
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      layout: ''
+      view_mode: default
+      cache: 0
+      skin: ''
+      lazy: ''
+      style: grid
+      background: false
+      box_caption: alt
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: slick_lightbox
+      ratio: '3:2'
+      thumbnail_style: ''
+      grid: '3'
+      grid_medium: '2'
+      grid_small: '2'
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: hover
+      thumbnail_position: ''
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      use_theme_field: true
+      preserve_keys: false
+      visible_items: 32
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
+  field_metatags: true
+  field_show_in_company_news: true
+  field_show_in_lab_news: true
   langcode: true
+  links: true

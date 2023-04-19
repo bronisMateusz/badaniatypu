@@ -57,12 +57,15 @@
   {% for item in items %}
       <div{{ item.attributes.addClass('field__item') }}>
         <a {{ create_attribute({'href': item.content['#url_title']}) }}>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-          <div {{ create_attribute({'class': 'tile'}) }}>{{ item.content['#title'] }}</div>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
+          {% for i in 0..5 %}
+            {% if loop.index != 3 %}
+              <div {{ create_attribute({'class': 'tile'}) }}></div>
+            {% else %}
+              <div {{ create_attribute({'class': 'tile'}) }}>
+                {{ item.content['#title'] }}
+              </div>
+            {% endif %}
+          {% endfor %}
         </a>
       </div>
   {% endfor %}
@@ -71,15 +74,15 @@
     {% for item in items %}
       <div{{ item.attributes.addClass('field__item') }}>
         <a {{ create_attribute({'href': item.content['#url_title']}) }}>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-          <div {{ create_attribute({'class': 'tile'}) }}>
-            <p>{{ item.content['#title'] }}</p>
-          </div>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-          <div {{ create_attribute({'class': 'tile'}) }}></div>
-        </a>
+          {% for i in 0..5 %}
+            {% if loop.index != 3 %}
+              <div {{ create_attribute({'class': 'tile'}) }}></div>
+            {% else %}
+              <div {{ create_attribute({'class': 'tile'}) }}>
+                {{ item.content['#title'] }}
+              </div>
+            {% endif %}
+          {% endfor %}
       </div>
     {% endfor %}
   </div>

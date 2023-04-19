@@ -1,0 +1,32 @@
+uuid: c76830b7-cb26-4cde-a994-85f13d7747e9
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_form
+    - node.type.contact_page
+    - webform.webform.contact
+  module:
+    - webform
+id: node.contact_page.field_form
+field_name: field_form
+entity_type: node
+bundle: contact_page
+label: 'Formularz kontaktowy'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 7ff45dd2-332c-425f-84ad-1c38c1a926a5
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

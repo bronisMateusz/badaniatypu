@@ -1,0 +1,13 @@
+@use "../base/variables.scss" as *;
+
+.field--name-field-gallery {
+  margin-bottom: 50px;
+
+  .blazy__slick-lightbox {
+    cursor: pointer;
+  }
+
+  .slide__caption {
+    text-align: center;
+  }
+}

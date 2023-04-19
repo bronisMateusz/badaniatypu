@@ -1,0 +1,8 @@
+uuid: 3b82c406-5d57-46e3-953a-ccbee3186260
+langcode: pl
+status: true
+dependencies: {  }
+id: banner
+label: Baner
+revision: 0
+description: 'Dodaje baner z obrazem'

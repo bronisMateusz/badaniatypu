@@ -1,0 +1,29 @@
+uuid: 0fae3dbd-0dd8-4922-abd0-82e25f548c03
+langcode: pl
+status: true
+dependencies:
+  config:
+    - system.menu.lab-menu
+  module:
+    - system
+  theme:
+    - badaniatypu
+id: lab_menu_sidebar
+theme: badaniatypu
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:lab-menu'
+settings:
+  id: 'system_menu_block:lab-menu'
+  label: 'Menu laboratorium'
+  label_display: '0'
+  provider: system
+  level: 2
+  depth: 2
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/wojciech-bogacki/*/*'

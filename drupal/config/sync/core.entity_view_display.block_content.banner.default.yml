@@ -1,0 +1,27 @@
+uuid: f334898d-27c0-4007-9d7b-99f6c3ab5f64
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.field.block_content.banner.field_background
+  module:
+    - media
+id: block_content.banner.default
+targetEntityType: block_content
+bundle: banner
+mode: default
+content:
+  field_background:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

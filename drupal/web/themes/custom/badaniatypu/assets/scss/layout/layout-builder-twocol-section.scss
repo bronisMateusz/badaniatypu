@@ -11,4 +11,18 @@
       flex: 0 1 50%;
     }
   }
+
+  &.layout--twocol-section--25-75 {
+    flex-wrap: nowrap;
+
+    > .layout__region {
+      &--first {
+        flex: 0 1 25%;
+      }
+
+      &--second {
+        flex: 0 1 75%;
+      }
+    }
+  }
 }

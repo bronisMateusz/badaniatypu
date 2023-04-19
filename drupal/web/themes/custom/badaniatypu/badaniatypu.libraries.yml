@@ -1,10 +1,20 @@
 global-styling:
   vite: true
   css:
-    component:
-      assets/scss/components/node.scss: {}
     theme:
       assets/scss/style.scss: {}
+
+block--block-content--banner:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--block-content--banner.scss: {}
+
+block--block-content--business-card:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--block-content--business-card.scss: {}
 
 block--block-content--featured:
   vite: true
@@ -30,6 +40,20 @@ block--inline-block--redirect-to-page:
     theme:
       assets/scss/components/block--inline-block--redirect-to-page.scss: {}
 
+block--company-menu-sidebar:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--menu-sidebar.scss: {}
+      assets/scss/components/block--company-menu-sidebar.scss: {}
+
+block--lab-menu-sidebar:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/block--menu-sidebar.scss: {}
+      assets/scss/components/block--lab-menu-sidebar.scss: {}
+
 block--system-menu-block:
   vite: true
   css:
@@ -37,6 +61,24 @@ block--system-menu-block:
       assets/scss/components/block--system-menu-block.scss: {}
   js:
     assets/js/block--system-menu-block.js: {}
+
+field--field-form:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/field--field-form.scss: {}
+
+field--field-gallery:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/field--field-gallery.scss: {}
+
+field--field-map:
+  vite: true
+  css:
+    theme:
+      assets/scss/components/field--field-map.scss: {}
 
 layout_builder_twocol_section:
   vite: true
@@ -50,14 +92,20 @@ node--front-page:
     theme:
       assets/scss/content/node--front-page.scss: {}
 
-node--welcome-page:
-  vite: true
-  css:
-    theme:
-      assets/scss/content/node--welcome-page.scss: {}
-
 layout_twocol_always_section:
   vite: true
   css:
     layout:
       assets/scss/layout/layout-builder-twocol-always-section.scss: {}
+
+views-view--news:
+  vite: true
+  css:
+    layout:
+      assets/scss/layout/views-view--news.scss: {}
+
+company-styling:
+  vite: true
+  css:
+    theme:
+      assets/scss/style-company.scss: {}

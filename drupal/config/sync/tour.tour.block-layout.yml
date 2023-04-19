@@ -22,7 +22,7 @@ tips:
   place-block:
     id: place-block
     plugin: text
-    label: 'Place Blocks'
+    label: 'Umieść bloki'
     weight: 2
     selector: .button--small
     body: 'Any custom or contributed block can be added to a particular region by clicking on a button Place block. A new block can also be created by clicking on Place Block'
@@ -43,6 +43,6 @@ tips:
   custom-block-library:
     id: custom-block-library
     plugin: text
-    label: 'Custom Block Library'
+    label: 'Biblioteka Własnych Bloków'
     weight: 5
     body: 'The block management screen also has an another tab on the top which is used to add Custom blocks. The name of the tab is "Custom block library". This tab ultimately provides a link to add custom blocks.'

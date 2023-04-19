@@ -50,28 +50,54 @@
         color: $black;
         display: block;
         font: 600 0.875rem $raleway;
-        padding: 10px 15px;
+        padding: 10px 15px 0;
+        text-decoration: none;
+        transition: color 0.3s ease-out;
+
+        &.is-active,
+        &:hover {
+          color: $brand-color;
+        }
 
         @media (min-width: $lg) {
           background-color: unset;
+
+          &::after {
+            background-color: $brand-color;
+            content: "";
+            display: block;
+            height: 1px;
+            margin-top: 10px;
+            transition: width 0.3s ease-out;
+            width: 0;
+          }
+
+          &:hover::after,
+          &.is-active::after {
+            width: 100%;
+          }
         }
       }
 
       &--active-trail {
-        background-color: rgba($color: $first-brand-color, $alpha: 10%);
+        background-color: rgba($color: $brand-color, $alpha: 10%);
 
         @media (min-width: $lg) {
           background-color: unset;
+
+          a::after {
+            width: 100%;
+          }
         }
 
         a {
-          color: $first-brand-color;
+          color: $brand-color;
         }
       }
     }
 
     &__toggle {
-      background-color: $first-brand-color;
+      background-color: $brand-color;
       border: unset;
       border-radius: 4px;
       cursor: pointer;

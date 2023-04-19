@@ -1,0 +1,73 @@
+uuid: ca869224-1c33-47ab-be49-3ca9d266f7ce
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.business_card
+    - field.field.block_content.business_card.field_email
+    - field.field.block_content.business_card.field_image
+    - field.field.block_content.business_card.field_phone_number
+    - field.field.block_content.business_card.field_text
+    - field.field.block_content.business_card.field_text_2
+  module:
+    - media_library
+    - telephone
+id: block_content.business_card.default
+targetEntityType: block_content
+bundle: business_card
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_phone_number:
+    type: telephone_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_2:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -20,18 +20,23 @@ settings:
       - fontSize
       - bold
       - italic
+      - underline
       - superscript
       - subscript
       - fontColor
       - alignment
+      - removeFormat
       - '|'
       - bulletedList
       - numberedList
+      - indent
+      - outdent
       - '|'
       - link
       - blockQuote
-      - drupalInsertImage
+      - drupalMedia
       - insertTable
+      - Accordion
       - horizontalLine
       - '|'
       - style
@@ -60,8 +65,8 @@ settings:
         - center
         - right
         - justify
-    ckeditor5_imageResize:
-      allow_resize: true
+    media_media:
+      allow_view_mode_override: false
     ckeditor5_font_colors:
       colors: '[{"color":"#004987","label":"Laboratorium"},{"color":"#e94519","label":"Sp\u00f3\u0142ka"}]'
     ckeditor_font_font:

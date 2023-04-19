@@ -1,0 +1,45 @@
+@use "../base/variables.scss" as *;
+
+.view-news {
+  h2 > a {
+    color: $black;
+    display: flex;
+    font-size: 1.424rem;
+    flex-direction: column;
+    margin-bottom: 30px;
+    pointer-events: none;
+    position: relative;
+    row-gap: 20px;
+    text-decoration: none;
+
+    &::after {
+      background-color: $black;
+      content: "";
+      display: block;
+      height: 2px;
+      width: 40px;
+    }
+  }
+
+  .node {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 50px;
+  }
+
+  .pager {
+    margin-top: 50px;
+
+    ul {
+      column-gap: 10px;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+
+      a {
+        text-decoration: none;
+        padding: 10px;
+      }
+    }
+  }
+}

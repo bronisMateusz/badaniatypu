@@ -11,7 +11,7 @@ dependencies:
 id: lab_menu
 theme: badaniatypu
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:lab-menu'
 settings:
@@ -19,8 +19,8 @@ settings:
   label: 'Menu laboratorium'
   label_display: '0'
   provider: system
-  level: 1
-  depth: 0
+  level: 2
+  depth: 1
   expand_all_items: false
 visibility:
   request_path:

@@ -1,0 +1,19 @@
+uuid: 0edd0653-9946-46c1-988a-4141d72d25cf
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.business_card
+    - field.storage.block_content.field_email
+id: block_content.business_card.field_email
+field_name: field_email
+entity_type: block_content
+bundle: business_card
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

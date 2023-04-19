@@ -1,0 +1,161 @@
+uuid: 20befc8d-f9d6-4359-823d-55235a031bb0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.business_card
+    - field.field.block_content.business_card.field_email
+    - field.field.block_content.business_card.field_image
+    - field.field.block_content.business_card.field_phone_number
+    - field.field.block_content.business_card.field_text
+    - field.field.block_content.business_card.field_text_2
+  module:
+    - layout_builder
+    - telephone
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          1cf606b1-3149-4bb0-8db5-b5f43c9ee570:
+            uuid: 1cf606b1-3149-4bb0-8db5-b5f43c9ee570
+            region: first
+            configuration:
+              id: 'field_block:block_content:business_card:field_image'
+              label: Obraz
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b816ef25-0777-4e8d-b7c0-c01433c941f6:
+            uuid: b816ef25-0777-4e8d-b7c0-c01433c941f6
+            region: second
+            configuration:
+              id: 'field_block:block_content:business_card:field_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e3ccee42-f9a8-43e6-8eba-3ab7c6534509:
+            uuid: e3ccee42-f9a8-43e6-8eba-3ab7c6534509
+            region: second
+            configuration:
+              id: 'field_block:block_content:business_card:field_text_2'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          467fc451-2eb8-40a8-a552-d6b499b5cf60:
+            uuid: 467fc451-2eb8-40a8-a552-d6b499b5cf60
+            region: second
+            configuration:
+              id: 'field_block:block_content:business_card:field_email'
+              label: Email
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          9cf5fc4e-ed55-476e-bd14-130873feebb4:
+            uuid: 9cf5fc4e-ed55-476e-bd14-130873feebb4
+            region: second
+            configuration:
+              id: 'field_block:block_content:business_card:field_phone_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.business_card.default
+targetEntityType: block_content
+bundle: business_card
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phone_number:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_text_2:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true

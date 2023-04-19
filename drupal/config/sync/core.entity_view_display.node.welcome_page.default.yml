@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - block_content.type.redirect_to_page
+    - field.field.node.welcome_page.field_metatags
     - node.type.welcome_page
   module:
     - layout_builder
+    - metatag
     - user
 third_party_settings:
   layout_builder:
@@ -48,12 +50,34 @@ third_party_settings:
               block_serialized: null
             weight: 0
             additional: {  }
+          3a2c4482-6569-46f3-81d4-42b7d32a9cf1:
+            uuid: 3a2c4482-6569-46f3-81d4-42b7d32a9cf1
+            region: first
+            configuration:
+              id: 'field_block:node:welcome_page:field_metatags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
 id: node.welcome_page.default
 targetEntityType: node
 bundle: welcome_page
 mode: default
 content:
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: first
   links:
     settings: {  }
     third_party_settings: {  }

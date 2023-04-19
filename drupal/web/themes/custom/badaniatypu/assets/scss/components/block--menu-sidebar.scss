@@ -1,0 +1,55 @@
+@use "../base/variables.scss" as *;
+
+[id*="-sidebar"] {
+  margin-top: -100px;
+  width: 100%;
+
+  @media (min-width: $lg) {
+    width: 300px;
+  }
+
+  > .menu {
+    list-style: none;
+    padding: 25px 0 35px;
+
+    &-title {
+      color: #fff;
+      font-family: $raleway;
+      font-weight: 700;
+      padding: 30px 40px;
+    }
+
+    .menu-item {
+      a {
+        color: #fff;
+        display: block;
+        padding: 15px 40px 5px;
+        text-decoration: none;
+
+        &:hover::after {
+          background-color: $border-hover-color;
+          width: 50%;
+        }
+
+        &:focus::after {
+          background-color: $border-hover-color;
+          width: 100%;
+        }
+
+        &::after {
+          background-color: #fff;
+          content: "";
+          display: block;
+          height: 2px;
+          margin-top: 10px;
+          width: 0;
+          transition: width 0.3s ease-out, background-color 0.3s ease-out;
+        }
+      }
+
+      &--active-trail a::after {
+        width: 30px;
+      }
+    }
+  }
+}

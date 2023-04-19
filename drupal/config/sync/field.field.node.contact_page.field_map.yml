@@ -1,0 +1,36 @@
+uuid: 383573bb-16cf-4545-9562-91bc5a4e9ed2
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map
+    - node.type.contact_page
+  module:
+    - google_map_field
+id: node.contact_page.field_map
+field_name: field_map
+entity_type: node
+bundle: contact_page
+label: Mapa
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    preview: ''
+    actions: {  }
+    lat: '51.664940'
+    name: ''
+    lon: '19.482540'
+    zoom: '9'
+    type: roadmap
+    width: 100%
+    height: 450px
+    marker: '1'
+    traffic: '0'
+    marker_icon: ''
+    controls: '1'
+    infowindow: ''
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

@@ -1,0 +1,45 @@
+uuid: d0e9f85a-53a4-4b59-8948-591c07dcd3c7
+langcode: pl
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.body
+    - field.field.node.page.field_gallery
+    - field.field.node.page.field_metatags
+    - field.field.node.page.field_show_in_company_news
+    - field.field.node.page.field_show_in_lab_news
+    - node.type.page
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden:
+  field_gallery: true
+  field_metatags: true
+  field_show_in_company_news: true
+  field_show_in_lab_news: true
+  langcode: true

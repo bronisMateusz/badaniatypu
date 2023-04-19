@@ -1,0 +1,19 @@
+uuid: 0251d81d-8a27-457f-87c6-8fc9ff43714d
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.business_card
+    - field.storage.block_content.field_text_2
+id: block_content.business_card.field_text_2
+field_name: field_text_2
+entity_type: block_content
+bundle: business_card
+label: Stanowisko
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

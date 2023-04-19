@@ -8,11 +8,13 @@ module:
   admin_toolbar_tools: 0
   automated_cron: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
   ckeditor5: 0
   ckeditor5_font: 0
+  ckeditor_accordion: 0
   ckeditor_font: 0
   color_field: 0
   comment: 0
@@ -32,6 +34,7 @@ module:
   gin_lb: 0
   gin_login: 0
   gin_toolbar: 0
+  google_map_field: 0
   help: 0
   history: 0
   image: 0
@@ -45,14 +48,21 @@ module:
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
+  metatag_open_graph: 0
   mysql: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  redirect: 0
+  responsive_favicons: 0
   search: 0
   shortcut: 0
+  slick: 0
+  slick_lightbox: 0
+  slick_ui: 0
   svg_image: 0
   system: 0
   taxonomy: 0
@@ -61,10 +71,13 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
   vite: 0
+  webform: 0
+  webform_ui: 0
   whoops: 0
   pathauto: 1
   views: 10

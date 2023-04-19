@@ -3,13 +3,10 @@
 [id*="block-footer-"] {
   border-top: 1px solid $border-color;
   font-size: 0.875rem;
+  line-height: 1.25rem;
   margin: 75px auto 0;
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 50px 15px;
-
-  a {
-    color: $first-brand-color;
-  }
 
   .layout__region--second {
     margin-top: 20px;
@@ -36,7 +33,7 @@
 
   &.without_logo {
     a {
-      color: $second-brand-color;
+      color: $company-color;
     }
 
     @media (min-width: $md) {

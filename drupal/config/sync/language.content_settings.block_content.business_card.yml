@@ -1,0 +1,11 @@
+uuid: 17d097b7-437f-4dc7-9213-fa4af66b5763
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.business_card
+id: block_content.business_card
+target_entity_type_id: block_content
+target_bundle: business_card
+default_langcode: site_default
+language_alterable: false

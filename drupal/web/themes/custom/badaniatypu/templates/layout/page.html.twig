@@ -40,6 +40,10 @@
  * @see html.html.twig
  */
 #}
+{% set url = url('<current>')|render|render %}
+{% if 'bogaccy' in url %}
+  {{ attach_library('badaniatypu/company-styling') }}
+{% endif %}
 <div class="layout-container">
 
   <header role="banner">
@@ -49,17 +53,22 @@
   {{ page.help }}
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+    {{ page.highlighted }}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+    <div class="layout">
+
+      <div class="layout-content">
+        {{ page.content }}
+      </div>
+
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+
+    </div>
 
   </main>
 
@@ -69,4 +78,4 @@
     </footer>
   {% endif %}
 
-</div>{# /.layout-container #}
+</div>
