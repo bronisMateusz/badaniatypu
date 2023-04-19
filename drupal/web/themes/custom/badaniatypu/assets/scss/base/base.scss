@@ -67,6 +67,7 @@ h1.page-title {
   display: flex;
   flex-direction: column;
   margin: 0;
+  line-height: 2rem;
   padding: 70px 50px 0;
   position: relative;
   row-gap: 20px;
@@ -169,4 +170,17 @@ main {
   &--type-welcome-page {
     margin-top: 40px;
   }
+}
+
+.slick-list.draggable {
+  cursor: revert;
+
+  .slick-lightbox-slick-item-inner {
+    cursor: grab;
+  }
+}
+
+// Workaround slick-lightbox double instances
+.slick-lightbox-close {
+  pointer-events: none;
 }
