@@ -171,3 +171,16 @@ main {
     margin-top: 40px;
   }
 }
+
+.slick-list.draggable {
+  cursor: revert;
+
+  .slick-lightbox-slick-item-inner {
+    cursor: grab;
+  }
+}
+
+// Workaround slick-lightbox double instances
+.slick-lightbox-close {
+  pointer-events: none;
+}
