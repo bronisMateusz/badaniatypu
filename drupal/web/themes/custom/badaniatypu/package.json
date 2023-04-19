@@ -4,11 +4,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "format": "prettier --write assets/scss/**/*.scss js ; stylelint --fix assets/scss/**/*.scss ; eslint --fix assets/scss/**/*.js",
-    "lint": "npm-run-all --continue-on-error lint:prettier lint:stylelint lint:eslint",
-    "lint:prettier": "prettier --no-error-on-unmatched-pattern --check scss js",
+    "format": "prettier --write assets/scss/**/*.scss js; stylelint --fix assets/scss/**/*.scss; eslint --fix assets/js/*.js",
+    "lint": "run lint:prettier; run lint:stylelint; run lint:eslint",
+    "lint:prettier": "prettier --no-error-on-unmatched-pattern --check scss assets/js/*.js",
     "lint:stylelint": "stylelint assets/scss/**/*.scss",
-    "lint:eslint": "eslint --no-error-on-unmatched-pattern assets/scss/**/*.js",
+    "lint:eslint": "eslint --no-error-on-unmatched-pattern assets/js/*.js",
     "upgrade": "yarn-upgrade-all"
   },
   "devDependencies": {

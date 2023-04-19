@@ -5,6 +5,8 @@
  * Functions to support theming.
  */
 
+declare(strict_types=1);
+
 use Drupal\block\Entity\Block;
 
 /**
@@ -13,11 +15,15 @@ use Drupal\block\Entity\Block;
  * Pass block region value to content so this can be used in
  * THEME_theme_suggestions_menu_alter.
  */
-function badaniatypu_preprocess_block(&$variables) {
+function badaniatypu_preprocess_block(array &$variables): void {
   if (isset($variables['elements']['#id'])) {
-    $region = Block::load($variables['elements']['#id'])->getRegion();
-    if (!empty($region)) {
-      $variables['content']['#attributes']['data-block']['region'] = $region;
+    $block = Block::load($variables['elements']['#id']);
+    if (!empty($block)) {
+      $region = $block->getRegion();
+
+      if (!empty($region)) {
+        $variables['content']['#attributes']['data-block']['region'] = $region;
+      }
     }
   }
 }
@@ -25,7 +31,7 @@ function badaniatypu_preprocess_block(&$variables) {
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
-function badaniatypu_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
+function badaniatypu_theme_suggestions_menu_alter(array &$suggestions, array $variables): void {
   if (isset($variables['attributes']['data-block']['region'])) {
     $region = $variables['attributes']['data-block']['region'];
     $suggestions[] = $variables['theme_hook_original'] . '__' . $region;

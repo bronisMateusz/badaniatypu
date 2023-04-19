@@ -13,7 +13,7 @@
   }
 
   .menu {
-    left: 135%;
+    left: 170%;
     list-style: none;
     margin-left: -100vw;
     padding: 0;
@@ -50,7 +50,7 @@
         color: $black;
         display: block;
         font: 600 0.875rem $raleway;
-        padding: 10px 15px 0;
+        padding: 15px 30px;
         text-decoration: none;
         transition: color 0.3s ease-out;
 
@@ -61,6 +61,7 @@
 
         @media (min-width: $lg) {
           background-color: unset;
+          padding: 10px 15px 0;
 
           &::after {
             background-color: $brand-color;
